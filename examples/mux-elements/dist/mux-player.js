@@ -5,35 +5,35 @@ var __markAsModule = (target) => __defProp(target, "__esModule", { value: true }
 var dist_exports = {};
 __markAsModule(dist_exports);
 (() => {
-  var Be = Object.defineProperty;
-  var Oi = (O) => Be(O, "__esModule", { value: true });
-  var je = (O, M) => {
-    Oi(O);
-    for (var C in M)
-      Be(O, C, { get: M[C], enumerable: true });
+  var je = Object.defineProperty;
+  var Pi = (O) => je(O, "__esModule", { value: true });
+  var He = (O, M) => {
+    Pi(O);
+    for (var x in M)
+      je(O, x, { get: M[x], enumerable: true });
   };
-  var ge = {};
-  je(ge, { MediaUIAttributes: () => G, MediaUIEvents: () => it, ReadyStates: () => Pi, TextTrackKinds: () => Ht, TextTrackModes: () => Nt });
-  var it = { MEDIA_PLAY_REQUEST: "mediaplayrequest", MEDIA_PAUSE_REQUEST: "mediapauserequest", MEDIA_MUTE_REQUEST: "mediamuterequest", MEDIA_UNMUTE_REQUEST: "mediaunmuterequest", MEDIA_VOLUME_REQUEST: "mediavolumerequest", MEDIA_SEEK_REQUEST: "mediaseekrequest", MEDIA_AIRPLAY_REQUEST: "mediaairplayrequest", MEDIA_ENTER_FULLSCREEN_REQUEST: "mediaenterfullscreenrequest", MEDIA_EXIT_FULLSCREEN_REQUEST: "mediaexitfullscreenrequest", MEDIA_PREVIEW_REQUEST: "mediapreviewrequest", MEDIA_ENTER_PIP_REQUEST: "mediaenterpiprequest", MEDIA_EXIT_PIP_REQUEST: "mediaexitpiprequest", MEDIA_SHOW_TEXT_TRACKS_REQUEST: "mediashowtexttracksrequest", MEDIA_HIDE_TEXT_TRACKS_REQUEST: "mediahidetexttracksrequest", MEDIA_SHOW_CAPTIONS_REQUEST: "mediashowcaptionsrequest", MEDIA_SHOW_SUBTITLES_REQUEST: "mediashowsubtitlesrequest", MEDIA_DISABLE_CAPTIONS_REQUEST: "mediadisablecaptionsrequest", MEDIA_DISABLE_SUBTITLES_REQUEST: "mediadisablesubtitlesrequest", MEDIA_PLAYBACK_RATE_REQUEST: "mediaplaybackraterequest", REGISTER_MEDIA_STATE_RECEIVER: "registermediastatereceiver", UNREGISTER_MEDIA_STATE_RECEIVER: "unregistermediastatereceiver" }, G = { MEDIA_PAUSED: "media-paused", MEDIA_MUTED: "media-muted", MEDIA_VOLUME_LEVEL: "media-volume-level", MEDIA_VOLUME: "media-volume", MEDIA_IS_PIP: "media-is-pip", MEDIA_CAPTIONS_LIST: "media-captions-list", MEDIA_SUBTITLES_LIST: "media-subtitles-list", MEDIA_CAPTIONS_SHOWING: "media-captions-showing", MEDIA_SUBTITLES_SHOWING: "media-subtitles-showing", MEDIA_IS_FULLSCREEN: "media-is-fullscreen", MEDIA_PLAYBACK_RATE: "media-playback-rate", MEDIA_CURRENT_TIME: "media-current-time", MEDIA_DURATION: "media-duration", MEDIA_PREVIEW_IMAGE: "media-preview-image", MEDIA_PREVIEW_COORDS: "media-preview-coords", MEDIA_CHROME_ATTRIBUTES: "media-chrome-attributes", MEDIA_CONTROLLER: "media-controller", MEDIA_LOADING: "media-loading" }, Ht = { SUBTITLES: "subtitles", CAPTIONS: "captions", DESCRIPTIONS: "descriptions", CHAPTERS: "chapters", METADATA: "metadata" }, Nt = { DISABLED: "disabled", HIDDEN: "hidden", SHOWING: "showing" }, Pi = { HAVE_NOTHING: 0, HAVE_METADATA: 1, HAVE_CURRENT_DATA: 2, HAVE_FUTURE_DATA: 3, HAVE_ENOUGH_DATA: 4 };
-  var _t = { AUDIO_PLAYER: () => "audio player", VIDEO_PLAYER: () => "video player", VOLUME: () => "volume", SEEK: () => "seek", CLOSED_CAPTIONS: () => "closed captions", PLAYBACK_RATE: ({ playbackRate: O = 1 } = {}) => `current playback rate ${O}`, PLAYBACK_TIME: () => "playback time", MEDIA_LOADING: () => "media loading" }, gt = { PLAY: () => "play", PAUSE: () => "pause", MUTE: () => "mute", UNMUTE: () => "unmute", AIRPLAY: () => "air play", ENTER_FULLSCREEN: () => "enter fullscreen mode", EXIT_FULLSCREEN: () => "exit fullscreen mode", ENTER_PIP: () => "enter picture in picture mode", EXIT_PIP: () => "exit picture in picture mode", SEEK_FORWARD_N_SECS: ({ seekOffset: O = 30 } = {}) => `seek forward ${O} seconds`, SEEK_BACK_N_SECS: ({ seekOffset: O = 30 } = {}) => `seek back ${O} seconds` }, Ni = { ..._t, ...gt };
   var ye = {};
-  je(ye, { formatAsTimePhrase: () => Ft, formatTime: () => xt });
-  var Fi = (O) => typeof O == "number" && !Number.isNaN(O) && Number.isFinite(O), He = [{ singular: "hour", plural: "hours" }, { singular: "minute", plural: "minutes" }, { singular: "second", plural: "seconds" }], Ui = (O, M) => {
-    let C = O === 1 ? He[M].singular : He[M].plural;
-    return `${O} ${C}`;
+  He(ye, { MediaUIAttributes: () => G, MediaUIEvents: () => it, ReadyStates: () => Ni, TextTrackKinds: () => Ht, TextTrackModes: () => Nt });
+  var it = { MEDIA_PLAY_REQUEST: "mediaplayrequest", MEDIA_PAUSE_REQUEST: "mediapauserequest", MEDIA_MUTE_REQUEST: "mediamuterequest", MEDIA_UNMUTE_REQUEST: "mediaunmuterequest", MEDIA_VOLUME_REQUEST: "mediavolumerequest", MEDIA_SEEK_REQUEST: "mediaseekrequest", MEDIA_AIRPLAY_REQUEST: "mediaairplayrequest", MEDIA_ENTER_FULLSCREEN_REQUEST: "mediaenterfullscreenrequest", MEDIA_EXIT_FULLSCREEN_REQUEST: "mediaexitfullscreenrequest", MEDIA_PREVIEW_REQUEST: "mediapreviewrequest", MEDIA_ENTER_PIP_REQUEST: "mediaenterpiprequest", MEDIA_EXIT_PIP_REQUEST: "mediaexitpiprequest", MEDIA_SHOW_TEXT_TRACKS_REQUEST: "mediashowtexttracksrequest", MEDIA_HIDE_TEXT_TRACKS_REQUEST: "mediahidetexttracksrequest", MEDIA_SHOW_CAPTIONS_REQUEST: "mediashowcaptionsrequest", MEDIA_SHOW_SUBTITLES_REQUEST: "mediashowsubtitlesrequest", MEDIA_DISABLE_CAPTIONS_REQUEST: "mediadisablecaptionsrequest", MEDIA_DISABLE_SUBTITLES_REQUEST: "mediadisablesubtitlesrequest", MEDIA_PLAYBACK_RATE_REQUEST: "mediaplaybackraterequest", REGISTER_MEDIA_STATE_RECEIVER: "registermediastatereceiver", UNREGISTER_MEDIA_STATE_RECEIVER: "unregistermediastatereceiver" }, G = { MEDIA_PAUSED: "media-paused", MEDIA_MUTED: "media-muted", MEDIA_VOLUME_LEVEL: "media-volume-level", MEDIA_VOLUME: "media-volume", MEDIA_IS_PIP: "media-is-pip", MEDIA_CAPTIONS_LIST: "media-captions-list", MEDIA_SUBTITLES_LIST: "media-subtitles-list", MEDIA_CAPTIONS_SHOWING: "media-captions-showing", MEDIA_SUBTITLES_SHOWING: "media-subtitles-showing", MEDIA_IS_FULLSCREEN: "media-is-fullscreen", MEDIA_PLAYBACK_RATE: "media-playback-rate", MEDIA_CURRENT_TIME: "media-current-time", MEDIA_DURATION: "media-duration", MEDIA_PREVIEW_IMAGE: "media-preview-image", MEDIA_PREVIEW_COORDS: "media-preview-coords", MEDIA_CHROME_ATTRIBUTES: "media-chrome-attributes", MEDIA_CONTROLLER: "media-controller", MEDIA_LOADING: "media-loading" }, Ht = { SUBTITLES: "subtitles", CAPTIONS: "captions", DESCRIPTIONS: "descriptions", CHAPTERS: "chapters", METADATA: "metadata" }, Nt = { DISABLED: "disabled", HIDDEN: "hidden", SHOWING: "showing" }, Ni = { HAVE_NOTHING: 0, HAVE_METADATA: 1, HAVE_CURRENT_DATA: 2, HAVE_FUTURE_DATA: 3, HAVE_ENOUGH_DATA: 4 };
+  var _t = { AUDIO_PLAYER: () => "audio player", VIDEO_PLAYER: () => "video player", VOLUME: () => "volume", SEEK: () => "seek", CLOSED_CAPTIONS: () => "closed captions", PLAYBACK_RATE: ({ playbackRate: O = 1 } = {}) => `current playback rate ${O}`, PLAYBACK_TIME: () => "playback time", MEDIA_LOADING: () => "media loading" }, gt = { PLAY: () => "play", PAUSE: () => "pause", MUTE: () => "mute", UNMUTE: () => "unmute", AIRPLAY: () => "air play", ENTER_FULLSCREEN: () => "enter fullscreen mode", EXIT_FULLSCREEN: () => "exit fullscreen mode", ENTER_PIP: () => "enter picture in picture mode", EXIT_PIP: () => "exit picture in picture mode", SEEK_FORWARD_N_SECS: ({ seekOffset: O = 30 } = {}) => `seek forward ${O} seconds`, SEEK_BACK_N_SECS: ({ seekOffset: O = 30 } = {}) => `seek back ${O} seconds` }, Fi = { ..._t, ...gt };
+  var Ee = {};
+  He(Ee, { formatAsTimePhrase: () => Ft, formatTime: () => Ct });
+  var Ui = (O) => typeof O == "number" && !Number.isNaN(O) && Number.isFinite(O), Ge = [{ singular: "hour", plural: "hours" }, { singular: "minute", plural: "minutes" }, { singular: "second", plural: "seconds" }], Bi = (O, M) => {
+    let x = O === 1 ? Ge[M].singular : Ge[M].plural;
+    return `${O} ${x}`;
   }, Ft = (O) => {
-    if (!Fi(O))
+    if (!Ui(O))
       return "";
-    let M = Math.abs(O), C = M !== O, T = new Date(0, 0, 0, 0, 0, M, 0);
-    return `${[T.getHours(), T.getMinutes(), T.getSeconds()].map((y, w) => y && Ui(y, w)).filter((y) => y).join(", ")}${C ? " remaining" : ""}`;
+    let M = Math.abs(O), x = M !== O, T = new Date(0, 0, 0, 0, 0, M, 0);
+    return `${[T.getHours(), T.getMinutes(), T.getSeconds()].map((y, w) => y && Bi(y, w)).filter((y) => y).join(", ")}${x ? " remaining" : ""}`;
   };
-  function xt(O, M) {
-    let C = false;
-    O < 0 && (C = true, O = 0 - O), O = O < 0 ? 0 : O;
+  function Ct(O, M) {
+    let x = false;
+    O < 0 && (x = true, O = 0 - O), O = O < 0 ? 0 : O;
     let T = Math.floor(O % 60), e = Math.floor(O / 60 % 60), R = Math.floor(O / 3600), m = Math.floor(M / 60 % 60), y = Math.floor(M / 3600);
-    return (isNaN(O) || O === 1 / 0) && (R = e = T = "-"), R = R > 0 || y > 0 ? R + ":" : "", e = ((R || m >= 10) && e < 10 ? "0" + e : e) + ":", T = T < 10 ? "0" + T : T, (C ? "-" : "") + R + e + T;
+    return (isNaN(O) || O === 1 / 0) && (R = e = T = "-"), R = R > 0 || y > 0 ? R + ":" : "", e = ((R || m >= 10) && e < 10 ? "0" + e : e) + ":", T = T < 10 ? "0" + T : T, (x ? "-" : "") + R + e + T;
   }
-  var Ge = { HTMLElement: function() {
+  var Ve = { HTMLElement: function() {
     this.addEventListener = () => {
     }, this.removeEventListener = () => {
     }, this.dispatchEvent = () => {
@@ -42,14 +42,14 @@ __markAsModule(dist_exports);
   }, define: function() {
   }, whenDefined: function() {
   } }, CustomEvent: function() {
-  } }, Bi = { createElement: function() {
-    return new Ge.HTMLElement();
-  } }, Ve = typeof window == "undefined" || typeof window.customElements == "undefined", W = Ve ? Ge : window, Y = Ve ? Bi : window.document;
+  } }, ji = { createElement: function() {
+    return new Ve.HTMLElement();
+  } }, Ke = typeof window == "undefined" || typeof window.customElements == "undefined", W = Ke ? Ve : window, Y = Ke ? ji : window.document;
   function rt(O, M) {
     W.customElements.get(O) || (W.customElements.define(O, M), W[M.name] = M);
   }
-  var Ke = Y.createElement("template");
-  Ke.innerHTML = `
+  var qe = Y.createElement("template");
+  qe.innerHTML = `
 <style>
   :host {
     display: inline-flex;
@@ -104,21 +104,21 @@ __markAsModule(dist_exports);
   }
 </style>
 `;
-  var qe = ["Enter", " "], Ee = class extends W.HTMLElement {
+  var We = ["Enter", " "], be = class extends W.HTMLElement {
     static get observedAttributes() {
       return [G.MEDIA_CONTROLLER];
     }
     constructor(M = {}) {
       super();
-      let C = this.attachShadow({ mode: "open" }), T = Ke.content.cloneNode(true);
+      let x = this.attachShadow({ mode: "open" }), T = qe.content.cloneNode(true);
       this.nativeEl = T;
       let e = M.slotTemplate;
-      e || (e = Y.createElement("template"), e.innerHTML = `<slot>${M.defaultContent || ""}</slot>`), this.nativeEl.appendChild(e.content.cloneNode(true)), C.appendChild(T), this.addEventListener("click", (m) => {
+      e || (e = Y.createElement("template"), e.innerHTML = `<slot>${M.defaultContent || ""}</slot>`), this.nativeEl.appendChild(e.content.cloneNode(true)), x.appendChild(T), this.addEventListener("click", (m) => {
         this.handleClick(m);
       });
       let R = (m) => {
         let { key: y } = m;
-        if (!qe.includes(y)) {
+        if (!We.includes(y)) {
           this.removeEventListener("keyup", R);
           return;
         }
@@ -126,18 +126,18 @@ __markAsModule(dist_exports);
       };
       this.addEventListener("keydown", (m) => {
         let { metaKey: y, altKey: w, key: A } = m;
-        if (y || w || !qe.includes(A)) {
+        if (y || w || !We.includes(A)) {
           this.removeEventListener("keyup", R);
           return;
         }
         this.addEventListener("keyup", R);
       });
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       var e, R;
       if (M === G.MEDIA_CONTROLLER) {
-        if (C) {
-          let m = Y.getElementById(C);
+        if (x) {
+          let m = Y.getElementById(x);
           (e = m == null ? void 0 : m.unassociateElement) == null || e.call(m, this);
         }
         if (T) {
@@ -147,51 +147,51 @@ __markAsModule(dist_exports);
       }
     }
     connectedCallback() {
-      var C;
+      var x;
       this.setAttribute("role", "button"), this.setAttribute("tabindex", 0);
       let M = this.getAttribute(G.MEDIA_CONTROLLER);
       if (M) {
         let T = Y.getElementById(M);
-        (C = T == null ? void 0 : T.associateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.associateElement) == null || x.call(T, this);
       }
     }
     disconnectedCallback() {
-      var C;
+      var x;
       if (this.getAttribute(G.MEDIA_CONTROLLER)) {
         let T = Y.getElementById(mediaControllerId);
-        (C = T == null ? void 0 : T.unassociateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.unassociateElement) == null || x.call(T, this);
       }
     }
     handleClick() {
     }
   };
-  rt("media-chrome-button", Ee);
-  var yt = Ee;
-  var ji = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18"><title>Mux Player SVG Icons_v3</title><path d="M19.13,0H.87A.87.87,0,0,0,0,.87V14.13A.87.87,0,0,0,.87,15h3.4L6,13H2V2H18V13H14l1.72,2h3.4a.87.87,0,0,0,.87-.87V.87A.87.87,0,0,0,19.13,0ZM10.38,11.44a.5.5,0,0,0-.76,0L4.71,17.17a.5.5,0,0,0,.38.83h9.82a.5.5,0,0,0,.38-.83Z"/></svg>', We = Y.createElement("template");
-  We.innerHTML = `
+  rt("media-chrome-button", be);
+  var yt = be;
+  var Hi = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18"><title>Mux Player SVG Icons_v3</title><path d="M19.13,0H.87A.87.87,0,0,0,0,.87V14.13A.87.87,0,0,0,.87,15h3.4L6,13H2V2H18V13H14l1.72,2h3.4a.87.87,0,0,0,.87-.87V.87A.87.87,0,0,0,19.13,0ZM10.38,11.44a.5.5,0,0,0-.76,0L4.71,17.17a.5.5,0,0,0,.38.83h9.82a.5.5,0,0,0,.38-.83Z"/></svg>', $e = Y.createElement("template");
+  $e.innerHTML = `
   <style>
   </style>
 
-  <slot name="airplay">${ji}</slot>
+  <slot name="airplay">${Hi}</slot>
 `;
-  var $e = class extends yt {
+  var Ye = class extends yt {
     static get observedAttributes() {
       return [...super.observedAttributes];
     }
     constructor(M = {}) {
-      super({ slotTemplate: We, ...M });
+      super({ slotTemplate: $e, ...M });
     }
     connectedCallback() {
       this.setAttribute("aria-label", gt.AIRPLAY()), super.connectedCallback();
     }
     handleClick(M) {
-      let C = new W.CustomEvent(it.MEDIA_AIRPLAY_REQUEST, { composed: true, bubbles: true });
-      this.dispatchEvent(C);
+      let x = new W.CustomEvent(it.MEDIA_AIRPLAY_REQUEST, { composed: true, bubbles: true });
+      this.dispatchEvent(x);
     }
   };
-  rt("media-airplay-button", $e);
-  var Ye = Y.createElement("template");
-  Ye.innerHTML = `
+  rt("media-airplay-button", Ye);
+  var ze = Y.createElement("template");
+  ze.innerHTML = `
   <style>
     :host {
       box-sizing: border-box;
@@ -290,12 +290,12 @@ __markAsModule(dist_exports);
     <slot name="centered-chrome"></slot>
   </span>
 `;
-  var Hi = Object.values(G), be = class extends W.HTMLElement {
+  var Gi = Object.values(G), _e = class extends W.HTMLElement {
     constructor() {
       super();
       let M = this.attachShadow({ mode: "open" });
-      this.shadowRoot.appendChild(Ye.content.cloneNode(true));
-      let C = (e, R) => {
+      this.shadowRoot.appendChild(ze.content.cloneNode(true));
+      let x = (e, R) => {
         let m = this.media;
         for (let y of e)
           y.type === "childList" && (y.removedNodes.forEach((w) => {
@@ -314,12 +314,12 @@ __markAsModule(dist_exports);
             w == m && this.handleMediaUpdated(m).then((A) => this.mediaSetCallback(A));
           }));
       };
-      new MutationObserver(C).observe(this, { childList: true, subtree: true });
+      new MutationObserver(x).observe(this, { childList: true, subtree: true });
     }
     static get observedAttributes() {
-      return ["autohide"].concat(Hi);
+      return ["autohide"].concat(Gi);
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       M.toLowerCase() == "autohide" && (this.autohide = T);
     }
     get media() {
@@ -327,23 +327,23 @@ __markAsModule(dist_exports);
       return (M == null ? void 0 : M.nodeName) == "SLOT" && (M = M.assignedElements({ flatten: true })[0]), M;
     }
     mediaSetCallback(M) {
-      this._mediaClickPlayToggle = (C) => {
+      this._mediaClickPlayToggle = (x) => {
         let T = M.paused ? it.MEDIA_PLAY_REQUEST : it.MEDIA_PAUSE_REQUEST;
         this.dispatchEvent(new W.CustomEvent(T, { composed: true, bubbles: true }));
       };
     }
     handleMediaUpdated(M) {
-      let C = (R) => Promise.resolve(R), T = (R) => (console.error('<media-chrome>: Media element set with slot="media" does not appear to be compatible.', R), Promise.reject(R));
+      let x = (R) => Promise.resolve(R), T = (R) => (console.error('<media-chrome>: Media element set with slot="media" does not appear to be compatible.', R), Promise.reject(R));
       if (!M)
         return T(M);
       let e = M.nodeName.toLowerCase();
-      return e.includes("-") ? W.customElements.whenDefined(e).then(() => C(M)) : C(M);
+      return e.includes("-") ? W.customElements.whenDefined(e).then(() => x(M)) : x(M);
     }
     mediaUnsetCallback(M) {
     }
     connectedCallback() {
-      let C = this.getAttribute("audio") != null ? _t.AUDIO_PLAYER() : _t.VIDEO_PLAYER();
-      this.setAttribute("role", "region"), this.setAttribute("aria-label", C), this.media && this.handleMediaUpdated(this.media).then((e) => this.mediaSetCallback(e));
+      let x = this.getAttribute("audio") != null ? _t.AUDIO_PLAYER() : _t.VIDEO_PLAYER();
+      this.setAttribute("role", "region"), this.setAttribute("aria-label", x), this.media && this.handleMediaUpdated(this.media).then((e) => this.mediaSetCallback(e));
       let T = () => {
         this.removeAttribute("user-inactive"), W.clearTimeout(this.inactiveTimeout), !(this.autohide < 0) && (this.inactiveTimeout = W.setTimeout(() => {
           this.setAttribute("user-inactive", "user-inactive");
@@ -368,90 +368,90 @@ __markAsModule(dist_exports);
       return this._autohide === void 0 ? 2 : this._autohide;
     }
   };
-  rt("media-container-temp", be);
-  var ze = be;
+  rt("media-container-temp", _e);
+  var Qe = _e;
   var Tt = { enter: "requestFullscreen", exit: "exitFullscreen", event: "fullscreenchange", element: "fullscreenElement", error: "fullscreenerror" };
   Y.fullscreenElement === void 0 && (Tt.enter = "webkitRequestFullScreen", Tt.exit = Y.webkitExitFullscreen != null ? "webkitExitFullscreen" : "webkitCancelFullScreen", Tt.event = "webkitfullscreenchange", Tt.element = "webkitFullscreenElement", Tt.error = "webkitfullscreenerror");
   function re(O, M = false) {
-    return O.split("_").map(function(C, T) {
-      return (T || M ? C[0].toUpperCase() : C[0].toLowerCase()) + C.slice(1).toLowerCase();
+    return O.split("_").map(function(x, T) {
+      return (T || M ? x[0].toUpperCase() : x[0].toLowerCase()) + x.slice(1).toLowerCase();
     }).join("");
   }
-  var ie = (O = "") => O.split(/\s+/), Qe = (O = "") => {
-    let [M, C] = O.split(":"), T = C ? decodeURIComponent(C) : void 0;
+  var ie = (O = "") => O.split(/\s+/), Xe = (O = "") => {
+    let [M, x] = O.split(":"), T = x ? decodeURIComponent(x) : void 0;
     return { language: M, label: T };
-  }, Gi = (O = "", M = {}) => ie(O).map((C) => {
-    let T = Qe(C);
+  }, Vi = (O = "", M = {}) => ie(O).map((x) => {
+    let T = Xe(x);
     return { ...M, ...T };
-  }), Vi = (O) => Array.isArray(O) ? O.map((M) => typeof M == "string" ? Qe(M) : M) : typeof O == "string" ? Gi(O) : [O], Ki = ({ label: O, language: M } = {}) => O ? `${M}:${encodeURIComponent(O)}` : M, wt = (O = []) => Array.prototype.map.call(O, Ki).join(" "), qi = (O, M) => (C) => C[O] === M, Xe = (O) => {
-    let M = Object.entries(O).map(([C, T]) => qi(C, T));
-    return (C) => M.every((T) => T(C));
-  }, Xt = (O, M = [], C = []) => {
-    let T = Vi(C).map(Xe), e = (R) => T.some((m) => m(R));
+  }), Ki = (O) => Array.isArray(O) ? O.map((M) => typeof M == "string" ? Xe(M) : M) : typeof O == "string" ? Vi(O) : [O], qi = ({ label: O, language: M } = {}) => O ? `${M}:${encodeURIComponent(O)}` : M, wt = (O = []) => Array.prototype.map.call(O, qi).join(" "), Wi = (O, M) => (x) => x[O] === M, Ze = (O) => {
+    let M = Object.entries(O).map(([x, T]) => Wi(x, T));
+    return (x) => M.every((T) => T(x));
+  }, Xt = (O, M = [], x = []) => {
+    let T = Ki(x).map(Ze), e = (R) => T.some((m) => m(R));
     Array.from(M).filter(e).forEach((R) => {
       R.mode = O;
     });
   }, Vt = (O, M = () => true) => {
     if (!(O == null ? void 0 : O.textTracks))
       return [];
-    let C = typeof M == "function" ? M : Xe(M);
-    return Array.from(O.textTracks).filter(C);
+    let x = typeof M == "function" ? M : Ze(M);
+    return Array.from(O.textTracks).filter(x);
   };
-  var { MEDIA_PLAY_REQUEST: Wi, MEDIA_PAUSE_REQUEST: $i, MEDIA_MUTE_REQUEST: Yi, MEDIA_UNMUTE_REQUEST: zi, MEDIA_VOLUME_REQUEST: Qi, MEDIA_ENTER_FULLSCREEN_REQUEST: Xi, MEDIA_EXIT_FULLSCREEN_REQUEST: Zi, MEDIA_SEEK_REQUEST: Ji, MEDIA_PREVIEW_REQUEST: tn, MEDIA_ENTER_PIP_REQUEST: en, MEDIA_EXIT_PIP_REQUEST: rn, MEDIA_PLAYBACK_RATE_REQUEST: nn } = it, _e = class extends ze {
+  var { MEDIA_PLAY_REQUEST: $i, MEDIA_PAUSE_REQUEST: Yi, MEDIA_MUTE_REQUEST: zi, MEDIA_UNMUTE_REQUEST: Qi, MEDIA_VOLUME_REQUEST: Xi, MEDIA_ENTER_FULLSCREEN_REQUEST: Zi, MEDIA_EXIT_FULLSCREEN_REQUEST: Ji, MEDIA_SEEK_REQUEST: tn, MEDIA_PREVIEW_REQUEST: en, MEDIA_ENTER_PIP_REQUEST: rn, MEDIA_EXIT_PIP_REQUEST: nn, MEDIA_PLAYBACK_RATE_REQUEST: an } = it, Te = class extends Qe {
     constructor() {
       super();
       this.mediaStateReceivers = [], this.associatedElementSubscriptions = /* @__PURE__ */ new Map(), this.associatedElements = [], this.associateElement(this);
       let M = { MEDIA_PLAY_REQUEST: () => this.media.play(), MEDIA_PAUSE_REQUEST: () => this.media.pause(), MEDIA_MUTE_REQUEST: () => this.media.muted = true, MEDIA_UNMUTE_REQUEST: () => {
-        let C = this.media;
-        C.muted = false, C.volume === 0 && (C.volume = 0.25);
-      }, MEDIA_VOLUME_REQUEST: (C) => {
-        let T = this.media, e = C.detail;
+        let x = this.media;
+        x.muted = false, x.volume === 0 && (x.volume = 0.25);
+      }, MEDIA_VOLUME_REQUEST: (x) => {
+        let T = this.media, e = x.detail;
         T.volume = e, e > 0 && T.muted && (T.muted = false);
         try {
           W.localStorage.setItem("media-chrome-pref-volume", e.toString());
         } catch {
         }
       }, MEDIA_ENTER_FULLSCREEN_REQUEST: () => {
-        let C = this.getRootNode(), T = this.media;
-        C.pictureInPictureElement && C.exitPictureInPicture(), super[Tt.enter] ? super[Tt.enter]() : T.webkitEnterFullscreen ? T.webkitEnterFullscreen() : T.requestFullscreen ? T.requestFullscreen() : console.warn("MediaChrome: Fullscreen not supported");
+        let x = this.getRootNode(), T = this.media;
+        x.pictureInPictureElement && x.exitPictureInPicture(), super[Tt.enter] ? super[Tt.enter]() : T.webkitEnterFullscreen ? T.webkitEnterFullscreen() : T.requestFullscreen ? T.requestFullscreen() : console.warn("MediaChrome: Fullscreen not supported");
       }, MEDIA_EXIT_FULLSCREEN_REQUEST: () => {
         Y[Tt.exit]();
       }, MEDIA_ENTER_PIP_REQUEST: () => {
-        let C = this.getRootNode(), T = this.media;
-        !C.pictureInPictureEnabled || (C[Tt.element] && C[Tt.exit](), T.requestPictureInPicture());
+        let x = this.getRootNode(), T = this.media;
+        !x.pictureInPictureEnabled || (x[Tt.element] && x[Tt.exit](), T.requestPictureInPicture());
       }, MEDIA_EXIT_PIP_REQUEST: () => {
-        let C = this.getRootNode();
-        C.exitPictureInPicture && C.exitPictureInPicture();
-      }, MEDIA_SEEK_REQUEST: (C) => {
-        let T = this.media, e = C.detail;
+        let x = this.getRootNode();
+        x.exitPictureInPicture && x.exitPictureInPicture();
+      }, MEDIA_SEEK_REQUEST: (x) => {
+        let T = this.media, e = x.detail;
         (T.readyState > 0 || T.readyState === void 0) && (T.currentTime = e);
-      }, MEDIA_PLAYBACK_RATE_REQUEST: (C) => {
-        this.media.playbackRate = C.detail;
-      }, MEDIA_PREVIEW_REQUEST: (C) => {
+      }, MEDIA_PLAYBACK_RATE_REQUEST: (x) => {
+        this.media.playbackRate = x.detail;
+      }, MEDIA_PREVIEW_REQUEST: (x) => {
         let T = this.media;
         if (!T)
           return;
         let [e] = Vt(T, { kind: Ht.METADATA, label: "thumbnails" });
         if (!(e && e.cues))
           return;
-        let R = C.detail, m = Array.prototype.find.call(e.cues, (A) => A.startTime >= R);
+        let R = x.detail, m = Array.prototype.find.call(e.cues, (A) => A.startTime >= R);
         if (!m)
           return;
         let y = new URL(m.text), w = new URLSearchParams(y.hash).get("#xywh");
         this.propagateMediaState(G.MEDIA_PREVIEW_IMAGE, y.href), this.propagateMediaState(G.MEDIA_PREVIEW_COORDS, w.split(",").join(" "));
-      }, MEDIA_SHOW_CAPTIONS_REQUEST: (C) => {
-        let T = this.captionTracks, { detail: e = [] } = C;
+      }, MEDIA_SHOW_CAPTIONS_REQUEST: (x) => {
+        let T = this.captionTracks, { detail: e = [] } = x;
         Xt(Nt.SHOWING, T, e);
-      }, MEDIA_DISABLE_CAPTIONS_REQUEST: (C) => {
-        let T = this.captionTracks, { detail: e = [] } = C;
+      }, MEDIA_DISABLE_CAPTIONS_REQUEST: (x) => {
+        let T = this.captionTracks, { detail: e = [] } = x;
         Xt(Nt.DISABLED, T, e);
-      }, MEDIA_SHOW_SUBTITLES_REQUEST: (C) => {
-        let T = this.subtitleTracks, { detail: e = [] } = C;
+      }, MEDIA_SHOW_SUBTITLES_REQUEST: (x) => {
+        let T = this.subtitleTracks, { detail: e = [] } = x;
         Xt(Nt.SHOWING, T, e);
-      }, MEDIA_DISABLE_SUBTITLES_REQUEST: (C) => {
-        let T = this.subtitleTracks, { detail: e = [] } = C;
+      }, MEDIA_DISABLE_SUBTITLES_REQUEST: (x) => {
+        let T = this.subtitleTracks, { detail: e = [] } = x;
         Xt(Nt.DISABLED, T, e);
-      }, MEDIA_AIRPLAY_REQUEST: (C) => {
+      }, MEDIA_AIRPLAY_REQUEST: (x) => {
         let { media: T } = this;
         if (!!T) {
           if (!(T.webkitShowPlaybackTargetPicker && W.WebKitPlaybackTargetAvailabilityEvent)) {
@@ -461,26 +461,26 @@ __markAsModule(dist_exports);
           T.webkitShowPlaybackTargetPicker();
         }
       } };
-      Object.keys(M).forEach((C) => {
-        let T = `_handle${re(C, true)}`;
+      Object.keys(M).forEach((x) => {
+        let T = `_handle${re(x, true)}`;
         this[T] = (e) => {
           if (e.stopPropagation(), !this.media) {
             console.warn("MediaController: No media available.");
             return;
           }
-          M[C](e, this.media);
-        }, this.addEventListener(it[C], this[T]);
+          M[x](e, this.media);
+        }, this.addEventListener(it[x], this[T]);
       }), this._mediaStatePropagators = { "play,pause": () => {
         this.propagateMediaState(G.MEDIA_PAUSED, this.media.paused);
       }, volumechange: () => {
-        let { muted: C, volume: T } = this.media, e = "high";
-        T == 0 || C ? e = "off" : T < 0.5 ? e = "low" : T < 0.75 && (e = "medium"), this.propagateMediaState(G.MEDIA_MUTED, C), this.propagateMediaState(G.MEDIA_VOLUME, T), this.propagateMediaState(G.MEDIA_VOLUME_LEVEL, e);
+        let { muted: x, volume: T } = this.media, e = "high";
+        T == 0 || x ? e = "off" : T < 0.5 ? e = "low" : T < 0.75 && (e = "medium"), this.propagateMediaState(G.MEDIA_MUTED, x), this.propagateMediaState(G.MEDIA_VOLUME, T), this.propagateMediaState(G.MEDIA_VOLUME_LEVEL, e);
       }, [Tt.event]: () => {
-        let C = this.getRootNode()[Tt.element];
-        this.propagateMediaState(G.MEDIA_IS_FULLSCREEN, C === this);
-      }, "enterpictureinpicture,leavepictureinpicture": (C) => {
+        let x = this.getRootNode()[Tt.element];
+        this.propagateMediaState(G.MEDIA_IS_FULLSCREEN, x === this);
+      }, "enterpictureinpicture,leavepictureinpicture": (x) => {
         let T;
-        C ? T = C.type == "enterpictureinpicture" : T = this.media == this.getRootNode().pictureInPictureElement, this.propagateMediaState(G.MEDIA_IS_PIP, T);
+        x ? T = x.type == "enterpictureinpicture" : T = this.media == this.getRootNode().pictureInPictureElement, this.propagateMediaState(G.MEDIA_IS_PIP, T);
       }, "timeupdate,loadedmetadata": () => {
         this.propagateMediaState(G.MEDIA_CURRENT_TIME, this.media.currentTime);
       }, "durationchange,loadedmetadata": () => {
@@ -489,8 +489,8 @@ __markAsModule(dist_exports);
         this.propagateMediaState(G.MEDIA_PLAYBACK_RATE, this.media.playbackRate);
       }, "waiting,playing": () => {
         var T;
-        let C = ((T = this.media) == null ? void 0 : T.readyState) < 3;
-        this.propagateMediaState(G.MEDIA_LOADING, C);
+        let x = ((T = this.media) == null ? void 0 : T.readyState) < 3;
+        this.propagateMediaState(G.MEDIA_LOADING, x);
       } }, this._textTrackMediaStatePropagators = { "addtrack,removetrack": () => {
         this.propagateMediaState(G.MEDIA_CAPTIONS_LIST, wt(this.captionTracks) || void 0), this.propagateMediaState(G.MEDIA_SUBTITLES_LIST, wt(this.subtitleTracks) || void 0), this.propagateMediaState(G.MEDIA_CAPTIONS_SHOWING, wt(this.showingCaptionTracks) || void 0), this.propagateMediaState(G.MEDIA_SUBTITLES_SHOWING, wt(this.showingSubtitleTracks) || void 0);
       }, change: () => {
@@ -498,108 +498,108 @@ __markAsModule(dist_exports);
       } };
     }
     mediaSetCallback(M) {
-      super.mediaSetCallback(M), Object.keys(this._mediaStatePropagators).forEach((C) => {
-        let T = C.split(","), e = this._mediaStatePropagators[C];
+      super.mediaSetCallback(M), Object.keys(this._mediaStatePropagators).forEach((x) => {
+        let T = x.split(","), e = this._mediaStatePropagators[x];
         T.forEach((R) => {
           (R == Tt.event ? this.getRootNode() : M).addEventListener(R, e);
         }), e();
-      }), Object.entries(this._textTrackMediaStatePropagators).forEach(([C, T]) => {
-        C.split(",").forEach((R) => {
+      }), Object.entries(this._textTrackMediaStatePropagators).forEach(([x, T]) => {
+        x.split(",").forEach((R) => {
           M.textTracks && M.textTracks.addEventListener(R, T);
         }), T();
       });
       try {
-        let C = W.localStorage.getItem("media-chrome-pref-volume");
-        C !== null && (M.volume = C);
-      } catch (C) {
-        console.debug("Error getting volume pref", C);
+        let x = W.localStorage.getItem("media-chrome-pref-volume");
+        x !== null && (M.volume = x);
+      } catch (x) {
+        console.debug("Error getting volume pref", x);
       }
     }
     mediaUnsetCallback(M) {
-      super.mediaUnsetCallback(M), Object.keys(this._mediaStatePropagators).forEach((C) => {
-        let T = C.split(","), e = this._mediaStatePropagators[C];
+      super.mediaUnsetCallback(M), Object.keys(this._mediaStatePropagators).forEach((x) => {
+        let T = x.split(","), e = this._mediaStatePropagators[x];
         T.forEach((R) => {
           (R == Tt.event ? this.getRootNode() : M).removeEventListener(R, e);
         });
-      }), Object.entries(this._textTrackMediaStatePropagators).forEach(([C, T]) => {
-        C.split(",").forEach((R) => {
+      }), Object.entries(this._textTrackMediaStatePropagators).forEach(([x, T]) => {
+        x.split(",").forEach((R) => {
           M.textTracks && M.textTracks.removeEventListener(R, T);
         }), T();
       }), this.propagateMediaState(G.MEDIA_PAUSED, true);
     }
-    propagateMediaState(M, C) {
-      It(this.mediaStateReceivers, M, C);
+    propagateMediaState(M, x) {
+      It(this.mediaStateReceivers, M, x);
     }
     associateElement(M) {
       if (!M)
         return;
-      let { associatedElementSubscriptions: C } = this;
-      if (C.has(M))
+      let { associatedElementSubscriptions: x } = this;
+      if (x.has(M))
         return;
-      let T = this.registerMediaStateReceiver.bind(this), e = this.unregisterMediaStateReceiver.bind(this), R = ln(M, T, e);
+      let T = this.registerMediaStateReceiver.bind(this), e = this.unregisterMediaStateReceiver.bind(this), R = un(M, T, e);
       Object.keys(it).forEach((m) => {
         M.addEventListener(it[m], this[`_handle${re(m, true)}`]);
-      }), C.set(M, R);
+      }), x.set(M, R);
     }
     unassociateElement(M) {
       if (!M)
         return;
-      let { associatedElementSubscriptions: C } = this;
-      if (!C.has(M))
+      let { associatedElementSubscriptions: x } = this;
+      if (!x.has(M))
         return;
-      C.get(M)(), C.delete(M), Object.keys(it).forEach((e) => {
+      x.get(M)(), x.delete(M), Object.keys(it).forEach((e) => {
         M.removeEventListener(it[e], this[`_handle${re(e, true)}`]);
       });
     }
     registerMediaStateReceiver(M) {
       if (!M)
         return;
-      let C = this.mediaStateReceivers;
-      C.indexOf(M) > -1 || (C.push(M), this.media && (It([M], G.MEDIA_CAPTIONS_LIST, wt(this.captionTracks) || void 0), It([M], G.MEDIA_SUBTITLES_LIST, wt(this.subtitleTracks) || void 0), It([M], G.MEDIA_CAPTIONS_SHOWING, wt(this.showingCaptionTracks) || void 0), It([M], G.MEDIA_SUBTITLES_SHOWING, wt(this.showingSubtitleTracks) || void 0), It([M], G.MEDIA_PAUSED, this.media.paused), It([M], G.MEDIA_MUTED, this.media.muted), It([M], G.MEDIA_VOLUME, this.media.volume), It([M], G.MEDIA_CURRENT_TIME, this.media.currentTime), It([M], G.MEDIA_DURATION, this.media.duration), It([M], G.MEDIA_PLAYBACK_RATE, this.media.playbackRate)));
+      let x = this.mediaStateReceivers;
+      x.indexOf(M) > -1 || (x.push(M), this.media && (It([M], G.MEDIA_CAPTIONS_LIST, wt(this.captionTracks) || void 0), It([M], G.MEDIA_SUBTITLES_LIST, wt(this.subtitleTracks) || void 0), It([M], G.MEDIA_CAPTIONS_SHOWING, wt(this.showingCaptionTracks) || void 0), It([M], G.MEDIA_SUBTITLES_SHOWING, wt(this.showingSubtitleTracks) || void 0), It([M], G.MEDIA_PAUSED, this.media.paused), It([M], G.MEDIA_MUTED, this.media.muted), It([M], G.MEDIA_VOLUME, this.media.volume), It([M], G.MEDIA_CURRENT_TIME, this.media.currentTime), It([M], G.MEDIA_DURATION, this.media.duration), It([M], G.MEDIA_PLAYBACK_RATE, this.media.playbackRate)));
     }
     unregisterMediaStateReceiver(M) {
-      let C = this.mediaStateReceivers, T = C.indexOf(M);
-      T < 0 || C.splice(T, 1);
+      let x = this.mediaStateReceivers, T = x.indexOf(M);
+      T < 0 || x.splice(T, 1);
     }
     play() {
-      this.dispatchEvent(new W.CustomEvent(Wi));
+      this.dispatchEvent(new W.CustomEvent($i));
     }
     pause() {
-      this.dispatchEvent(new W.CustomEvent($i));
+      this.dispatchEvent(new W.CustomEvent(Yi));
     }
     get muted() {
       return !!(this.media && this.media.muted);
     }
     set muted(M) {
-      let C = M ? Yi : zi;
-      this.dispatchEvent(new W.CustomEvent(C));
+      let x = M ? zi : Qi;
+      this.dispatchEvent(new W.CustomEvent(x));
     }
     get volume() {
       let M = this.media;
       return M ? M.volume : 1;
     }
     set volume(M) {
-      this.dispatchEvent(new W.CustomEvent(Qi, { detail: M }));
+      this.dispatchEvent(new W.CustomEvent(Xi, { detail: M }));
     }
     requestFullscreen() {
-      this.dispatchEvent(new W.CustomEvent(Xi));
+      this.dispatchEvent(new W.CustomEvent(Zi));
     }
     exitFullscreen() {
-      this.dispatchEvent(new W.CustomEvent(Zi));
+      this.dispatchEvent(new W.CustomEvent(Ji));
     }
     get currentTime() {
       let M = this.media;
       return M ? M.currentTime : 0;
     }
     set currentTime(M) {
-      this.dispatchEvent(new W.CustomEvent(Ji, { detail: M }));
+      this.dispatchEvent(new W.CustomEvent(tn, { detail: M }));
     }
     get playbackRate() {
       let M = this.media;
       return M ? M.playbackRate : 1;
     }
     set playbackRate(M) {
-      this.dispatchEvent(new W.CustomEvent(nn, { detail: M }));
+      this.dispatchEvent(new W.CustomEvent(an, { detail: M }));
     }
     get subtitleTracks() {
       return Vt(this.media, { kind: Ht.SUBTITLES });
@@ -614,42 +614,42 @@ __markAsModule(dist_exports);
       return Vt(this.media, { kind: Ht.CAPTIONS, mode: Nt.SHOWING });
     }
     requestPictureInPicture() {
-      this.dispatchEvent(new W.CustomEvent(en));
-    }
-    exitPictureInPicture() {
       this.dispatchEvent(new W.CustomEvent(rn));
     }
-    requestPreview(M) {
-      this.dispatchEvent(new W.CustomEvent(tn, { detail: M }));
+    exitPictureInPicture() {
+      this.dispatchEvent(new W.CustomEvent(nn));
     }
-  }, an = Object.values(G), Ze = (O) => {
+    requestPreview(M) {
+      this.dispatchEvent(new W.CustomEvent(en, { detail: M }));
+    }
+  }, sn = Object.values(G), Je = (O) => {
     var T, e, R;
-    let { constructor: { observedAttributes: M } } = O, C = (R = (e = (T = O == null ? void 0 : O.getAttribute) == null ? void 0 : T.call(O, G.MEDIA_CHROME_ATTRIBUTES)) == null ? void 0 : e.split) == null ? void 0 : R.call(e, /\s+/);
-    return Array.isArray(M || C) ? (M || C).filter((m) => an.includes(m)) : [];
-  }, Te = (O) => !!Ze(O).length, sn = (O, M, C) => C == null ? O.removeAttribute(M) : typeof C == "boolean" ? C ? O.setAttribute(M, "") : O.removeAttribute(M) : Number.isNaN(C) ? O.removeAttribute(M) : O.setAttribute(M, C), on = (O) => {
+    let { constructor: { observedAttributes: M } } = O, x = (R = (e = (T = O == null ? void 0 : O.getAttribute) == null ? void 0 : T.call(O, G.MEDIA_CHROME_ATTRIBUTES)) == null ? void 0 : e.split) == null ? void 0 : R.call(e, /\s+/);
+    return Array.isArray(M || x) ? (M || x).filter((m) => sn.includes(m)) : [];
+  }, Ae = (O) => !!Je(O).length, on = (O, M, x) => x == null ? O.removeAttribute(M) : typeof x == "boolean" ? x ? O.setAttribute(M, "") : O.removeAttribute(M) : Number.isNaN(x) ? O.removeAttribute(M) : O.setAttribute(M, x), ln = (O) => {
     var M;
     return !!((M = O.closest) == null ? void 0 : M.call(O, '*[slot="media"]'));
   }, Zt = (O, M) => {
-    if (on(O))
+    if (ln(O))
       return;
-    let C = (e, R) => {
+    let x = (e, R) => {
       var A, L;
-      Te(e) && R(e);
+      Ae(e) && R(e);
       let { children: m = [] } = e != null ? e : {}, y = (L = (A = e == null ? void 0 : e.shadowRoot) == null ? void 0 : A.children) != null ? L : [];
       [...m, ...y].forEach((b) => Zt(b, R));
     }, T = O == null ? void 0 : O.nodeName.toLowerCase();
-    if (T.includes("-") && !Te(O)) {
+    if (T.includes("-") && !Ae(O)) {
       W.customElements.whenDefined(T).then(() => {
-        C(O, M);
+        x(O, M);
       });
       return;
     }
-    C(O, M);
-  }, It = (O, M, C) => {
+    x(O, M);
+  }, It = (O, M, x) => {
     O.forEach((T) => {
-      !Ze(T).includes(M) || sn(T, M, C);
+      !Je(T).includes(M) || on(T, M, x);
     });
-  }, ln = (O, M, C) => {
+  }, un = (O, M, x) => {
     Zt(O, M);
     let T = (w) => {
       var L;
@@ -658,22 +658,22 @@ __markAsModule(dist_exports);
     }, e = (w) => {
       var L;
       let A = (L = w == null ? void 0 : w.composedPath()[0]) != null ? L : w.target;
-      C(A);
+      x(A);
     };
     O.addEventListener(it.REGISTER_MEDIA_STATE_RECEIVER, T), O.addEventListener(it.UNREGISTER_MEDIA_STATE_RECEIVER, e);
     let R = (w, A) => {
       w.forEach((L) => {
         let { addedNodes: b = [], removedNodes: u = [], type: g, target: D, attributeName: E } = L;
-        g === "childList" ? (Array.prototype.forEach.call(b, (S) => Zt(S, M)), Array.prototype.forEach.call(u, (S) => Zt(S, C))) : g === "attributes" && E === G.MEDIA_CHROME_ATTRIBUTES && (Te(D) ? M(D) : C(D));
+        g === "childList" ? (Array.prototype.forEach.call(b, (S) => Zt(S, M)), Array.prototype.forEach.call(u, (S) => Zt(S, x))) : g === "attributes" && E === G.MEDIA_CHROME_ATTRIBUTES && (Ae(D) ? M(D) : x(D));
       });
     }, m = new MutationObserver(R);
     return m.observe(O, { childList: true, attributes: true, subtree: true }), () => {
-      Zt(O, C), m.disconnect(), O.removeEventListener(it.REGISTER_MEDIA_STATE_RECEIVER, T), O.removeEventListener(it.UNREGISTER_MEDIA_STATE_RECEIVER, e);
+      Zt(O, x), m.disconnect(), O.removeEventListener(it.REGISTER_MEDIA_STATE_RECEIVER, T), O.removeEventListener(it.UNREGISTER_MEDIA_STATE_RECEIVER, e);
     };
   };
-  rt("media-controller", _e);
-  var Ae = _e;
-  var Je = Y.createElement("template"), tr = `
+  rt("media-controller", Te);
+  var Se = Te;
+  var tr = Y.createElement("template"), er = `
   height: var(--thumb-height);
   width: var(--media-range-thumb-width, 10px);
   border: var(--media-range-thumb-border, none);
@@ -684,7 +684,7 @@ __markAsModule(dist_exports);
   transition: var(--media-range-thumb-transition, none);
   transform: var(--media-range-thumb-transform, none);
   opacity: var(--media-range-thumb-opacity, 1);
-`, Se = `
+`, Le = `
   width: var(--media-range-track-width, 100%);
   min-width: 40px;
   height: var(--track-height);
@@ -696,7 +696,7 @@ __markAsModule(dist_exports);
   transition: var(--media-range-track-transition, none);
   cursor: pointer;
 `;
-  Je.innerHTML = `
+  tr.innerHTML = `
   <style>
     :host {
       --thumb-height: var(--media-range-thumb-height, 10px);
@@ -745,14 +745,14 @@ __markAsModule(dist_exports);
     /* Special styling for WebKit/Blink */
     input[type=range]::-webkit-slider-thumb {
       -webkit-appearance: none;
-      ${tr}
+      ${er}
       /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       margin-top: calc(calc(0px - var(--thumb-height) + var(--track-height)) / 2);
     }
-    input[type=range]::-moz-range-thumb { ${tr} }
+    input[type=range]::-moz-range-thumb { ${er} }
 
-    input[type=range]::-webkit-slider-runnable-track { ${Se} }
-    input[type=range]::-moz-range-track { ${Se} }
+    input[type=range]::-webkit-slider-runnable-track { ${Le} }
+    input[type=range]::-moz-range-track { ${Le} }
     input[type=range]::-ms-track {
       /* Reset */
       width: 100%;
@@ -762,7 +762,7 @@ __markAsModule(dist_exports);
       border-color: transparent;
       color: transparent;
 
-      ${Se}
+      ${Le}
     }
 
     /* Eventually want to move towards different styles for focus-visible
@@ -786,19 +786,19 @@ __markAsModule(dist_exports);
   </style>
   <input id="range" type="range" min="0" max="1000" step="1" value="0">
 `;
-  var Le = class extends W.HTMLElement {
+  var De = class extends W.HTMLElement {
     static get observedAttributes() {
       return [G.MEDIA_CONTROLLER];
     }
     constructor() {
       super();
-      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(Je.content.cloneNode(true)), this.range = this.shadowRoot.querySelector("#range"), this.range.addEventListener("input", this.updateBar.bind(this));
+      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(tr.content.cloneNode(true)), this.range = this.shadowRoot.querySelector("#range"), this.range.addEventListener("input", this.updateBar.bind(this));
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       var e, R;
       if (M === G.MEDIA_CONTROLLER) {
-        if (C) {
-          let m = Y.getElementById(C);
+        if (x) {
+          let m = Y.getElementById(x);
           (e = m == null ? void 0 : m.unassociateElement) == null || e.call(m, this);
         }
         if (T) {
@@ -808,36 +808,36 @@ __markAsModule(dist_exports);
       }
     }
     connectedCallback() {
-      var C;
+      var x;
       let M = this.getAttribute(G.MEDIA_CONTROLLER);
       if (M) {
         let T = Y.getElementById(M);
-        (C = T == null ? void 0 : T.associateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.associateElement) == null || x.call(T, this);
       }
       this.updateBar();
     }
     disconnectedCallback() {
-      var C;
+      var x;
       if (this.getAttribute(G.MEDIA_CONTROLLER)) {
         let T = Y.getElementById(mediaControllerId);
-        (C = T == null ? void 0 : T.unassociateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.unassociateElement) == null || x.call(T, this);
       }
     }
     updateBar() {
-      let M = this.getBarColors(), C = "linear-gradient(to right, ", T = 0;
+      let M = this.getBarColors(), x = "linear-gradient(to right, ", T = 0;
       M.forEach((e) => {
-        e[1] < T || (C = C + `${e[0]} ${T}%, ${e[0]} ${e[1]}%,`, T = e[1]);
-      }), C = C.slice(0, C.length - 1) + ")", this.style.setProperty("--media-range-track-background-internal", C);
+        e[1] < T || (x = x + `${e[0]} ${T}%, ${e[0]} ${e[1]}%,`, T = e[1]);
+      }), x = x.slice(0, x.length - 1) + ")", this.style.setProperty("--media-range-track-background-internal", x);
     }
     getBarColors() {
-      let M = this.range, C = M.value / M.max * 100;
-      return [["var(--media-range-bar-color, #fff)", C], ["var(--media-range-track-background, #333)", 100]];
+      let M = this.range, x = M.value / M.max * 100;
+      return [["var(--media-range-bar-color, #fff)", x], ["var(--media-range-track-background, #333)", 100]];
     }
   };
-  rt("media-chrome-range", Le);
-  var Jt = Le;
-  var er = Y.createElement("template");
-  er.innerHTML = `
+  rt("media-chrome-range", De);
+  var Jt = De;
+  var rr = Y.createElement("template");
+  rr.innerHTML = `
   <style>
     :host {
       /* Need position to display above video for some reason */
@@ -857,19 +857,19 @@ __markAsModule(dist_exports);
 
   <slot></slot>
 `;
-  var rr = class extends W.HTMLElement {
+  var ir = class extends W.HTMLElement {
     static get observedAttributes() {
       return [G.MEDIA_CONTROLLER];
     }
     constructor() {
       super();
-      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(er.content.cloneNode(true));
+      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(rr.content.cloneNode(true));
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       var e, R;
       if (M === G.MEDIA_CONTROLLER) {
-        if (C) {
-          let m = Y.getElementById(C);
+        if (x) {
+          let m = Y.getElementById(x);
           (e = m == null ? void 0 : m.unassociateElement) == null || e.call(m, this);
         }
         if (T) {
@@ -879,24 +879,24 @@ __markAsModule(dist_exports);
       }
     }
     connectedCallback() {
-      var C;
+      var x;
       let M = this.getAttribute(G.MEDIA_CONTROLLER);
       if (M) {
         let T = Y.getElementById(M);
-        (C = T == null ? void 0 : T.associateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.associateElement) == null || x.call(T, this);
       }
     }
     disconnectedCallback() {
-      var C;
+      var x;
       if (this.getAttribute(G.MEDIA_CONTROLLER)) {
         let T = Y.getElementById(mediaControllerId);
-        (C = T == null ? void 0 : T.unassociateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.unassociateElement) == null || x.call(T, this);
       }
     }
   };
-  rt("media-control-bar", rr);
-  var ir = Y.createElement("template");
-  ir.innerHTML = `
+  rt("media-control-bar", ir);
+  var nr = Y.createElement("template");
+  nr.innerHTML = `
   <style>
     :host {
       display: inline-flex;
@@ -924,19 +924,19 @@ __markAsModule(dist_exports);
   <slot></slot>
   </span>
 `;
-  var De = class extends W.HTMLElement {
+  var ke = class extends W.HTMLElement {
     static get observedAttributes() {
       return [G.MEDIA_CONTROLLER];
     }
     constructor() {
       super();
-      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(ir.content.cloneNode(true)), this.container = this.shadowRoot.querySelector("#container");
+      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(nr.content.cloneNode(true)), this.container = this.shadowRoot.querySelector("#container");
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       var e, R;
       if (M === G.MEDIA_CONTROLLER) {
-        if (C) {
-          let m = Y.getElementById(C);
+        if (x) {
+          let m = Y.getElementById(x);
           (e = m == null ? void 0 : m.unassociateElement) == null || e.call(m, this);
         }
         if (T) {
@@ -946,74 +946,74 @@ __markAsModule(dist_exports);
       }
     }
     connectedCallback() {
-      var C;
+      var x;
       let M = this.getAttribute(G.MEDIA_CONTROLLER);
       if (M) {
         let T = Y.getElementById(M);
-        (C = T == null ? void 0 : T.associateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.associateElement) == null || x.call(T, this);
       }
     }
     disconnectedCallback() {
-      var C;
+      var x;
       if (this.getAttribute(G.MEDIA_CONTROLLER)) {
         let T = Y.getElementById(mediaControllerId);
-        (C = T == null ? void 0 : T.unassociateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.unassociateElement) == null || x.call(T, this);
       }
     }
   };
-  rt("media-text-display", De);
-  var Kt = De;
-  var nr = class extends Kt {
+  rt("media-text-display", ke);
+  var Kt = ke;
+  var ar = class extends Kt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_CURRENT_TIME];
     }
-    attributeChangedCallback(M, C, T) {
-      M === G.MEDIA_CURRENT_TIME && (this.container.innerHTML = xt(T)), super.attributeChangedCallback(M, C, T);
+    attributeChangedCallback(M, x, T) {
+      M === G.MEDIA_CURRENT_TIME && (this.container.innerHTML = Ct(T)), super.attributeChangedCallback(M, x, T);
     }
   };
-  rt("media-current-time-display", nr);
-  var ar = class extends Kt {
+  rt("media-current-time-display", ar);
+  var sr = class extends Kt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_DURATION];
     }
-    attributeChangedCallback(M, C, T) {
-      M === G.MEDIA_DURATION && (this.container.innerHTML = xt(T)), super.attributeChangedCallback(M, C, T);
+    attributeChangedCallback(M, x, T) {
+      M === G.MEDIA_DURATION && (this.container.innerHTML = Ct(T)), super.attributeChangedCallback(M, x, T);
     }
   };
-  rt("media-duration-display", ar);
-  var un = " / ", dn = (O, { timesSep: M = un } = {}) => {
-    let C = O.getAttribute("remaining") != null, T = O.getAttribute("show-duration") != null, e = +O.getAttribute(G.MEDIA_CURRENT_TIME), R = +O.getAttribute(G.MEDIA_DURATION), m = C ? xt(0 - (R - e)) : xt(e);
-    return T ? `${m}${M}${xt(R)}` : m;
-  }, cn = "video not loaded, unknown time.", hn = (O) => {
+  rt("media-duration-display", sr);
+  var dn = " / ", cn = (O, { timesSep: M = dn } = {}) => {
+    let x = O.getAttribute("remaining") != null, T = O.getAttribute("show-duration") != null, e = +O.getAttribute(G.MEDIA_CURRENT_TIME), R = +O.getAttribute(G.MEDIA_DURATION), m = x ? Ct(0 - (R - e)) : Ct(e);
+    return T ? `${m}${M}${Ct(R)}` : m;
+  }, hn = "video not loaded, unknown time.", fn = (O) => {
     if (!(O.hasAttribute(G.MEDIA_CURRENT_TIME) && O.hasAttribute(G.MEDIA_DURATION))) {
-      O.setAttribute("aria-valuetext", cn);
+      O.setAttribute("aria-valuetext", hn);
       return;
     }
-    let M = O.getAttribute("remaining") != null, C = O.getAttribute("show-duration") != null, T = +O.getAttribute(G.MEDIA_CURRENT_TIME), e = +O.getAttribute(G.MEDIA_DURATION), R = M ? Ft(0 - (e - T)) : Ft(T);
-    if (!C) {
+    let M = O.getAttribute("remaining") != null, x = O.getAttribute("show-duration") != null, T = +O.getAttribute(G.MEDIA_CURRENT_TIME), e = +O.getAttribute(G.MEDIA_DURATION), R = M ? Ft(0 - (e - T)) : Ft(T);
+    if (!x) {
       O.setAttribute("aria-valuetext", R);
       return;
     }
     let m = Ft(e), y = `${R} of ${m}`;
     O.setAttribute("aria-valuetext", y);
-  }, sr = class extends Kt {
+  }, or = class extends Kt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_CURRENT_TIME, G.MEDIA_DURATION, "remaining", "show-duration"];
     }
     connectedCallback() {
       this.setAttribute("role", "progressbar"), this.setAttribute("aria-label", _t.PLAYBACK_TIME()), this.setAttribute("tabindex", 0), super.connectedCallback();
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       if ([G.MEDIA_CURRENT_TIME, G.MEDIA_DURATION, "remaining", "show-duration"].includes(M)) {
-        let e = dn(this);
-        hn(this), this.container.innerHTML = e;
+        let e = cn(this);
+        fn(this), this.container.innerHTML = e;
       }
-      super.attributeChangedCallback(M, C, T);
+      super.attributeChangedCallback(M, x, T);
     }
   };
-  rt("media-time-display", sr);
-  var fn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18"><title>Mux Player SVG Icons_v3</title><path d="M19.83,2.68a2.58,2.58,0,0,0-2.3-2.5C13.91-.06,6.09-.06,2.47.18a2.58,2.58,0,0,0-2.3,2.5,115.86,115.86,0,0,0,0,12.64,2.58,2.58,0,0,0,2.3,2.5c3.62.24,11.44.24,15.06,0a2.58,2.58,0,0,0,2.3-2.5A115.86,115.86,0,0,0,19.83,2.68ZM8.44,12.13a3.07,3.07,0,0,1-1.91.57,3.06,3.06,0,0,1-2.34-1,3.75,3.75,0,0,1-.92-2.67,3.92,3.92,0,0,1,.92-2.77,3.18,3.18,0,0,1,2.43-1,2.94,2.94,0,0,1,2.13.78,2.73,2.73,0,0,1,.74,1.31l-1.43.35A1.49,1.49,0,0,0,6.55,6.53a1.61,1.61,0,0,0-1.29.58A2.79,2.79,0,0,0,4.76,9a3,3,0,0,0,.49,1.93,1.61,1.61,0,0,0,1.27.58,1.48,1.48,0,0,0,1-.37A2.1,2.1,0,0,0,8.11,10l1.4.44A3.23,3.23,0,0,1,8.44,12.13Zm7.22,0a3.07,3.07,0,0,1-1.91.57,3.06,3.06,0,0,1-2.34-1,3.75,3.75,0,0,1-.92-2.67,3.88,3.88,0,0,1,.93-2.77,3.14,3.14,0,0,1,2.42-1A3,3,0,0,1,16,6.08a2.8,2.8,0,0,1,.73,1.31l-1.43.35a1.49,1.49,0,0,0-1.51-1.21,1.61,1.61,0,0,0-1.29.58A2.79,2.79,0,0,0,12,9a3,3,0,0,0,.49,1.93,1.61,1.61,0,0,0,1.27.58,1.44,1.44,0,0,0,1-.37,2.1,2.1,0,0,0,.6-1.15l1.4.44A3.17,3.17,0,0,1,15.66,12.13Z"/></svg>', mn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18"><title>Mux Player SVG Icons_v3</title><path d="M14.73,11.09a1.4,1.4,0,0,1-1,.37,1.58,1.58,0,0,1-1.27-.58A3,3,0,0,1,12,9a2.8,2.8,0,0,1,.5-1.85,1.63,1.63,0,0,1,1.29-.57,1.47,1.47,0,0,1,1.51,1.2l1.43-.34A2.89,2.89,0,0,0,16,6.07a3,3,0,0,0-2.14-.78,3.14,3.14,0,0,0-2.42,1,3.91,3.91,0,0,0-.93,2.78,3.74,3.74,0,0,0,.92,2.66,3.07,3.07,0,0,0,2.34,1,3.07,3.07,0,0,0,1.91-.57,3.17,3.17,0,0,0,1.07-1.74l-1.4-.45A2.06,2.06,0,0,1,14.73,11.09Zm-7.22,0a1.43,1.43,0,0,1-1,.37,1.58,1.58,0,0,1-1.27-.58A3,3,0,0,1,4.76,9a2.8,2.8,0,0,1,.5-1.85,1.63,1.63,0,0,1,1.29-.57,1.47,1.47,0,0,1,1.51,1.2l1.43-.34a2.81,2.81,0,0,0-.74-1.32,2.94,2.94,0,0,0-2.13-.78,3.18,3.18,0,0,0-2.43,1,4,4,0,0,0-.92,2.78,3.74,3.74,0,0,0,.92,2.66,3.07,3.07,0,0,0,2.34,1,3.07,3.07,0,0,0,1.91-.57,3.23,3.23,0,0,0,1.07-1.74l-1.4-.45A2.06,2.06,0,0,1,7.51,11.09ZM19.83,2.68A2.59,2.59,0,0,0,17.53.17C15.72.05,12.86,0,10,0S4.28.05,2.47.17A2.59,2.59,0,0,0,.17,2.68a115.68,115.68,0,0,0,0,12.63,2.57,2.57,0,0,0,2.3,2.5c1.81.13,4.67.19,7.53.19s5.72-.06,7.53-.19a2.57,2.57,0,0,0,2.3-2.5A115.68,115.68,0,0,0,19.83,2.68ZM18.34,15.21a1.11,1.11,0,0,1-.91,1.11c-1.67.11-4.45.18-7.43.18s-5.76-.07-7.43-.18a1.11,1.11,0,0,1-.91-1.11,122.7,122.7,0,0,1,0-12.43,1.11,1.11,0,0,1,.91-1.11C4.24,1.56,7,1.49,10,1.49s5.76.07,7.43.18a1.11,1.11,0,0,1,.91,1.11A122.7,122.7,0,0,1,18.34,15.21Z"/></svg>', or = Y.createElement("template");
-  or.innerHTML = `
+  rt("media-time-display", or);
+  var mn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18"><title>Mux Player SVG Icons_v3</title><path d="M19.83,2.68a2.58,2.58,0,0,0-2.3-2.5C13.91-.06,6.09-.06,2.47.18a2.58,2.58,0,0,0-2.3,2.5,115.86,115.86,0,0,0,0,12.64,2.58,2.58,0,0,0,2.3,2.5c3.62.24,11.44.24,15.06,0a2.58,2.58,0,0,0,2.3-2.5A115.86,115.86,0,0,0,19.83,2.68ZM8.44,12.13a3.07,3.07,0,0,1-1.91.57,3.06,3.06,0,0,1-2.34-1,3.75,3.75,0,0,1-.92-2.67,3.92,3.92,0,0,1,.92-2.77,3.18,3.18,0,0,1,2.43-1,2.94,2.94,0,0,1,2.13.78,2.73,2.73,0,0,1,.74,1.31l-1.43.35A1.49,1.49,0,0,0,6.55,6.53a1.61,1.61,0,0,0-1.29.58A2.79,2.79,0,0,0,4.76,9a3,3,0,0,0,.49,1.93,1.61,1.61,0,0,0,1.27.58,1.48,1.48,0,0,0,1-.37A2.1,2.1,0,0,0,8.11,10l1.4.44A3.23,3.23,0,0,1,8.44,12.13Zm7.22,0a3.07,3.07,0,0,1-1.91.57,3.06,3.06,0,0,1-2.34-1,3.75,3.75,0,0,1-.92-2.67,3.88,3.88,0,0,1,.93-2.77,3.14,3.14,0,0,1,2.42-1A3,3,0,0,1,16,6.08a2.8,2.8,0,0,1,.73,1.31l-1.43.35a1.49,1.49,0,0,0-1.51-1.21,1.61,1.61,0,0,0-1.29.58A2.79,2.79,0,0,0,12,9a3,3,0,0,0,.49,1.93,1.61,1.61,0,0,0,1.27.58,1.44,1.44,0,0,0,1-.37,2.1,2.1,0,0,0,.6-1.15l1.4.44A3.17,3.17,0,0,1,15.66,12.13Z"/></svg>', pn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 18"><title>Mux Player SVG Icons_v3</title><path d="M14.73,11.09a1.4,1.4,0,0,1-1,.37,1.58,1.58,0,0,1-1.27-.58A3,3,0,0,1,12,9a2.8,2.8,0,0,1,.5-1.85,1.63,1.63,0,0,1,1.29-.57,1.47,1.47,0,0,1,1.51,1.2l1.43-.34A2.89,2.89,0,0,0,16,6.07a3,3,0,0,0-2.14-.78,3.14,3.14,0,0,0-2.42,1,3.91,3.91,0,0,0-.93,2.78,3.74,3.74,0,0,0,.92,2.66,3.07,3.07,0,0,0,2.34,1,3.07,3.07,0,0,0,1.91-.57,3.17,3.17,0,0,0,1.07-1.74l-1.4-.45A2.06,2.06,0,0,1,14.73,11.09Zm-7.22,0a1.43,1.43,0,0,1-1,.37,1.58,1.58,0,0,1-1.27-.58A3,3,0,0,1,4.76,9a2.8,2.8,0,0,1,.5-1.85,1.63,1.63,0,0,1,1.29-.57,1.47,1.47,0,0,1,1.51,1.2l1.43-.34a2.81,2.81,0,0,0-.74-1.32,2.94,2.94,0,0,0-2.13-.78,3.18,3.18,0,0,0-2.43,1,4,4,0,0,0-.92,2.78,3.74,3.74,0,0,0,.92,2.66,3.07,3.07,0,0,0,2.34,1,3.07,3.07,0,0,0,1.91-.57,3.23,3.23,0,0,0,1.07-1.74l-1.4-.45A2.06,2.06,0,0,1,7.51,11.09ZM19.83,2.68A2.59,2.59,0,0,0,17.53.17C15.72.05,12.86,0,10,0S4.28.05,2.47.17A2.59,2.59,0,0,0,.17,2.68a115.68,115.68,0,0,0,0,12.63,2.57,2.57,0,0,0,2.3,2.5c1.81.13,4.67.19,7.53.19s5.72-.06,7.53-.19a2.57,2.57,0,0,0,2.3-2.5A115.68,115.68,0,0,0,19.83,2.68ZM18.34,15.21a1.11,1.11,0,0,1-.91,1.11c-1.67.11-4.45.18-7.43.18s-5.76-.07-7.43-.18a1.11,1.11,0,0,1-.91-1.11,122.7,122.7,0,0,1,0-12.43,1.11,1.11,0,0,1,.91-1.11C4.24,1.56,7,1.49,10,1.49s5.76.07,7.43.18a1.11,1.11,0,0,1,.91,1.11A122.7,122.7,0,0,1,18.34,15.21Z"/></svg>', lr = Y.createElement("template");
+  lr.innerHTML = `
   <style>
   :host([aria-checked="true"]) slot:not([name=on]) > *, 
   :host([aria-checked="true"]) ::slotted(:not([slot=on])) {
@@ -1027,30 +1027,30 @@ __markAsModule(dist_exports);
   }
   </style>
 
-  <slot name="on">${fn}</slot>
-  <slot name="off">${mn}</slot>
+  <slot name="on">${mn}</slot>
+  <slot name="off">${pn}</slot>
 `;
-  var lr = (O) => {
-    O.setAttribute("aria-checked", ur(O));
-  }, ur = (O) => {
-    let M = !!O.getAttribute(G.MEDIA_CAPTIONS_SHOWING), C = !O.hasAttribute("no-subtitles-fallback") && !!O.getAttribute(G.MEDIA_SUBTITLES_SHOWING);
-    return M || C;
-  }, dr = class extends yt {
+  var ur = (O) => {
+    O.setAttribute("aria-checked", dr(O));
+  }, dr = (O) => {
+    let M = !!O.getAttribute(G.MEDIA_CAPTIONS_SHOWING), x = !O.hasAttribute("no-subtitles-fallback") && !!O.getAttribute(G.MEDIA_SUBTITLES_SHOWING);
+    return M || x;
+  }, cr = class extends yt {
     static get observedAttributes() {
       return [...super.observedAttributes, "no-subtitles-fallback", G.MEDIA_CAPTIONS_LIST, G.MEDIA_CAPTIONS_SHOWING, G.MEDIA_SUBTITLES_LIST, G.MEDIA_SUBTITLES_SHOWING];
     }
     constructor(M = {}) {
-      super({ slotTemplate: or, ...M });
+      super({ slotTemplate: lr, ...M });
     }
     connectedCallback() {
-      super.connectedCallback(), this.setAttribute("role", "switch"), this.setAttribute("aria-label", _t.CLOSED_CAPTIONS()), lr(this);
+      super.connectedCallback(), this.setAttribute("role", "switch"), this.setAttribute("aria-label", _t.CLOSED_CAPTIONS()), ur(this);
     }
-    attributeChangedCallback(M, C, T) {
-      [G.MEDIA_CAPTIONS_SHOWING, G.MEDIA_SUBTITLES_SHOWING].includes(M) && lr(this), super.attributeChangedCallback(M, C, T);
+    attributeChangedCallback(M, x, T) {
+      [G.MEDIA_CAPTIONS_SHOWING, G.MEDIA_SUBTITLES_SHOWING].includes(M) && ur(this), super.attributeChangedCallback(M, x, T);
     }
     handleClick(M) {
       var T, e, R, m;
-      if (ur(this)) {
+      if (dr(this)) {
         let y = this.getAttribute(G.MEDIA_CAPTIONS_SHOWING);
         if (y) {
           let A = new W.CustomEvent(it.MEDIA_DISABLE_CAPTIONS_REQUEST, { composed: true, bubbles: true, detail: y });
@@ -1078,32 +1078,32 @@ __markAsModule(dist_exports);
       }
     }
   };
-  rt("media-captions-button", dr);
-  var pn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18"><defs><style>.cls-1{font-size:8px;font-family:Arial-BoldMT, Arial;font-weight:700;}</style></defs><title>Mux Player SVG Icons_v3</title><text class="cls-1" transform="translate(5.9 17.6)">30</text><path d="M7,3V0l5.61,4L7,7.94V5A5.54,5.54,0,0,0,5.1,15.48V17.6A7.5,7.5,0,0,1,7,3Z"/></svg>', cr = Y.createElement("template");
-  cr.innerHTML = `  
-  <slot name="forward">${pn}</slot>
+  rt("media-captions-button", cr);
+  var vn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18"><defs><style>.cls-1{font-size:8px;font-family:Arial-BoldMT, Arial;font-weight:700;}</style></defs><title>Mux Player SVG Icons_v3</title><text class="cls-1" transform="translate(5.9 17.6)">30</text><path d="M7,3V0l5.61,4L7,7.94V5A5.54,5.54,0,0,0,5.1,15.48V17.6A7.5,7.5,0,0,1,7,3Z"/></svg>', hr = Y.createElement("template");
+  hr.innerHTML = `  
+  <slot name="forward">${vn}</slot>
 `;
-  var vn = 0, hr = 30, gn = (O) => {
-    let M = Math.abs(hr), C = gt.SEEK_FORWARD_N_SECS({ seekOffset: M });
-    O.setAttribute("aria-label", C);
-  }, fr = class extends yt {
+  var gn = 0, fr = 30, yn = (O) => {
+    let M = Math.abs(fr), x = gt.SEEK_FORWARD_N_SECS({ seekOffset: M });
+    O.setAttribute("aria-label", x);
+  }, mr = class extends yt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_CURRENT_TIME];
     }
     constructor(M = {}) {
-      super({ slotTemplate: cr, ...M });
+      super({ slotTemplate: hr, ...M });
     }
     connectedCallback() {
-      gn(this), super.connectedCallback();
+      yn(this), super.connectedCallback();
     }
     handleClick() {
-      let M = this.getAttribute(G.MEDIA_CURRENT_TIME), T = (M && !Number.isNaN(+M) ? +M : vn) + hr, e = new W.CustomEvent(it.MEDIA_SEEK_REQUEST, { composed: true, bubbles: true, detail: T });
+      let M = this.getAttribute(G.MEDIA_CURRENT_TIME), T = (M && !Number.isNaN(+M) ? +M : gn) + fr, e = new W.CustomEvent(it.MEDIA_SEEK_REQUEST, { composed: true, bubbles: true, detail: T });
       this.dispatchEvent(e);
     }
   };
-  rt("media-seek-forward-button", fr);
-  var yn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M12,0V2.5h3.5V6H18V0ZM0,6H2.5V2.5H6V0H0Zm15.5,9.5H12V18h6V12H15.5ZM2.5,12H0v6H6V15.5H2.5Z"/></svg>', En = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M14.5,3.5V0H12V6h6V3.5ZM12,18h2.5V14.5H18V12H12ZM0,14.5H3.5V18H6V12H0Zm3.5-11H0V6H6V0H3.5Z"/></svg>', mr = Y.createElement("template");
-  mr.innerHTML = `
+  rt("media-seek-forward-button", mr);
+  var En = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M12,0V2.5h3.5V6H18V0ZM0,6H2.5V2.5H6V0H0Zm15.5,9.5H12V18h6V12H15.5ZM2.5,12H0v6H6V15.5H2.5Z"/></svg>', bn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M14.5,3.5V0H12V6h6V3.5ZM12,18h2.5V14.5H18V12H12ZM0,14.5H3.5V18H6V12H0Zm3.5-11H0V6H6V0H3.5Z"/></svg>', pr = Y.createElement("template");
+  pr.innerHTML = `
   <style>
   :host([${G.MEDIA_IS_FULLSCREEN}]) slot:not([name=exit]) > *, 
   :host([${G.MEDIA_IS_FULLSCREEN}]) ::slotted(:not([slot=exit])) {
@@ -1117,33 +1117,33 @@ __markAsModule(dist_exports);
   }
   </style>
 
-  <slot name="enter">${yn}</slot>
-  <slot name="exit">${En}</slot>
+  <slot name="enter">${En}</slot>
+  <slot name="exit">${bn}</slot>
 `;
-  var pr = (O) => {
-    let C = O.getAttribute(G.MEDIA_IS_FULLSCREEN) != null ? gt.EXIT_FULLSCREEN() : gt.ENTER_FULLSCREEN();
-    O.setAttribute("aria-label", C);
-  }, vr = class extends yt {
+  var vr = (O) => {
+    let x = O.getAttribute(G.MEDIA_IS_FULLSCREEN) != null ? gt.EXIT_FULLSCREEN() : gt.ENTER_FULLSCREEN();
+    O.setAttribute("aria-label", x);
+  }, gr = class extends yt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_IS_FULLSCREEN];
     }
     constructor(M = {}) {
-      super({ slotTemplate: mr, ...M });
+      super({ slotTemplate: pr, ...M });
     }
     connectedCallback() {
-      pr(this), super.connectedCallback();
+      vr(this), super.connectedCallback();
     }
-    attributeChangedCallback(M, C, T) {
-      M === G.MEDIA_IS_FULLSCREEN && pr(this), super.attributeChangedCallback(M, C, T);
+    attributeChangedCallback(M, x, T) {
+      M === G.MEDIA_IS_FULLSCREEN && vr(this), super.attributeChangedCallback(M, x, T);
     }
     handleClick(M) {
-      let C = this.getAttribute(G.MEDIA_IS_FULLSCREEN) != null ? it.MEDIA_EXIT_FULLSCREEN_REQUEST : it.MEDIA_ENTER_FULLSCREEN_REQUEST;
-      this.dispatchEvent(new W.CustomEvent(C, { composed: true, bubbles: true }));
+      let x = this.getAttribute(G.MEDIA_IS_FULLSCREEN) != null ? it.MEDIA_EXIT_FULLSCREEN_REQUEST : it.MEDIA_ENTER_FULLSCREEN_REQUEST;
+      this.dispatchEvent(new W.CustomEvent(x, { composed: true, bubbles: true }));
     }
   };
-  rt("media-fullscreen-button", vr);
-  var bn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M13.5,9A4.5,4.5,0,0,0,11,5V7.18l2.45,2.45A4.23,4.23,0,0,0,13.5,9ZM16,9a6.84,6.84,0,0,1-.54,2.64L17,13.15A8.8,8.8,0,0,0,18,9,9,9,0,0,0,11,.23V2.29A7,7,0,0,1,16,9ZM1.27,0,0,1.27,4.73,6H0v6H4l5,5V10.27l4.25,4.25A6.92,6.92,0,0,1,11,15.7v2.06A9,9,0,0,0,14.69,16l2,2.05L18,16.73l-9-9ZM9,1,6.91,3.09,9,5.18Z"/></svg>', gr = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M0,6v6H4l5,5V1L4,6ZM13.5,9A4.5,4.5,0,0,0,11,5V13A4.47,4.47,0,0,0,13.5,9Z"/></svg>', _n = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M0,6v6H4l5,5V1L4,6ZM13.5,9A4.5,4.5,0,0,0,11,5V13A4.47,4.47,0,0,0,13.5,9ZM11,.23V2.29a7,7,0,0,1,0,13.42v2.06A9,9,0,0,0,11,.23Z"/></svg>', yr = Y.createElement("template");
-  yr.innerHTML = `
+  rt("media-fullscreen-button", gr);
+  var _n = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M13.5,9A4.5,4.5,0,0,0,11,5V7.18l2.45,2.45A4.23,4.23,0,0,0,13.5,9ZM16,9a6.84,6.84,0,0,1-.54,2.64L17,13.15A8.8,8.8,0,0,0,18,9,9,9,0,0,0,11,.23V2.29A7,7,0,0,1,16,9ZM1.27,0,0,1.27,4.73,6H0v6H4l5,5V10.27l4.25,4.25A6.92,6.92,0,0,1,11,15.7v2.06A9,9,0,0,0,14.69,16l2,2.05L18,16.73l-9-9ZM9,1,6.91,3.09,9,5.18Z"/></svg>', yr = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M0,6v6H4l5,5V1L4,6ZM13.5,9A4.5,4.5,0,0,0,11,5V13A4.47,4.47,0,0,0,13.5,9Z"/></svg>', Tn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mux Player SVG Icons_v3</title><path d="M0,6v6H4l5,5V1L4,6ZM13.5,9A4.5,4.5,0,0,0,11,5V13A4.47,4.47,0,0,0,13.5,9ZM11,.23V2.29a7,7,0,0,1,0,13.42v2.06A9,9,0,0,0,11,.23Z"/></svg>', Er = Y.createElement("template");
+  Er.innerHTML = `
   <style>
   /* Default to High slot/icon. */
   :host(:not([${G.MEDIA_VOLUME_LEVEL}])) slot:not([name=high]) > *, 
@@ -1169,35 +1169,35 @@ __markAsModule(dist_exports);
   }
   </style>
 
-  <slot name="off">${bn}</slot>
-  <slot name="low">${gr}</slot>
-  <slot name="medium">${gr}</slot>
-  <slot name="high">${_n}</slot>
+  <slot name="off">${_n}</slot>
+  <slot name="low">${yr}</slot>
+  <slot name="medium">${yr}</slot>
+  <slot name="high">${Tn}</slot>
 `;
-  var Er = (O) => {
-    let C = O.getAttribute(G.MEDIA_VOLUME_LEVEL) === "off" ? gt.UNMUTE() : gt.MUTE();
-    O.setAttribute("aria-label", C);
-  }, br = class extends yt {
+  var br = (O) => {
+    let x = O.getAttribute(G.MEDIA_VOLUME_LEVEL) === "off" ? gt.UNMUTE() : gt.MUTE();
+    O.setAttribute("aria-label", x);
+  }, _r = class extends yt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_VOLUME_LEVEL];
     }
     constructor(M = {}) {
-      super({ slotTemplate: yr, ...M });
+      super({ slotTemplate: Er, ...M });
     }
     connectedCallback() {
-      Er(this), super.connectedCallback();
+      br(this), super.connectedCallback();
     }
-    attributeChangedCallback(M, C, T) {
-      M === G.MEDIA_VOLUME_LEVEL && Er(this), super.attributeChangedCallback(M, C, T);
+    attributeChangedCallback(M, x, T) {
+      M === G.MEDIA_VOLUME_LEVEL && br(this), super.attributeChangedCallback(M, x, T);
     }
     handleClick(M) {
-      let C = this.getAttribute(G.MEDIA_VOLUME_LEVEL) === "off" ? it.MEDIA_UNMUTE_REQUEST : it.MEDIA_MUTE_REQUEST;
-      this.dispatchEvent(new W.CustomEvent(C, { composed: true, bubbles: true }));
+      let x = this.getAttribute(G.MEDIA_VOLUME_LEVEL) === "off" ? it.MEDIA_UNMUTE_REQUEST : it.MEDIA_MUTE_REQUEST;
+      this.dispatchEvent(new W.CustomEvent(x, { composed: true, bubbles: true }));
     }
   };
-  rt("media-mute-button", br);
-  var _r = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18"><title>Mux Player SVG Icons_v3</title><path d="M21,0H1A1,1,0,0,0,0,1V17a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V1A1,1,0,0,0,21,0ZM20,16H2V2H20ZM17,8H10v5h7Z"/></svg>', Tr = Y.createElement("template");
-  Tr.innerHTML = `
+  rt("media-mute-button", _r);
+  var Tr = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 18"><title>Mux Player SVG Icons_v3</title><path d="M21,0H1A1,1,0,0,0,0,1V17a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V1A1,1,0,0,0,21,0ZM20,16H2V2H20ZM17,8H10v5h7Z"/></svg>', Ar = Y.createElement("template");
+  Ar.innerHTML = `
   <style>
   :host([${G.MEDIA_IS_PIP}]) slot:not([name=exit]) > *, 
   :host([${G.MEDIA_IS_PIP}]) ::slotted(:not([slot=exit])) {
@@ -1211,39 +1211,39 @@ __markAsModule(dist_exports);
   }
   </style>
 
-  <slot name="enter">${_r}</slot>
-  <slot name="exit">${_r}</slot>
+  <slot name="enter">${Tr}</slot>
+  <slot name="exit">${Tr}</slot>
 `;
-  var Ar = (O) => {
-    let C = O.getAttribute(G.MEDIA_IS_PIP) != null ? gt.EXIT_PIP() : gt.ENTER_PIP();
-    O.setAttribute("aria-label", C);
-  }, Sr = class extends yt {
+  var Sr = (O) => {
+    let x = O.getAttribute(G.MEDIA_IS_PIP) != null ? gt.EXIT_PIP() : gt.ENTER_PIP();
+    O.setAttribute("aria-label", x);
+  }, Lr = class extends yt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_IS_PIP];
     }
     constructor(M = {}) {
-      super({ slotTemplate: Tr, ...M });
+      super({ slotTemplate: Ar, ...M });
     }
     connectedCallback() {
-      Ar(this), super.connectedCallback();
+      Sr(this), super.connectedCallback();
     }
-    attributeChangedCallback(M, C, T) {
-      M === G.MEDIA_IS_PIP && Ar(this), super.attributeChangedCallback(M, C, T);
+    attributeChangedCallback(M, x, T) {
+      M === G.MEDIA_IS_PIP && Sr(this), super.attributeChangedCallback(M, x, T);
     }
     handleClick(M) {
-      let C = this.getAttribute(G.MEDIA_IS_PIP) != null ? it.MEDIA_EXIT_PIP_REQUEST : it.MEDIA_ENTER_PIP_REQUEST;
-      this.dispatchEvent(new W.CustomEvent(C, { composed: true, bubbles: true }));
+      let x = this.getAttribute(G.MEDIA_IS_PIP) != null ? it.MEDIA_EXIT_PIP_REQUEST : it.MEDIA_ENTER_PIP_REQUEST;
+      this.dispatchEvent(new W.CustomEvent(x, { composed: true, bubbles: true }));
     }
   };
-  rt("media-pip-button", Sr);
-  var Tn = `<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+  rt("media-pip-button", Lr);
+  var An = `<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
   xmlns="http://www.w3.org/2000/svg">
   <path d="M3 18L18 9L3 0V18Z"/>
-</svg>`, An = `<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+</svg>`, Sn = `<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
   xmlns="http://www.w3.org/2000/svg">
   <path d="M3 17H7V1H3V17ZM11 1V17H15V1H11Z"/>
-</svg>`, Lr = Y.createElement("template");
-  Lr.innerHTML = `
+</svg>`, Dr = Y.createElement("template");
+  Dr.innerHTML = `
   <style>
   :host([${G.MEDIA_PAUSED}]) slot[name=pause] > *, 
   :host([${G.MEDIA_PAUSED}]) ::slotted([slot=pause]) {
@@ -1256,33 +1256,33 @@ __markAsModule(dist_exports);
   }
   </style>
 
-  <slot name="play">${Tn}</slot>
-  <slot name="pause">${An}</slot>
+  <slot name="play">${An}</slot>
+  <slot name="pause">${Sn}</slot>
 `;
-  var Dr = (O) => {
-    let C = O.getAttribute(G.MEDIA_PAUSED) != null ? gt.PLAY() : gt.PAUSE();
-    O.setAttribute("aria-label", C);
-  }, kr = class extends yt {
+  var kr = (O) => {
+    let x = O.getAttribute(G.MEDIA_PAUSED) != null ? gt.PLAY() : gt.PAUSE();
+    O.setAttribute("aria-label", x);
+  }, Rr = class extends yt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_PAUSED];
     }
     constructor(M = {}) {
-      super({ slotTemplate: Lr, ...M });
+      super({ slotTemplate: Dr, ...M });
     }
     connectedCallback() {
-      Dr(this), super.connectedCallback();
+      kr(this), super.connectedCallback();
     }
-    attributeChangedCallback(M, C, T) {
-      M === G.MEDIA_PAUSED && Dr(this), super.attributeChangedCallback(M, C, T);
+    attributeChangedCallback(M, x, T) {
+      M === G.MEDIA_PAUSED && kr(this), super.attributeChangedCallback(M, x, T);
     }
     handleClick(M) {
-      let C = this.getAttribute(G.MEDIA_PAUSED) != null ? it.MEDIA_PLAY_REQUEST : it.MEDIA_PAUSE_REQUEST;
-      this.dispatchEvent(new W.CustomEvent(C, { composed: true, bubbles: true }));
+      let x = this.getAttribute(G.MEDIA_PAUSED) != null ? it.MEDIA_PLAY_REQUEST : it.MEDIA_PAUSE_REQUEST;
+      this.dispatchEvent(new W.CustomEvent(x, { composed: true, bubbles: true }));
     }
   };
-  rt("media-play-button", kr);
-  var Rr = [1, 1.25, 1.5, 1.75, 2], ne = 1, wr = Y.createElement("template");
-  wr.innerHTML = `
+  rt("media-play-button", Rr);
+  var wr = [1, 1.25, 1.5, 1.75, 2], ne = 1, Ir = Y.createElement("template");
+  Ir.innerHTML = `
   <style>
   :host {
     font-size: 14px;
@@ -1297,18 +1297,18 @@ __markAsModule(dist_exports);
 
   <span id="container"></span>
 `;
-  var Ir = class extends yt {
+  var Mr = class extends yt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_PLAYBACK_RATE, "rates"];
     }
     constructor(M = {}) {
-      super({ slotTemplate: wr, ...M });
-      this._rates = Rr, this.container = this.shadowRoot.querySelector("#container"), this.container.innerHTML = `${ne}x`;
+      super({ slotTemplate: Ir, ...M });
+      this._rates = wr, this.container = this.shadowRoot.querySelector("#container"), this.container.innerHTML = `${ne}x`;
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       if (M === "rates") {
         let e = (T != null ? T : "").trim().split(/\s*,?\s+/).map((R) => Number(R)).filter((R) => !Number.isNaN(R)).sort((R, m) => R - m);
-        this._rates = e.length ? e : Rr;
+        this._rates = e.length ? e : wr;
         return;
       }
       if (M === G.MEDIA_PLAYBACK_RATE) {
@@ -1316,17 +1316,17 @@ __markAsModule(dist_exports);
         this.container.innerHTML = `${R}x`, this.setAttribute("aria-label", _t.PLAYBACK_RATE({ playbackRate: R }));
         return;
       }
-      super.attributeChangedCallback(M, C, T);
+      super.attributeChangedCallback(M, x, T);
     }
     handleClick(M) {
       var R, m;
-      let C = +this.getAttribute(G.MEDIA_PLAYBACK_RATE) || ne, T = (m = (R = this._rates.find((y) => y > C)) != null ? R : this._rates[0]) != null ? m : ne, e = new W.CustomEvent(it.MEDIA_PLAYBACK_RATE_REQUEST, { composed: true, bubbles: true, detail: T });
+      let x = +this.getAttribute(G.MEDIA_PLAYBACK_RATE) || ne, T = (m = (R = this._rates.find((y) => y > x)) != null ? R : this._rates[0]) != null ? m : ne, e = new W.CustomEvent(it.MEDIA_PLAYBACK_RATE_REQUEST, { composed: true, bubbles: true, detail: T });
       this.dispatchEvent(e);
     }
   };
-  rt("media-playback-rate-button", Ir);
-  var Sn = "video not loaded, unknown time.", Mr = (O) => {
-    let M = O.range, C = Ft(+M.value), T = Ft(+M.max), e = C && T ? `${C} of ${T}` : Sn;
+  rt("media-playback-rate-button", Mr);
+  var Ln = "video not loaded, unknown time.", Cr = (O) => {
+    let M = O.range, x = Ft(+M.value), T = Ft(+M.max), e = x && T ? `${x} of ${T}` : Ln;
     M.setAttribute("aria-valuetext", e);
   }, xr = Y.createElement("template");
   xr.innerHTML = `
@@ -1384,34 +1384,34 @@ __markAsModule(dist_exports);
     <media-thumbnail-preview></media-thumbnail-preview>
   </div>
 `;
-  var ke = class extends Jt {
+  var Re = class extends Jt {
     static get observedAttributes() {
       return [...super.observedAttributes, "thumbnails", G.MEDIA_DURATION, G.MEDIA_CURRENT_TIME, G.MEDIA_PREVIEW_IMAGE];
     }
     constructor() {
       super();
       this.shadowRoot.appendChild(xr.content.cloneNode(true)), this.range.addEventListener("input", () => {
-        let C = this.range.value, T = new W.CustomEvent(it.MEDIA_SEEK_REQUEST, { composed: true, bubbles: true, detail: C });
+        let x = this.range.value, T = new W.CustomEvent(it.MEDIA_SEEK_REQUEST, { composed: true, bubbles: true, detail: x });
         this.dispatchEvent(T);
       }), this.enableThumbnails();
     }
     connectedCallback() {
       this.range.setAttribute("aria-label", _t.SEEK()), super.connectedCallback();
     }
-    attributeChangedCallback(M, C, T) {
-      M === G.MEDIA_CURRENT_TIME && (this.range.value = +T, Mr(this), this.updateBar()), M === G.MEDIA_DURATION && (this.range.max = Math.floor(+T), Mr(this), this.updateBar()), super.attributeChangedCallback(M, C, T);
+    attributeChangedCallback(M, x, T) {
+      M === G.MEDIA_CURRENT_TIME && (this.range.value = +T, Cr(this), this.updateBar()), M === G.MEDIA_DURATION && (this.range.max = Math.floor(+T), Cr(this), this.updateBar()), super.attributeChangedCallback(M, x, T);
     }
     getBarColors() {
       let M = super.getBarColors();
       if (!this.mediaBuffered || !this.mediaBuffered.length || this.mediaDuration <= 0)
         return M;
-      let C = this.mediaBuffered, T = C[C.length - 1][1] / this.mediaDuration * 100;
+      let x = this.mediaBuffered, T = x[x.length - 1][1] / this.mediaDuration * 100;
       return M.splice(1, 0, ["var(--media-time-buffered-color, #777)", T]), M;
     }
     enableThumbnails() {
       this.thumbnailPreview = this.shadowRoot.querySelector("media-thumbnail-preview"), this.shadowRoot.querySelector("#thumbnailContainer").classList.add("enabled");
-      let C, T = () => {
-        C = (y) => {
+      let x, T = () => {
+        x = (y) => {
           let w = +this.getAttribute(G.MEDIA_DURATION);
           if (!w)
             return;
@@ -1421,9 +1421,9 @@ __markAsModule(dist_exports);
           this.thumbnailPreview.style.left = `${u}px`;
           let g = L * w, D = new W.CustomEvent(it.MEDIA_PREVIEW_REQUEST, { composed: true, bubbles: true, detail: g });
           this.dispatchEvent(D);
-        }, W.addEventListener("mousemove", C, false);
+        }, W.addEventListener("mousemove", x, false);
       }, e = () => {
-        W.removeEventListener("mousemove", C);
+        W.removeEventListener("mousemove", x);
       }, R = false, m = (y) => {
         let w = this.getAttribute(G.MEDIA_DURATION);
         if (!R && w) {
@@ -1437,40 +1437,40 @@ __markAsModule(dist_exports);
       this.addEventListener("mousemove", m, false);
     }
   };
-  rt("media-time-range", ke);
-  var Re = ke;
-  var Cr = class extends Re {
+  rt("media-time-range", Re);
+  var we = Re;
+  var Or = class extends we {
     constructor() {
       super();
       console.warn("MediaChrome: <media-progress-range> is deprecated. Use <media-time-range> instead.");
     }
   };
-  rt("media-progress-range", Cr);
-  var Ln = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18"><defs><style>.cls-1{font-size:8px;font-family:Arial-BoldMT, Arial;font-weight:700;}</style></defs><title>Mux Player SVG Icons_v3</title><text class="cls-1" transform="translate(0.18 17.6)">30</text><path d="M8,3V0L2.37,4,8,7.94V5A5.54,5.54,0,0,1,9.9,15.48V17.6A7.5,7.5,0,0,0,8,3Z"/></svg>', Or = Y.createElement("template");
-  Or.innerHTML = `  
-  <slot name="backward">${Ln}</slot>
+  rt("media-progress-range", Or);
+  var Dn = '<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 18"><defs><style>.cls-1{font-size:8px;font-family:Arial-BoldMT, Arial;font-weight:700;}</style></defs><title>Mux Player SVG Icons_v3</title><text class="cls-1" transform="translate(0.18 17.6)">30</text><path d="M8,3V0L2.37,4,8,7.94V5A5.54,5.54,0,0,1,9.9,15.48V17.6A7.5,7.5,0,0,0,8,3Z"/></svg>', Pr = Y.createElement("template");
+  Pr.innerHTML = `  
+  <slot name="backward">${Dn}</slot>
 `;
-  var Dn = 0, Pr = -30, kn = (O) => {
-    let M = Math.abs(Pr), C = gt.SEEK_BACK_N_SECS({ seekOffset: M });
-    O.setAttribute("aria-label", C);
-  }, Nr = class extends yt {
+  var kn = 0, Nr = -30, Rn = (O) => {
+    let M = Math.abs(Nr), x = gt.SEEK_BACK_N_SECS({ seekOffset: M });
+    O.setAttribute("aria-label", x);
+  }, Fr = class extends yt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_CURRENT_TIME];
     }
     constructor(M = {}) {
-      super({ slotTemplate: Or, ...M });
+      super({ slotTemplate: Pr, ...M });
     }
     connectedCallback() {
-      kn(this), super.connectedCallback();
+      Rn(this), super.connectedCallback();
     }
     handleClick() {
-      let M = this.getAttribute(G.MEDIA_CURRENT_TIME), C = M && !Number.isNaN(+M) ? +M : Dn, T = Math.max(C + Pr, 0), e = new W.CustomEvent(it.MEDIA_SEEK_REQUEST, { composed: true, bubbles: true, detail: T });
+      let M = this.getAttribute(G.MEDIA_CURRENT_TIME), x = M && !Number.isNaN(+M) ? +M : kn, T = Math.max(x + Nr, 0), e = new W.CustomEvent(it.MEDIA_SEEK_REQUEST, { composed: true, bubbles: true, detail: T });
       this.dispatchEvent(e);
     }
   };
-  rt("media-seek-backward-button", Nr);
-  var Fr = Y.createElement("template");
-  Fr.innerHTML = `
+  rt("media-seek-backward-button", Fr);
+  var Ur = Y.createElement("template");
+  Ur.innerHTML = `
   <style>
     :host {
       box-sizing: border-box;
@@ -1488,34 +1488,34 @@ __markAsModule(dist_exports);
   </style>
   <img crossorigin loading="eager" decoding="async" />
 `;
-  var Ur = class extends W.HTMLElement {
+  var Br = class extends W.HTMLElement {
     static get observedAttributes() {
       return [G.MEDIA_CONTROLLER, "time", G.MEDIA_PREVIEW_IMAGE, G.MEDIA_PREVIEW_COORDS];
     }
     constructor() {
       super();
-      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(Fr.content.cloneNode(true));
+      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(Ur.content.cloneNode(true));
     }
     connectedCallback() {
-      var C;
+      var x;
       let M = this.getAttribute(G.MEDIA_CONTROLLER);
       if (M) {
         let T = Y.getElementById(M);
-        (C = T == null ? void 0 : T.associateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.associateElement) == null || x.call(T, this);
       }
     }
     disconnectedCallback() {
-      var C;
+      var x;
       if (this.getAttribute(G.MEDIA_CONTROLLER)) {
         let T = Y.getElementById(mediaControllerId);
-        (C = T == null ? void 0 : T.unassociateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.unassociateElement) == null || x.call(T, this);
       }
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       var e, R;
       if (["time", G.MEDIA_PREVIEW_IMAGE, G.MEDIA_PREVIEW_COORDS].includes(M) && this.update(), M === G.MEDIA_CONTROLLER) {
-        if (C) {
-          let m = Y.getElementById(C);
+        if (x) {
+          let m = Y.getElementById(x);
           (e = m == null ? void 0 : m.unassociateElement) == null || e.call(m, this);
         }
         if (T) {
@@ -1525,17 +1525,17 @@ __markAsModule(dist_exports);
       }
     }
     update() {
-      let M = this.getAttribute(G.MEDIA_PREVIEW_COORDS), C = this.getAttribute(G.MEDIA_PREVIEW_IMAGE);
-      if (!(M && C))
+      let M = this.getAttribute(G.MEDIA_PREVIEW_COORDS), x = this.getAttribute(G.MEDIA_PREVIEW_IMAGE);
+      if (!(M && x))
         return;
-      let T = this.offsetWidth, e = this.shadowRoot.querySelector("img"), [R, m, y, w] = M.split(/\s+/).map((u) => +u), A = C, L = T / y || 1, b = () => {
+      let T = this.offsetWidth, e = this.shadowRoot.querySelector("img"), [R, m, y, w] = M.split(/\s+/).map((u) => +u), A = x, L = T / y || 1, b = () => {
         e.style.width = `${L * e.naturalWidth}px`, e.style.height = `${L * e.naturalHeight}px`;
       };
       e.src !== A && (e.onload = b, e.src = A, b()), b(), e.style.left = `-${L * R}px`, e.style.top = `-${L * m}px`;
     }
   };
-  rt("media-thumbnail-preview", Ur);
-  var Br = Y.createElement("template"), Rn = `
+  rt("media-thumbnail-preview", Br);
+  var jr = Y.createElement("template"), wn = `
 <svg viewBox="0 0 100 100">
   <path d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50">
     <animateTransform
@@ -1549,7 +1549,7 @@ __markAsModule(dist_exports);
   </path>
 </svg>
 `;
-  Br.innerHTML = `
+  jr.innerHTML = `
 <style>
 :host {
   display: inline-block;
@@ -1586,33 +1586,33 @@ svg, img, ::slotted(svg), ::slotted(img) {
 }
 </style>
 
-<slot name="loading">${Rn}</slot>
+<slot name="loading">${wn}</slot>
 <div id="status" role="status" aria-live="polite">${_t.MEDIA_LOADING()}</div>
 `;
-  var wn = 500, jr = class extends W.HTMLElement {
+  var In = 500, Hr = class extends W.HTMLElement {
     static get observedAttributes() {
       return [G.MEDIA_CONTROLLER, G.MEDIA_PAUSED, G.MEDIA_LOADING, "loading-delay"];
     }
     constructor() {
       super();
-      let M = this.attachShadow({ mode: "open" }), C = Br.content.cloneNode(true);
-      M.appendChild(C);
+      let M = this.attachShadow({ mode: "open" }), x = jr.content.cloneNode(true);
+      M.appendChild(x);
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       var e, R, m;
       if (M === G.MEDIA_LOADING || M === G.MEDIA_PAUSED) {
         let y = this.getAttribute(G.MEDIA_PAUSED) != null, w = this.getAttribute(G.MEDIA_LOADING) != null, A = !y && w;
         if (!A)
           this.loadingDelayHandle && (clearTimeout(this.loadingDelayHandle), this.loadingDelayHandle = void 0), this.removeAttribute("is-loading");
         else if (!this.loadingDelayHandle && A) {
-          let L = +((e = this.getAttribute("loading-delay")) != null ? e : wn);
+          let L = +((e = this.getAttribute("loading-delay")) != null ? e : In);
           this.loadingDelayHandle = setTimeout(() => {
             this.setAttribute("is-loading", ""), this.loadingDelayHandle = void 0;
           }, L);
         }
       } else if (M === G.MEDIA_CONTROLLER) {
-        if (C) {
-          let y = Y.getElementById(C);
+        if (x) {
+          let y = Y.getElementById(x);
           (R = y == null ? void 0 : y.unassociateElement) == null || R.call(y, this);
         }
         if (T) {
@@ -1622,24 +1622,24 @@ svg, img, ::slotted(svg), ::slotted(img) {
       }
     }
     connectedCallback() {
-      var C;
+      var x;
       let M = this.getAttribute(G.MEDIA_CONTROLLER);
       if (M) {
         let T = Y.getElementById(M);
-        (C = T == null ? void 0 : T.associateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.associateElement) == null || x.call(T, this);
       }
     }
     disconnectedCallback() {
-      var C;
+      var x;
       if (this.loadingDelayHandle && (clearTimeout(this.loadingDelayHandle), this.loadingDelayHandle = void 0), this.getAttribute(G.MEDIA_CONTROLLER)) {
         let T = Y.getElementById(mediaControllerId);
-        (C = T == null ? void 0 : T.unassociateElement) == null || C.call(T, this);
+        (x = T == null ? void 0 : T.unassociateElement) == null || x.call(T, this);
       }
     }
   };
-  rt("media-loading-indicator", jr);
-  var Hr = Y.createElement("template");
-  Hr.innerHTML = `
+  rt("media-loading-indicator", Hr);
+  var Gr = Y.createElement("template");
+  Gr.innerHTML = `
   <style>
     :host {
 
@@ -1648,75 +1648,75 @@ svg, img, ::slotted(svg), ::slotted(img) {
 
   <slot></slot>
 `;
-  var Gr = class extends W.HTMLElement {
+  var Vr = class extends W.HTMLElement {
     constructor() {
       super();
-      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(Hr.content.cloneNode(true));
+      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(Gr.content.cloneNode(true));
     }
   };
-  rt("media-title-bar", Gr);
-  var In = 100, Mn = (O) => {
+  rt("media-title-bar", Vr);
+  var Mn = 100, Cn = (O) => {
     var T;
     if (O.getAttribute(G.MEDIA_MUTED) != null)
       return 0;
-    let C = +((T = O.getAttribute(G.MEDIA_VOLUME)) != null ? T : 1);
-    return Math.round(C * O.range.max);
-  }, xn = ({ value: O, max: M }) => `${Math.round(O / M * 100)}%`, Vr = class extends Jt {
+    let x = +((T = O.getAttribute(G.MEDIA_VOLUME)) != null ? T : 1);
+    return Math.round(x * O.range.max);
+  }, xn = ({ value: O, max: M }) => `${Math.round(O / M * 100)}%`, Kr = class extends Jt {
     static get observedAttributes() {
       return [...super.observedAttributes, G.MEDIA_VOLUME, G.MEDIA_MUTED];
     }
     constructor() {
       super();
-      this.range.max = In, this.range.addEventListener("input", () => {
-        let C = this.range.value / this.range.max, T = new W.CustomEvent(it.MEDIA_VOLUME_REQUEST, { composed: true, bubbles: true, detail: C });
+      this.range.max = Mn, this.range.addEventListener("input", () => {
+        let x = this.range.value / this.range.max, T = new W.CustomEvent(it.MEDIA_VOLUME_REQUEST, { composed: true, bubbles: true, detail: x });
         this.dispatchEvent(T);
       });
     }
     connectedCallback() {
       this.range.setAttribute("aria-label", _t.VOLUME()), super.connectedCallback();
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       if (M === G.MEDIA_VOLUME || M === G.MEDIA_MUTED) {
-        let e = Mn(this);
+        let e = Cn(this);
         this.range.value = e, this.range.setAttribute("aria-valuetext", xn(this.range)), this.updateBar();
       }
-      super.attributeChangedCallback(M, C, T);
+      super.attributeChangedCallback(M, x, T);
     }
   };
-  rt("media-volume-range", Vr);
-  var Kr = class extends Ae {
+  rt("media-volume-range", Kr);
+  var qr = class extends Se {
   };
-  W.customElements.get("media-chrome") || W.customElements.define("media-chrome", Kr);
-  var qr = class extends Ae {
+  W.customElements.get("media-chrome") || W.customElements.define("media-chrome", qr);
+  var Wr = class extends Se {
     constructor() {
       super();
       console.warn("MediaChrome: <media-container> is deprecated. Use <media-controller>.");
     }
   };
-  W.customElements.get("media-container") || W.customElements.define("media-container", qr);
-  var Cn = Object.create, we = Object.defineProperty, On = Object.getOwnPropertyDescriptor, Pn = Object.getOwnPropertyNames, Nn = Object.getPrototypeOf, Fn = Object.prototype.hasOwnProperty, Un = (O) => we(O, "__esModule", { value: true }), ae = (O, M) => () => (M || O((M = { exports: {} }).exports, M), M.exports), Bn = (O, M, C) => {
+  W.customElements.get("media-container") || W.customElements.define("media-container", Wr);
+  var On = Object.create, Ie = Object.defineProperty, Pn = Object.getOwnPropertyDescriptor, Nn = Object.getOwnPropertyNames, Fn = Object.getPrototypeOf, Un = Object.prototype.hasOwnProperty, Bn = (O) => Ie(O, "__esModule", { value: true }), ae = (O, M) => () => (M || O((M = { exports: {} }).exports, M), M.exports), jn = (O, M, x) => {
     if (M && typeof M == "object" || typeof M == "function")
-      for (let T of Pn(M))
-        !Fn.call(O, T) && T !== "default" && we(O, T, { get: () => M[T], enumerable: !(C = On(M, T)) || C.enumerable });
+      for (let T of Nn(M))
+        !Un.call(O, T) && T !== "default" && Ie(O, T, { get: () => M[T], enumerable: !(x = Pn(M, T)) || x.enumerable });
     return O;
-  }, Wr = (O) => Bn(Un(we(O != null ? Cn(Nn(O)) : {}, "default", O && O.__esModule && "default" in O ? { get: () => O.default, enumerable: true } : { value: O, enumerable: true })), O), jn = ae(() => {
-    if (globalThis.customElements || (globalThis.customElements = { get(C) {
-    }, define(C, T, e) {
-    }, upgrade(C) {
-    }, whenDefined(C) {
+  }, $r = (O) => jn(Bn(Ie(O != null ? On(Fn(O)) : {}, "default", O && O.__esModule && "default" in O ? { get: () => O.default, enumerable: true } : { value: O, enumerable: true })), O), Hn = ae(() => {
+    if (globalThis.customElements || (globalThis.customElements = { get(x) {
+    }, define(x, T, e) {
+    }, upgrade(x) {
+    }, whenDefined(x) {
       return Promise.resolve(globalThis.HTMLElement);
     } }), !globalThis.CustomEvent) {
-      class C {
+      class x {
         constructor(e, R = {}) {
           this.detail = R == null ? void 0 : R.detail;
         }
         initCustomEvent(e, R, m, y) {
         }
       }
-      globalThis.CustomEvent = C;
+      globalThis.CustomEvent = x;
     }
     if (!globalThis.EventTarget) {
-      class C {
+      class x {
         addEventListener() {
         }
         removeEventListener() {
@@ -1725,25 +1725,25 @@ svg, img, ::slotted(svg), ::slotted(img) {
           return true;
         }
       }
-      globalThis.EventTarget = C;
+      globalThis.EventTarget = x;
     }
     if (!globalThis.HTMLElement) {
-      class C extends EventTarget {
+      class x extends EventTarget {
       }
-      globalThis.HTMLElement = C;
+      globalThis.HTMLElement = x;
     }
     var O, M;
     if (!((O = globalThis.document) == null ? void 0 : O.createElement)) {
-      let C = (M = globalThis.document) != null ? M : {};
-      C.createElement = function(T, e) {
+      let x = (M = globalThis.document) != null ? M : {};
+      x.createElement = function(T, e) {
         return new HTMLElement();
-      }, globalThis.document = C;
+      }, globalThis.document = x;
     }
-  }), Hn = ae((O, M) => {
+  }), Gn = ae((O, M) => {
     (function() {
-      var C = false;
+      var x = false;
       (function(T, e) {
-        typeof O == "object" && typeof M == "object" ? M.exports = e() : typeof C == "function" && C.amd ? C("mux", [], e) : typeof O == "object" ? O.mux = e() : T.mux = e();
+        typeof O == "object" && typeof M == "object" ? M.exports = e() : typeof x == "function" && x.amd ? x("mux", [], e) : typeof O == "object" ? O.mux = e() : T.mux = e();
       })(this, function() {
         return function(T) {
           function e(m) {
@@ -1818,8 +1818,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return U;
           }
           function L(F, U) {
-            return U = x(U === void 0 ? F.length - 1 : U, 0), function() {
-              for (var j = arguments, H = -1, V = x(j.length - U, 0), K = Array(V); ++H < V; )
+            return U = C(U === void 0 ? F.length - 1 : U, 0), function() {
+              for (var j = arguments, H = -1, V = C(j.length - U, 0), K = Array(V); ++H < V; )
                 K[H] = j[U + H];
               H = -1;
               for (var q = Array(U + 1); ++H < U; )
@@ -1881,7 +1881,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return function(j) {
               return F(U(j));
             };
-          }(Object.keys, Object), x = Math.max, P = !k.call({ valueOf: 1 }, "valueOf"), N = Array.isArray, B = function(F) {
+          }(Object.keys, Object), C = Math.max, P = !k.call({ valueOf: 1 }, "valueOf"), N = Array.isArray, B = function(F) {
             return L(function(U, j) {
               var H = -1, V = j.length, K = V > 1 ? j[V - 1] : void 0, q = V > 2 ? j[2] : void 0;
               for (K = F.length > 3 && typeof K == "function" ? (V--, K) : void 0, q && g(j[0], j[1], q) && (K = V < 3 ? void 0 : K, V = 1), U = Object(U); ++H < V; ) {
@@ -2117,8 +2117,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
               try {
                 for (var k, I = p[Symbol.iterator](); !(i = (k = I.next()).done) && (s.push(k.value), !o || s.length !== o); i = true)
                   ;
-              } catch (x) {
-                c = true, l = x;
+              } catch (C) {
+                c = true, l = C;
               } finally {
                 try {
                   !i && I.return && I.return();
@@ -2316,7 +2316,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 return X(Z, Q);
               throw new TypeError("Invalid attempt to destructure non-iterable instance");
             };
-          }(), w = R(4), A = m(w), L = R(2), b = m(L), u = R(6), g = R(5), D = R(0), E = m(D), S = R(10), d = m(S), t = R(3), r = m(t), n = R(20), h = R(21), a = R(22), f = m(a), v = R(23), _ = m(v), p = R(24), o = m(p), s = R(25), i = m(s), c = R(26), l = m(c), k = R(27), I = m(k), x = R(28), P = m(x), N = R(29), B = m(N), F = R(30), U = m(F), j = R(31), H = m(j), V = R(32), K = m(V), q = R(33), $ = m(q), J = R(34), z = m(J), tt = R(35), et = m(tt), at = R(44), pt = m(at), ot = ["viewstart", "ended", "loadstart", "pause", "play", "playing", "ratechange", "waiting", "adplay", "adpause", "adended", "aderror", "adplaying", "adrequest", "adresponse", "adbreakstart", "adbreakend", "adfirstquartile", "admidpoint", "adthirdquartile", "rebufferstart", "rebufferend", "seeked", "error", "hb", "requestcompleted", "requestfailed", "requestcanceled", "renditionchange"], nt = function(X, Z, Q) {
+          }(), w = R(4), A = m(w), L = R(2), b = m(L), u = R(6), g = R(5), D = R(0), E = m(D), S = R(10), d = m(S), t = R(3), r = m(t), n = R(20), h = R(21), a = R(22), f = m(a), v = R(23), _ = m(v), p = R(24), o = m(p), s = R(25), i = m(s), c = R(26), l = m(c), k = R(27), I = m(k), C = R(28), P = m(C), N = R(29), B = m(N), F = R(30), U = m(F), j = R(31), H = m(j), V = R(32), K = m(V), q = R(33), $ = m(q), J = R(34), z = m(J), tt = R(35), et = m(tt), at = R(44), pt = m(at), ot = ["viewstart", "ended", "loadstart", "pause", "play", "playing", "ratechange", "waiting", "adplay", "adpause", "adended", "aderror", "adplaying", "adrequest", "adresponse", "adbreakstart", "adbreakend", "adfirstquartile", "admidpoint", "adthirdquartile", "rebufferstart", "rebufferend", "seeked", "error", "hb", "requestcompleted", "requestfailed", "requestcanceled", "renditionchange"], nt = function(X, Z, Q) {
             var ut = this;
             this.DOM_CONTENT_LOADED_EVENT_END = d.default.domContentLoadedEventEnd(), this.NAVIGATION_START = d.default.navigationStart();
             var ft = { debug: false, minimumRebufferDuration: 250, sustainedRebufferThreshold: 1e3, playbackHeartbeatTime: 25, beaconDomain: "litix.io", sampleRate: 1, disableCookies: false, respectDoNotTrack: false, disableRebufferTracking: false, errorTranslator: function(lt) {
@@ -2432,16 +2432,16 @@ svg, img, ::slotted(svg), ::slotted(img) {
               return (0, w.default)(S.getAllResponseHeaders());
           }, D = function(S, d, t) {
             var r = (arguments.length > 3 && arguments[3] !== void 0 && arguments[3], arguments[4]), n = S.log, h = S.utils.secondsToMs, a = function(k) {
-              var I = parseInt(r.version), x = void 0;
-              return I === 1 && k.programDateTime !== null && (x = k.programDateTime), I === 0 && k.pdt !== null && (x = k.pdt), x;
+              var I = parseInt(r.version), C = void 0;
+              return I === 1 && k.programDateTime !== null && (C = k.programDateTime), I === 0 && k.pdt !== null && (C = k.pdt), C;
             };
             if (!L.default.exists())
               return void n.warn("performance timing not supported. Not tracking HLS.js.");
             var f = function(k, I) {
               return S.emit(d, k, I);
             }, v = function(k, I) {
-              var x = I.levels, P = I.audioTracks, N = I.url, B = I.stats, F = I.networkDetails, U = {}, j = {};
-              x.forEach(function(J, z) {
+              var C = I.levels, P = I.audioTracks, N = I.url, B = I.stats, F = I.networkDetails, U = {}, j = {};
+              C.forEach(function(J, z) {
                 U[z] = { width: J.width, height: J.height, bitrate: J.bitrate, attrs: J.attrs };
               }), P.forEach(function(J, z) {
                 j[z] = { name: J.name, language: J.lang, bitrate: J.bitrate };
@@ -2451,40 +2451,40 @@ svg, img, ::slotted(svg), ::slotted(img) {
             };
             t.on(r.Events.MANIFEST_LOADED, v);
             var _ = function(k, I) {
-              var x = I.details, P = I.level, N = I.networkDetails, B = I.stats, F = u(B), U = F.bytesLoaded, j = F.requestStart, H = F.responseStart, V = F.responseEnd, K = x.fragments[x.fragments.length - 1], q = a(K) + h(K.duration);
-              f("requestcompleted", { request_event_type: k, request_bytes_loaded: U, request_start: j, request_response_start: H, request_response_end: V, request_current_level: P, request_type: "manifest", request_hostname: (0, b.extractHostname)(x.url), request_response_headers: g(N), video_holdback: x.holdBack && h(x.holdBack), video_part_holdback: x.partHoldBack && h(x.partHoldBack), video_part_target_duration: x.partTarget && h(x.partTarget), video_target_duration: x.targetduration && h(x.targetduration), player_manifest_newest_program_time: isNaN(q) ? void 0 : q });
+              var C = I.details, P = I.level, N = I.networkDetails, B = I.stats, F = u(B), U = F.bytesLoaded, j = F.requestStart, H = F.responseStart, V = F.responseEnd, K = C.fragments[C.fragments.length - 1], q = a(K) + h(K.duration);
+              f("requestcompleted", { request_event_type: k, request_bytes_loaded: U, request_start: j, request_response_start: H, request_response_end: V, request_current_level: P, request_type: "manifest", request_hostname: (0, b.extractHostname)(C.url), request_response_headers: g(N), video_holdback: C.holdBack && h(C.holdBack), video_part_holdback: C.partHoldBack && h(C.partHoldBack), video_part_target_duration: C.partTarget && h(C.partTarget), video_target_duration: C.targetduration && h(C.targetduration), player_manifest_newest_program_time: isNaN(q) ? void 0 : q });
             };
             t.on(r.Events.LEVEL_LOADED, _);
             var p = function(k, I) {
-              var x = I.details, P = I.networkDetails, N = I.stats, B = u(N), F = B.bytesLoaded, U = B.requestStart, j = B.responseStart, H = B.responseEnd;
-              f("requestcompleted", { request_event_type: k, request_bytes_loaded: F, request_start: U, request_response_start: j, request_response_end: H, request_type: "manifest", request_hostname: (0, b.extractHostname)(x.url), request_response_headers: g(P) });
+              var C = I.details, P = I.networkDetails, N = I.stats, B = u(N), F = B.bytesLoaded, U = B.requestStart, j = B.responseStart, H = B.responseEnd;
+              f("requestcompleted", { request_event_type: k, request_bytes_loaded: F, request_start: U, request_response_start: j, request_response_end: H, request_type: "manifest", request_hostname: (0, b.extractHostname)(C.url), request_response_headers: g(P) });
             };
             t.on(r.Events.AUDIO_TRACK_LOADED, p);
             var o = function(k, I) {
-              var x = I.stats, P = I.networkDetails, N = I.frag, B = u(x), F = B.bytesLoaded, U = B.requestStart, j = B.responseStart, H = B.responseEnd, V = { request_event_type: k, request_bytes_loaded: F, request_start: U, request_response_start: j, request_response_end: H, request_hostname: P ? (0, b.extractHostname)(P.responseURL) : void 0, request_response_headers: g(P), request_media_duration: N.duration };
+              var C = I.stats, P = I.networkDetails, N = I.frag, B = u(C), F = B.bytesLoaded, U = B.requestStart, j = B.responseStart, H = B.responseEnd, V = { request_event_type: k, request_bytes_loaded: F, request_start: U, request_response_start: j, request_response_end: H, request_hostname: P ? (0, b.extractHostname)(P.responseURL) : void 0, request_response_headers: g(P), request_media_duration: N.duration };
               N.type === "main" ? (V.request_type = "media", V.request_current_level = N.level, V.request_video_width = (t.levels[N.level] || {}).width, V.request_video_height = (t.levels[N.level] || {}).height) : V.request_type = N.type, f("requestcompleted", V);
             };
             t.on(r.Events.FRAG_LOADED, o);
             var s = function(k, I) {
-              var x = I.frag, P = x.start, N = a(x), B = { currentFragmentPDT: N, currentFragmentStart: h(P) };
+              var C = I.frag, P = C.start, N = a(C), B = { currentFragmentPDT: N, currentFragmentStart: h(P) };
               f("fragmentchange", B);
             };
             t.on(r.Events.FRAG_CHANGED, s);
             var i = function(k, I) {
-              var x = I.details, P = I.response, N = I.context, B = I.frag;
-              if (x === r.ErrorDetails.MANIFEST_LOAD_ERROR || x === r.ErrorDetails.MANIFEST_LOAD_TIMEOUT || x === r.ErrorDetails.FRAG_LOAD_ERROR || x === r.ErrorDetails.FRAG_LOAD_TIMEOUT || x === r.ErrorDetails.LEVEL_LOAD_ERROR || x === r.ErrorDetails.LEVEL_LOAD_TIMEOUT) {
+              var C = I.details, P = I.response, N = I.context, B = I.frag;
+              if (C === r.ErrorDetails.MANIFEST_LOAD_ERROR || C === r.ErrorDetails.MANIFEST_LOAD_TIMEOUT || C === r.ErrorDetails.FRAG_LOAD_ERROR || C === r.ErrorDetails.FRAG_LOAD_TIMEOUT || C === r.ErrorDetails.LEVEL_LOAD_ERROR || C === r.ErrorDetails.LEVEL_LOAD_TIMEOUT) {
                 var F = B && B.url || N && N.url || "";
-                f("requestfailed", { request_error: x, request_url: F, request_hostname: (0, b.extractHostname)(F), request_type: x === r.ErrorDetails.FRAG_LOAD_ERROR || x === r.ErrorDetails.FRAG_LOAD_TIMEOUT ? "media" : "manifest", request_error_code: P && P.code, request_error_text: P && P.text });
+                f("requestfailed", { request_error: C, request_url: F, request_hostname: (0, b.extractHostname)(F), request_type: C === r.ErrorDetails.FRAG_LOAD_ERROR || C === r.ErrorDetails.FRAG_LOAD_TIMEOUT ? "media" : "manifest", request_error_code: P && P.code, request_error_text: P && P.text });
               }
             };
             t.on(r.Events.ERROR, i);
             var c = function(k, I) {
-              var x = I.frag, P = x && x._url || "";
+              var C = I.frag, P = C && C._url || "";
               f("requestcanceled", { request_cancel: k, request_url: P, request_type: "media", request_hostname: (0, b.extractHostname)(P) });
             };
             t.on(r.Events.FRAG_LOAD_EMERGENCY_ABORTED, c);
             var l = function(k, I) {
-              var x = I.level, P = t.levels[x];
+              var C = I.level, P = t.levels[C];
               if (P && P.attrs && P.attrs.BANDWIDTH) {
                 var N = P.attrs.BANDWIDTH;
                 N ? f("renditionchange", { video_source_bitrate: N, video_source_width: P.width, video_source_height: P.height }) : n.warn("missing BANDWIDTH from HLS manifest parsed by HLS.js");
@@ -2526,7 +2526,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             };
             t.on("manifestLoaded", h);
             var a = {}, f = function(i) {
-              var c = i.type, l = i.fragmentModel, k = i.chunk, I = k || {}, x = I.mediaInfo, P = x || {}, N = P.type, B = P.bitrateList;
+              var c = i.type, l = i.fragmentModel, k = i.chunk, I = k || {}, C = I.mediaInfo, P = C || {}, N = P.type, B = P.bitrateList;
               B = B || [];
               var F = {};
               B.forEach(function(J, z) {
@@ -2537,7 +2537,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             };
             t.on("initFragmentLoaded", f);
             var v = function(i) {
-              var c = i.type, l = i.fragmentModel, k = i.chunk, I = k || {}, x = I.mediaInfo, P = I.start, N = x || {}, B = N.type, F = u(l, t), U = F.requestStart, j = F.requestResponseStart, H = F.requestResponseEnd, V = F.requestBytesLoaded, K = F.requestResponseHeaders, q = F.requestMediaDuration, $ = F.requestHostname, J = g(B, t), z = J.currentLevel, tt = J.renditionWidth, et = J.renditionHeight, at = J.renditionBitrate;
+              var c = i.type, l = i.fragmentModel, k = i.chunk, I = k || {}, C = I.mediaInfo, P = I.start, N = C || {}, B = N.type, F = u(l, t), U = F.requestStart, j = F.requestResponseStart, H = F.requestResponseEnd, V = F.requestBytesLoaded, K = F.requestResponseHeaders, q = F.requestMediaDuration, $ = F.requestHostname, J = g(B, t), z = J.currentLevel, tt = J.renditionWidth, et = J.renditionHeight, at = J.renditionBitrate;
               n("requestcompleted", { request_event_type: c, request_start: U, request_response_start: j, request_response_end: H, request_bytes_loaded: V, request_type: B, request_response_headers: K, request_hostname: $, request_media_start_time: P, request_media_duration: q, request_current_level: z, request_labeled_bitrate: at, request_video_width: tt, request_video_height: et });
             };
             t.on("mediaFragmentLoaded", v);
@@ -2559,8 +2559,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 if (!I || typeof I.bitrate != "number")
                   return void r.warn("missing bitrate info for " + k);
                 _[k] = I;
-                var x = p();
-                x && n("renditionchange", x);
+                var C = p();
+                C && n("renditionchange", C);
               }
             };
             t.on("qualityChangeRendered", o);
@@ -2953,8 +2953,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             this.mux = c, this.envKey = l, this.eventQueue = new a.default((0, D.default)(l, k.beaconDomain)), this.previousBeaconData = null, this.lastEventTime = null, this.sampleRate = k.sampleRate, this.disableCookies = k.disableCookies, this.respectDoNotTrack = k.respectDoNotTrack;
             var I = k.platform || {};
             this.pageLevelData = { mux_api_version: this.mux.API_VERSION, mux_embed: this.mux.NAME, mux_embed_version: this.mux.VERSION, viewer_application_name: I.name, viewer_application_version: I.version, viewer_application_engine: I.layout, viewer_device_name: I.product, viewer_device_category: "", viewer_device_manufacturer: I.manufacturer, viewer_os_family: I.os && I.os.family, viewer_os_architecture: I.os && I.os.architecture, viewer_os_version: I.os && I.os.version };
-            var x = (0, t.default)();
-            x && (this.pageLevelData = (0, v.default)(this.pageLevelData, { viewer_connection_type: x })), A.default !== void 0 && A.default.location && A.default.location.href && (this.pageLevelData.page_url = A.default.location.href), this.viewerData = this.disableCookies ? {} : (0, L.getAndUpdateViewerData)();
+            var C = (0, t.default)();
+            C && (this.pageLevelData = (0, v.default)(this.pageLevelData, { viewer_connection_type: C })), A.default !== void 0 && A.default.location && A.default.location.href && (this.pageLevelData.page_url = A.default.location.href), this.viewerData = this.disableCookies ? {} : (0, L.getAndUpdateViewerData)();
           };
           o.prototype.send = function(c, l) {
             if (c) {
@@ -2964,8 +2964,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 return u.default.error("A data object was expected in send() but was not provided");
               var k = this.disableCookies ? {} : (0, L.getAndUpdateSessionData)(), I = {};
               (0, v.default)(I, this.pageLevelData), (0, v.default)(I, l), (0, v.default)(I, k), (0, v.default)(I, this.viewerData), I.event = c, I.env_key = this.envKey, I.user_id && (I.viewer_user_id = I.user_id, delete I.user_id);
-              var x = I.mux_sample_number >= this.sampleRate, P = this._deduplicateBeaconData(c, I), N = (0, n.default)(P);
-              if (this.lastEventTime = this.mux.utils.now(), x)
+              var C = I.mux_sample_number >= this.sampleRate, P = this._deduplicateBeaconData(c, I), N = (0, n.default)(P);
+              if (this.lastEventTime = this.mux.utils.now(), C)
                 return u.default.info("Not sending event due to sample rate restriction", c, I, N);
               if (!this.envKey)
                 return u.default.info("Not sending event due to missing environment key", c, I, N);
@@ -2985,9 +2985,9 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return c === "renditionchange" && l.indexOf("video_source_") === 0;
           };
           o.prototype._deduplicateBeaconData = function(c, l) {
-            var k = this, I = {}, x = l.view_id;
-            if (!x || c === "viewstart" || c === "viewend" || !this.previousBeaconData || this.mux.utils.now() - this.lastEventTime >= 6e5)
-              I = (0, v.default)({}, l), x && (this.previousBeaconData = I), x && c === "viewend" && (this.previousBeaconData = null);
+            var k = this, I = {}, C = l.view_id;
+            if (!C || c === "viewstart" || c === "viewend" || !this.previousBeaconData || this.mux.utils.now() - this.lastEventTime >= 6e5)
+              I = (0, v.default)({}, l), C && (this.previousBeaconData = I), C && c === "viewend" && (this.previousBeaconData = null);
             else {
               var P = c.indexOf("request") === 0;
               Object.keys(l).forEach(function(N) {
@@ -3085,8 +3085,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
               var k = _[l];
               t && D[k] === null || (s = s.concat(b(D[k], k, c, d, t, r ? n : null, p, h, a, f, o, v)));
             }
-            var I = s.join(S), x = E.addQueryPrefix === true ? "?" : "";
-            return I.length > 0 ? x + I : "";
+            var I = s.join(S), C = E.addQueryPrefix === true ? "?" : "";
+            return I.length > 0 ? C + I : "";
           };
         }, function(T, e, R) {
           "use strict";
@@ -3464,19 +3464,19 @@ svg, img, ::slotted(svg), ::slotted(img) {
         }]);
       });
     })();
-  }), Gn = ae((O, M) => {
-    typeof window != "undefined" && function(C, T) {
-      typeof O == "object" && typeof M == "object" ? M.exports = T() : typeof define == "function" && define.amd ? define([], T) : typeof O == "object" ? O.Hls = T() : C.Hls = T();
+  }), Vn = ae((O, M) => {
+    typeof window != "undefined" && function(x, T) {
+      typeof O == "object" && typeof M == "object" ? M.exports = T() : typeof define == "function" && define.amd ? define([], T) : typeof O == "object" ? O.Hls = T() : x.Hls = T();
     }(O, function() {
-      return function(C) {
+      return function(x) {
         var T = {};
         function e(R) {
           if (T[R])
             return T[R].exports;
           var m = T[R] = { i: R, l: false, exports: {} };
-          return C[R].call(m.exports, m, m.exports, e), m.l = true, m.exports;
+          return x[R].call(m.exports, m, m.exports, e), m.l = true, m.exports;
         }
-        return e.m = C, e.c = T, e.d = function(R, m, y) {
+        return e.m = x, e.c = T, e.d = function(R, m, y) {
           e.o(R, m) || Object.defineProperty(R, m, { enumerable: true, get: y });
         }, e.r = function(R) {
           typeof Symbol != "undefined" && Symbol.toStringTag && Object.defineProperty(R, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(R, "__esModule", { value: true });
@@ -3500,7 +3500,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         }, e.o = function(R, m) {
           return Object.prototype.hasOwnProperty.call(R, m);
         }, e.p = "/dist/", e(e.s = "./src/hls.ts");
-      }({ "./node_modules/eventemitter3/index.js": function(C, T, e) {
+      }({ "./node_modules/eventemitter3/index.js": function(x, T, e) {
         "use strict";
         var R = Object.prototype.hasOwnProperty, m = "~";
         function y() {
@@ -3609,8 +3609,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
         }, b.prototype.removeAllListeners = function(u) {
           var g;
           return u ? (g = m ? m + u : u, this._events[g] && L(this, g)) : (this._events = new y(), this._eventsCount = 0), this;
-        }, b.prototype.off = b.prototype.removeListener, b.prototype.addListener = b.prototype.on, b.prefixed = m, b.EventEmitter = b, C.exports = b;
-      }, "./node_modules/url-toolkit/src/url-toolkit.js": function(C, T, e) {
+        }, b.prototype.off = b.prototype.removeListener, b.prototype.addListener = b.prototype.on, b.prefixed = m, b.EventEmitter = b, x.exports = b;
+      }, "./node_modules/url-toolkit/src/url-toolkit.js": function(x, T, e) {
         (function(R) {
           var m = /^((?:[a-zA-Z0-9+\-.]+:)?)(\/\/[^\/?#]*)?((?:[^\/?#]*\/)*[^;?#]*)?(;[^?#]*)?(\?[^#]*)?(#[^]*)?$/, y = /^([^\/?#]*)([^]*)$/, w = /(?:\/|^)\.(?=\/)/g, A = /(?:\/|^)\.\.\/(?!\.\.\/)[^\/]*(?=\/)/g, L = { buildAbsoluteURL: function(b, u, g) {
             if (g = g || {}, b = b.trim(), u = u.trim(), !u) {
@@ -3653,9 +3653,9 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, buildURLFromParts: function(b) {
             return b.scheme + b.netLoc + b.path + b.params + b.query + b.fragment;
           } };
-          C.exports = L;
+          x.exports = L;
         })(this);
-      }, "./node_modules/webworkify-webpack/index.js": function(C, T, e) {
+      }, "./node_modules/webworkify-webpack/index.js": function(x, T, e) {
         function R(g) {
           var D = {};
           function E(d) {
@@ -3725,7 +3725,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }
           return S;
         }
-        C.exports = function(g, D) {
+        x.exports = function(g, D) {
           D = D || {};
           var E = { main: e.m }, S = D.all ? { main: Object.keys(E.main) } : u(E, g), d = "";
           Object.keys(S).filter(function(a) {
@@ -3746,7 +3746,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           var r = window.URL || window.webkitURL || window.mozURL || window.msURL, n = r.createObjectURL(t), h = new window.Worker(n);
           return h.objectURL = n, h;
         };
-      }, "./src/config.ts": function(C, T, e) {
+      }, "./src/config.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "hlsDefaultConfig", function() {
           return v;
@@ -3812,7 +3812,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             c && (s.loader = S.default, s.progressive = true, s.enableSoftwareAES = true, r.logger.log("[config]: Progressive streaming enabled, using FetchLoader"));
           }
         }
-      }, "./src/controller/abr-controller.ts": function(C, T, e) {
+      }, "./src/controller/abr-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/polyfills/number.ts"), m = e("./src/utils/ewma-bandwidth-estimator.ts"), y = e("./src/events.ts"), w = e("./src/utils/buffer-helper.ts"), A = e("./src/errors.ts"), L = e("./src/types/loader.ts"), b = e("./src/utils/logger.ts");
@@ -3860,12 +3860,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
               if (!(!n || a.paused || !a.playbackRate || !a.readyState)) {
                 var _ = performance.now() - f.loading.start, p = Math.abs(a.playbackRate);
                 if (!(_ <= 500 * v / p)) {
-                  var o = r.levels, s = r.minAutoLevel, i = o[d.level], c = f.total || Math.max(f.loaded, Math.round(v * i.maxBitrate / 8)), l = Math.max(1, f.bwEstimate ? f.bwEstimate / 8 : f.loaded * 1e3 / _), k = (c - f.loaded) / l, I = a.currentTime, x = (w.BufferHelper.bufferInfo(a, I, h.maxBufferHole).end - I) / p;
-                  if (!(x >= 2 * v / p || k <= x)) {
+                  var o = r.levels, s = r.minAutoLevel, i = o[d.level], c = f.total || Math.max(f.loaded, Math.round(v * i.maxBitrate / 8)), l = Math.max(1, f.bwEstimate ? f.bwEstimate / 8 : f.loaded * 1e3 / _), k = (c - f.loaded) / l, I = a.currentTime, C = (w.BufferHelper.bufferInfo(a, I, h.maxBufferHole).end - I) / p;
+                  if (!(C >= 2 * v / p || k <= C)) {
                     var P = Number.POSITIVE_INFINITY, N;
                     for (N = d.level - 1; N > s; N--) {
                       var B = o[N].maxBitrate;
-                      if (P = v * B / (8 * 0.8 * l), P < x)
+                      if (P = v * B / (8 * 0.8 * l), P < C)
                         break;
                     }
                     if (!(P >= k)) {
@@ -3874,7 +3874,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
       Current BW estimate: ` + (Object(R.isFiniteNumber)(F) ? (F / 1024).toFixed(3) : "Unknown") + ` Kb/s
       Estimated load time for current fragment: ` + k.toFixed(3) + ` s
       Estimated load time for the next fragment: ` + P.toFixed(3) + ` s
-      Time to underbuffer: ` + x.toFixed(3) + " s"), r.nextLoadLevel = N, this.bwEstimator.sample(_, f.loaded), this.clearTimer(), d.loader && (this.fragCurrent = this.partCurrent = null, d.loader.abort()), r.trigger(y.Events.FRAG_LOAD_EMERGENCY_ABORTED, { frag: d, part: t, stats: f });
+      Time to underbuffer: ` + C.toFixed(3) + " s"), r.nextLoadLevel = N, this.bwEstimator.sample(_, f.loaded), this.clearTimer(), d.loader && (this.fragCurrent = this.partCurrent = null, d.loader.abort()), r.trigger(y.Events.FRAG_LOAD_EMERGENCY_ABORTED, { frag: d, part: t, stats: f });
                     }
                   }
                 }
@@ -3919,8 +3919,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             if (!s) {
               var I = this.bitrateTestDelay;
               if (I) {
-                var x = v ? Math.min(v, h.maxLoadingDelay) : h.maxLoadingDelay;
-                c = x - I, b.logger.trace("bitrate test took " + Math.round(1e3 * I) + "ms, set first fragment max fetchDuration to " + Math.round(1e3 * c) + " ms"), l = k = 1;
+                var C = v ? Math.min(v, h.maxLoadingDelay) : h.maxLoadingDelay;
+                c = C - I, b.logger.trace("bitrate test took " + Math.round(1e3 * I) + "ms, set first fragment max fetchDuration to " + Math.round(1e3 * c) + " ms"), l = k = 1;
               }
             }
             return i = this.findBestLevel(o, a, n, s + c, l, k), Math.max(i, 0);
@@ -3928,7 +3928,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             for (var f, v = this.fragCurrent, _ = this.partCurrent, p = this.lastLoadedFragLevel, o = this.hls.levels, s = o[p], i = !!(s != null && (f = s.details) !== null && f !== void 0 && f.live), c = s == null ? void 0 : s.codecSet, l = _ ? _.duration : v ? v.duration : 0, k = r; k >= t; k--) {
               var I = o[k];
               if (!(!I || c && I.codecSet !== c)) {
-                var x = I.details, P = (_ ? x == null ? void 0 : x.partTarget : x == null ? void 0 : x.averagetargetduration) || l, N = void 0;
+                var C = I.details, P = (_ ? C == null ? void 0 : C.partTarget : C == null ? void 0 : C.averagetargetduration) || l, N = void 0;
                 k <= p ? N = h * d : N = a * d;
                 var B = o[k].maxBitrate, F = B * P / N;
                 if (b.logger.trace("level/adjustedbw/bitrate/avgDuration/maxFetchDuration/fetchDuration: " + k + "/" + Math.round(N) + "/" + B + "/" + P + "/" + n + "/" + F), N > B && (!F || i && !this.bitrateTestDelay || F < n))
@@ -3947,7 +3947,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           } }]), E;
         }();
         T.default = D;
-      }, "./src/controller/audio-stream-controller.ts": function(C, T, e) {
+      }, "./src/controller/audio-stream-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/polyfills/number.ts"), m = e("./src/controller/base-stream-controller.ts"), y = e("./src/events.ts"), w = e("./src/utils/buffer-helper.ts"), A = e("./src/controller/fragment-tracker.ts"), L = e("./src/types/level.ts"), b = e("./src/types/loader.ts"), u = e("./src/loader/fragment.ts"), g = e("./src/demux/chunk-cache.ts"), D = e("./src/demux/transmuxer-interface.ts"), E = e("./src/types/transmuxer.ts"), S = e("./src/controller/fragment-finders.ts"), d = e("./src/utils/discontinuities.ts"), t = e("./src/errors.ts"), r = e("./src/utils/logger.ts");
@@ -4012,8 +4012,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 break;
               }
               case m.State.FRAG_LOADING_WAITING_RETRY: {
-                var k, I = performance.now(), x = this.retryDate;
-                (!x || I >= x || (k = this.media) !== null && k !== void 0 && k.seeking) && (this.log("RetryDate reached, switch back to IDLE state"), this.state = m.State.IDLE);
+                var k, I = performance.now(), C = this.retryDate;
+                (!C || I >= C || (k = this.media) !== null && k !== void 0 && k.seeking) && (this.log("RetryDate reached, switch back to IDLE state"), this.state = m.State.IDLE);
                 break;
               }
               case m.State.WAITING_INIT_PTS: {
@@ -4045,8 +4045,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
               !this.loadedmetadata && c.length && (this.loadedmetadata = true), this.lastCurrentTime = s.currentTime;
             }
           }, o.doTickIdle = function() {
-            var s, i, c = this.hls, l = this.levels, k = this.media, I = this.trackId, x = c.config;
-            if (!(!l || !l[I]) && !(!k && (this.startFragRequested || !x.startFragPrefetch))) {
+            var s, i, c = this.hls, l = this.levels, k = this.media, I = this.trackId, C = c.config;
+            if (!(!l || !l[I]) && !(!k && (this.startFragRequested || !C.startFragPrefetch))) {
               var P = l[I], N = P.details;
               if (!N || N.live && this.levelLastLoaded !== I || this.waitForCdnTuneIn(N)) {
                 this.state = m.State.WAITING_TRACK;
@@ -4101,21 +4101,21 @@ svg, img, ::slotted(svg), ::slotted(img) {
               return;
             }
             this.log("Track " + I + " loaded [" + k.startSN + "," + k.endSN + "],duration:" + k.totalduration);
-            var x = l[I], P = 0;
-            if (k.live || (c = x.details) !== null && c !== void 0 && c.live) {
+            var C = l[I], P = 0;
+            if (k.live || (c = C.details) !== null && c !== void 0 && c.live) {
               var N = this.mainDetails;
               if (k.fragments[0] || (k.deltaUpdateFailed = true), k.deltaUpdateFailed || !N)
                 return;
-              !x.details && k.hasProgramDateTime && N.hasProgramDateTime ? (Object(d.alignMediaPlaylistByPDT)(k, N), P = k.fragments[0].start) : P = this.alignPlaylists(k, x.details);
+              !C.details && k.hasProgramDateTime && N.hasProgramDateTime ? (Object(d.alignMediaPlaylistByPDT)(k, N), P = k.fragments[0].start) : P = this.alignPlaylists(k, C.details);
             }
-            x.details = k, this.levelLastLoaded = I, !this.startFragRequested && (this.mainDetails || !k.live) && this.setStartPosition(x.details, P), this.state === m.State.WAITING_TRACK && !this.waitForCdnTuneIn(k) && (this.state = m.State.IDLE), this.tick();
+            C.details = k, this.levelLastLoaded = I, !this.startFragRequested && (this.mainDetails || !k.live) && this.setStartPosition(C.details, P), this.state === m.State.WAITING_TRACK && !this.waitForCdnTuneIn(k) && (this.state = m.State.IDLE), this.tick();
           }, o._handleFragmentLoadProgress = function(s) {
-            var i, c = s.frag, l = s.part, k = s.payload, I = this.config, x = this.trackId, P = this.levels;
+            var i, c = s.frag, l = s.part, k = s.payload, I = this.config, C = this.trackId, P = this.levels;
             if (!P) {
               this.warn("Audio tracks were reset while fragment load was in progress. Fragment " + c.sn + " of level " + c.level + " will not be buffered");
               return;
             }
-            var N = P[x];
+            var N = P[C];
             console.assert(N, "Audio track is defined on fragment load progress");
             var B = N.details;
             console.assert(B, "Audio track details are defined on fragment load progress");
@@ -4126,7 +4126,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
               var V = false, K = l ? l.index : -1, q = K !== -1, $ = new E.ChunkMetadata(c.level, c.sn, c.stats.chunkCount, k.byteLength, K, q);
               U.push(k, H, F, "", c, l, B.totalduration, V, $, j);
             } else {
-              r.logger.log("Unknown video PTS for cc " + c.cc + ", waiting for video PTS before demuxing audio frag " + c.sn + " of [" + B.startSN + " ," + B.endSN + "],track " + x);
+              r.logger.log("Unknown video PTS for cc " + c.cc + ", waiting for video PTS before demuxing audio frag " + c.sn + " of [" + B.startSN + " ," + B.endSN + "],track " + C);
               var J = this.waitingData = this.waitingData || { frag: c, part: l, cache: new g.default(), complete: false }, z = J.cache;
               z.push(new Uint8Array(k)), this.waitingVideoCC = this.videoTrackCC, this.state = m.State.WAITING_INIT_PTS;
             }
@@ -4175,12 +4175,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
             var c = i.type;
             c === u.ElementaryStreamTypes.AUDIO && (this.bufferFlushed = true);
           }, o._handleTransmuxComplete = function(s) {
-            var i, c = "audio", l = this.hls, k = s.remuxResult, I = s.chunkMeta, x = this.getCurrentContext(I);
-            if (!x) {
+            var i, c = "audio", l = this.hls, k = s.remuxResult, I = s.chunkMeta, C = this.getCurrentContext(I);
+            if (!C) {
               this.warn("The loading context changed while buffering fragment " + I.sn + " of level " + I.level + ". This chunk will not be buffered."), this.resetLiveStartWhenNotLoaded(I.level);
               return;
             }
-            var P = x.frag, N = x.part, B = k.audio, F = k.text, U = k.id3, j = k.initSegment;
+            var P = C.frag, N = C.part, B = k.audio, F = k.text, U = k.id3, j = k.initSegment;
             if (!this.fragContextChanged(P)) {
               if (this.state = m.State.PARSING, this.audioSwitch && B && this.completeAudioSwitch(), j != null && j.tracks && (this._bufferInitSegment(j.tracks, P, I), l.trigger(y.Events.FRAG_PARSING_INIT_SEGMENT, { frag: P, id: c, tracks: j.tracks })), B) {
                 var H = B.startPTS, V = B.endPTS, K = B.startDTS, q = B.endDTS;
@@ -4218,7 +4218,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, p;
         }(m.default);
         T.default = v;
-      }, "./src/controller/audio-track-controller.ts": function(C, T, e) {
+      }, "./src/controller/audio-track-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/events.ts"), m = e("./src/errors.ts"), y = e("./src/controller/base-playlist-controller.ts"), w = e("./src/types/loader.ts");
@@ -4335,7 +4335,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           } }]), E;
         }(y.default);
         T.default = g;
-      }, "./src/controller/base-playlist-controller.ts": function(C, T, e) {
+      }, "./src/controller/base-playlist-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return L;
@@ -4389,8 +4389,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   else {
                     var I = Math.floor(k / d.targetduration);
                     if (h += I, a !== void 0) {
-                      var x = Math.round(k % d.targetduration / d.partTarget);
-                      a += x;
+                      var C = Math.round(k % d.targetduration / d.partTarget);
+                      a += C;
                     }
                     this.log("CDN Tune-in age: " + d.ageHeader + "s last advanced " + c.toFixed(2) + "s goal: " + k + " skip sn " + I + " to part " + a);
                   }
@@ -4428,7 +4428,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return S;
           }, b;
         }();
-      }, "./src/controller/base-stream-controller.ts": function(C, T, e) {
+      }, "./src/controller/base-stream-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "State", function() {
           return p;
@@ -4461,8 +4461,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
         var p = { STOPPED: "STOPPED", IDLE: "IDLE", KEY_LOADING: "KEY_LOADING", FRAG_LOADING: "FRAG_LOADING", FRAG_LOADING_WAITING_RETRY: "FRAG_LOADING_WAITING_RETRY", WAITING_TRACK: "WAITING_TRACK", PARSING: "PARSING", PARSED: "PARSED", BACKTRACKING: "BACKTRACKING", ENDED: "ENDED", ERROR: "ERROR", WAITING_INIT_PTS: "WAITING_INIT_PTS", WAITING_LEVEL: "WAITING_LEVEL" }, o = function(s) {
           v(i, s);
           function i(l, k, I) {
-            var x;
-            return x = s.call(this) || this, x.hls = void 0, x.fragPrevious = null, x.fragCurrent = null, x.fragmentTracker = void 0, x.transmuxer = null, x._state = p.STOPPED, x.media = void 0, x.mediaBuffer = void 0, x.config = void 0, x.bitrateTest = false, x.lastCurrentTime = 0, x.nextLoadPosition = 0, x.startPosition = 0, x.loadedmetadata = false, x.fragLoadError = 0, x.retryDate = 0, x.levels = null, x.fragmentLoader = void 0, x.levelLastLoaded = null, x.startFragRequested = false, x.decrypter = void 0, x.initPTS = [], x.onvseeking = null, x.onvended = null, x.logPrefix = "", x.log = void 0, x.warn = void 0, x.logPrefix = I, x.log = A.logger.log.bind(A.logger, I + ":"), x.warn = A.logger.warn.bind(A.logger, I + ":"), x.hls = l, x.fragmentLoader = new d.default(l.config), x.fragmentTracker = k, x.config = l.config, x.decrypter = new t.default(l, l.config), l.on(L.Events.KEY_LOADED, x.onKeyLoaded, f(x)), x;
+            var C;
+            return C = s.call(this) || this, C.hls = void 0, C.fragPrevious = null, C.fragCurrent = null, C.fragmentTracker = void 0, C.transmuxer = null, C._state = p.STOPPED, C.media = void 0, C.mediaBuffer = void 0, C.config = void 0, C.bitrateTest = false, C.lastCurrentTime = 0, C.nextLoadPosition = 0, C.startPosition = 0, C.loadedmetadata = false, C.fragLoadError = 0, C.retryDate = 0, C.levels = null, C.fragmentLoader = void 0, C.levelLastLoaded = null, C.startFragRequested = false, C.decrypter = void 0, C.initPTS = [], C.onvseeking = null, C.onvended = null, C.logPrefix = "", C.log = void 0, C.warn = void 0, C.logPrefix = I, C.log = A.logger.log.bind(A.logger, I + ":"), C.warn = A.logger.warn.bind(A.logger, I + ":"), C.hls = l, C.fragmentLoader = new d.default(l.config), C.fragmentTracker = k, C.config = l.config, C.decrypter = new t.default(l, l.config), l.on(L.Events.KEY_LOADED, C.onKeyLoaded, f(C)), C;
           }
           var c = i.prototype;
           return c.doTick = function() {
@@ -4474,22 +4474,22 @@ svg, img, ::slotted(svg), ::slotted(img) {
             var l = this.fragCurrent;
             l && this.fragmentTracker.removeFragment(l), this.resetTransmuxer(), this.fragCurrent = null, this.fragPrevious = null, this.clearInterval(), this.clearNextTick(), this.state = p.STOPPED;
           }, c._streamEnded = function(l, k) {
-            var I = this.fragCurrent, x = this.fragmentTracker;
+            var I = this.fragCurrent, C = this.fragmentTracker;
             if (!k.live && I && I.sn === k.endSN && !l.nextStart) {
-              var P = x.getState(I);
+              var P = C.getState(I);
               return P === y.FragmentState.PARTIAL || P === y.FragmentState.OK;
             }
             return false;
           }, c.onMediaAttached = function(l, k) {
             var I = this.media = this.mediaBuffer = k.media;
             this.onvseeking = this.onMediaSeeking.bind(this), this.onvended = this.onMediaEnded.bind(this), I.addEventListener("seeking", this.onvseeking), I.addEventListener("ended", this.onvended);
-            var x = this.config;
-            this.levels && x.autoStartLoad && this.state === p.STOPPED && this.startLoad(x.startPosition);
+            var C = this.config;
+            this.levels && C.autoStartLoad && this.state === p.STOPPED && this.startLoad(C.startPosition);
           }, c.onMediaDetaching = function() {
             var l = this.media;
             l != null && l.ended && (this.log("MSE detaching and video ended, reset startPosition"), this.startPosition = this.lastCurrentTime = 0), l && (l.removeEventListener("seeking", this.onvseeking), l.removeEventListener("ended", this.onvended), this.onvseeking = this.onvended = null), this.media = this.mediaBuffer = null, this.loadedmetadata = false, this.fragmentTracker.removeAllFragments(), this.stopLoad();
           }, c.onMediaSeeking = function() {
-            var l = this.config, k = this.fragCurrent, I = this.media, x = this.mediaBuffer, P = this.state, N = I ? I.currentTime : 0, B = w.BufferHelper.bufferInfo(x || I, N, l.maxBufferHole);
+            var l = this.config, k = this.fragCurrent, I = this.media, C = this.mediaBuffer, P = this.state, N = I ? I.currentTime : 0, B = w.BufferHelper.bufferInfo(C || I, N, l.maxBufferHole);
             if (this.log("media seeking to " + (Object(R.isFiniteNumber)(N) ? N.toFixed(3) : N) + ", state: " + P), P === p.ENDED)
               this.resetLoadingState();
             else if (k && !B.len) {
@@ -4514,34 +4514,34 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, c.loadFragment = function(l, k, I) {
             this._loadFragForPlayback(l, k, I);
           }, c._loadFragForPlayback = function(l, k, I) {
-            var x = this, P = function(N) {
-              if (x.fragContextChanged(l)) {
-                x.warn("Fragment " + l.sn + (N.part ? " p: " + N.part.index : "") + " of level " + l.level + " was dropped during download."), x.fragmentTracker.removeFragment(l);
+            var C = this, P = function(N) {
+              if (C.fragContextChanged(l)) {
+                C.warn("Fragment " + l.sn + (N.part ? " p: " + N.part.index : "") + " of level " + l.level + " was dropped during download."), C.fragmentTracker.removeFragment(l);
                 return;
               }
-              l.stats.chunkCount++, x._handleFragmentLoadProgress(N);
+              l.stats.chunkCount++, C._handleFragmentLoadProgress(N);
             };
             this._doFragLoad(l, k, I, P).then(function(N) {
               if (N) {
-                x.fragLoadError = 0;
-                var B = x.state;
-                if (x.fragContextChanged(l)) {
-                  (B === p.FRAG_LOADING || B === p.BACKTRACKING || !x.fragCurrent && B === p.PARSING) && (x.fragmentTracker.removeFragment(l), x.state = p.IDLE);
+                C.fragLoadError = 0;
+                var B = C.state;
+                if (C.fragContextChanged(l)) {
+                  (B === p.FRAG_LOADING || B === p.BACKTRACKING || !C.fragCurrent && B === p.PARSING) && (C.fragmentTracker.removeFragment(l), C.state = p.IDLE);
                   return;
                 }
-                if ("payload" in N && (x.log("Loaded fragment " + l.sn + " of level " + l.level), x.hls.trigger(L.Events.FRAG_LOADED, N), x.state === p.BACKTRACKING)) {
-                  x.fragmentTracker.backtrack(l, N), x.resetFragmentLoading(l);
+                if ("payload" in N && (C.log("Loaded fragment " + l.sn + " of level " + l.level), C.hls.trigger(L.Events.FRAG_LOADED, N), C.state === p.BACKTRACKING)) {
+                  C.fragmentTracker.backtrack(l, N), C.resetFragmentLoading(l);
                   return;
                 }
-                x._handleFragmentLoadComplete(N);
+                C._handleFragmentLoadComplete(N);
               }
             }).catch(function(N) {
-              x.warn(N), x.resetFragmentLoading(l);
+              C.warn(N), C.resetFragmentLoading(l);
             });
           }, c.flushMainBuffer = function(l, k, I) {
             if (I === void 0 && (I = null), !!(l - k)) {
-              var x = { startOffset: l, endOffset: k, type: I };
-              this.fragLoadError = 0, this.hls.trigger(L.Events.BUFFER_FLUSHING, x);
+              var C = { startOffset: l, endOffset: k, type: I };
+              this.fragLoadError = 0, this.hls.trigger(L.Events.BUFFER_FLUSHING, C);
             }
           }, c._loadInitSegment = function(l) {
             var k = this;
@@ -4550,23 +4550,23 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 throw new Error("init load aborted");
               return I;
             }).then(function(I) {
-              var x = k.hls, P = I.payload, N = l.decryptdata;
+              var C = k.hls, P = I.payload, N = l.decryptdata;
               if (P && P.byteLength > 0 && N && N.key && N.iv && N.method === "AES-128") {
                 var B = self.performance.now();
                 return k.decrypter.webCryptoDecrypt(new Uint8Array(P), N.key.buffer, N.iv.buffer).then(function(F) {
                   var U = self.performance.now();
-                  return x.trigger(L.Events.FRAG_DECRYPTED, { frag: l, payload: F, stats: { tstart: B, tdecrypt: U } }), I.payload = F, I;
+                  return C.trigger(L.Events.FRAG_DECRYPTED, { frag: l, payload: F, stats: { tstart: B, tdecrypt: U } }), I.payload = F, I;
                 });
               }
               return I;
             }).then(function(I) {
-              var x = k.fragCurrent, P = k.hls, N = k.levels;
+              var C = k.fragCurrent, P = k.hls, N = k.levels;
               if (!N)
                 throw new Error("init load aborted, missing levels");
               var B = N[l.level].details;
               console.assert(B, "Level details are defined when init segment is loaded");
               var F = l.stats;
-              k.state = p.IDLE, k.fragLoadError = 0, l.data = new Uint8Array(I.payload), F.parsing.start = F.buffering.start = self.performance.now(), F.parsing.end = F.buffering.end = self.performance.now(), I.frag === x && P.trigger(L.Events.FRAG_BUFFERED, { stats: F, frag: x, part: null, id: l.type }), k.tick();
+              k.state = p.IDLE, k.fragLoadError = 0, l.data = new Uint8Array(I.payload), F.parsing.start = F.buffering.start = self.performance.now(), F.parsing.end = F.buffering.end = self.performance.now(), I.frag === C && P.trigger(L.Events.FRAG_BUFFERED, { stats: F, frag: C, part: null, id: l.type }), k.tick();
             }).catch(function(I) {
               k.warn(I), k.resetFragmentLoading(l);
             });
@@ -4579,39 +4579,39 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, c._handleFragmentLoadComplete = function(l) {
             var k = this.transmuxer;
             if (k) {
-              var I = l.frag, x = l.part, P = l.partsLoaded, N = !P || P.length === 0 || P.some(function(F) {
+              var I = l.frag, C = l.part, P = l.partsLoaded, N = !P || P.length === 0 || P.some(function(F) {
                 return !F;
-              }), B = new u.ChunkMetadata(I.level, I.sn, I.stats.chunkCount + 1, 0, x ? x.index : -1, !N);
+              }), B = new u.ChunkMetadata(I.level, I.sn, I.stats.chunkCount + 1, 0, C ? C.index : -1, !N);
               k.flush(B);
             }
           }, c._handleFragmentLoadProgress = function(l) {
-          }, c._doFragLoad = function(l, k, I, x) {
+          }, c._doFragLoad = function(l, k, I, C) {
             var P = this;
             if (I === void 0 && (I = null), !this.levels)
               throw new Error("frag load aborted, missing levels");
             if (I = Math.max(l.start, I || 0), this.config.lowLatencyMode && k) {
               var N = k.partList;
-              if (N && x) {
+              if (N && C) {
                 I > l.end && k.fragmentHint && (l = k.fragmentHint);
                 var B = this.getNextPart(N, l, I);
                 if (B > -1) {
                   var F = N[B];
-                  return this.log("Loading part sn: " + l.sn + " p: " + F.index + " cc: " + l.cc + " of playlist [" + k.startSN + "-" + k.endSN + "] parts [0-" + B + "-" + (N.length - 1) + "] " + (this.logPrefix === "[stream-controller]" ? "level" : "track") + ": " + l.level + ", target: " + parseFloat(I.toFixed(3))), this.nextLoadPosition = F.start + F.duration, this.state = p.FRAG_LOADING, this.hls.trigger(L.Events.FRAG_LOADING, { frag: l, part: N[B], targetBufferTime: I }), this.doFragPartsLoad(l, N, B, x).catch(function(U) {
+                  return this.log("Loading part sn: " + l.sn + " p: " + F.index + " cc: " + l.cc + " of playlist [" + k.startSN + "-" + k.endSN + "] parts [0-" + B + "-" + (N.length - 1) + "] " + (this.logPrefix === "[stream-controller]" ? "level" : "track") + ": " + l.level + ", target: " + parseFloat(I.toFixed(3))), this.nextLoadPosition = F.start + F.duration, this.state = p.FRAG_LOADING, this.hls.trigger(L.Events.FRAG_LOADING, { frag: l, part: N[B], targetBufferTime: I }), this.doFragPartsLoad(l, N, B, C).catch(function(U) {
                     return P.handleFragLoadError(U);
                   });
                 } else if (!l.url || this.loadedEndOfParts(N, I))
                   return Promise.resolve(null);
               }
             }
-            return this.log("Loading fragment " + l.sn + " cc: " + l.cc + " " + (k ? "of [" + k.startSN + "-" + k.endSN + "] " : "") + (this.logPrefix === "[stream-controller]" ? "level" : "track") + ": " + l.level + ", target: " + parseFloat(I.toFixed(3))), Object(R.isFiniteNumber)(l.sn) && !this.bitrateTest && (this.nextLoadPosition = l.start + l.duration), this.state = p.FRAG_LOADING, this.hls.trigger(L.Events.FRAG_LOADING, { frag: l, targetBufferTime: I }), this.fragmentLoader.load(l, x).catch(function(U) {
+            return this.log("Loading fragment " + l.sn + " cc: " + l.cc + " " + (k ? "of [" + k.startSN + "-" + k.endSN + "] " : "") + (this.logPrefix === "[stream-controller]" ? "level" : "track") + ": " + l.level + ", target: " + parseFloat(I.toFixed(3))), Object(R.isFiniteNumber)(l.sn) && !this.bitrateTest && (this.nextLoadPosition = l.start + l.duration), this.state = p.FRAG_LOADING, this.hls.trigger(L.Events.FRAG_LOADING, { frag: l, targetBufferTime: I }), this.fragmentLoader.load(l, C).catch(function(U) {
               return P.handleFragLoadError(U);
             });
-          }, c.doFragPartsLoad = function(l, k, I, x) {
+          }, c.doFragPartsLoad = function(l, k, I, C) {
             var P = this;
             return new Promise(function(N, B) {
               var F = [], U = function j(H) {
                 var V = k[H];
-                P.fragmentLoader.loadPart(l, V, x).then(function(K) {
+                P.fragmentLoader.loadPart(l, V, C).then(function(K) {
                   F[V.index] = K;
                   var q = K.part;
                   P.hls.trigger(L.Events.FRAG_LOADED, K);
@@ -4633,19 +4633,19 @@ svg, img, ::slotted(svg), ::slotted(img) {
               this.fragCurrent || (this.state = p.IDLE);
               return;
             }
-            var I = k.frag, x = k.part, P = k.level, N = self.performance.now();
-            I.stats.parsing.end = N, x && (x.stats.parsing.end = N), this.updateLevelTiming(I, x, P, l.partial);
+            var I = k.frag, C = k.part, P = k.level, N = self.performance.now();
+            I.stats.parsing.end = N, C && (C.stats.parsing.end = N), this.updateLevelTiming(I, C, P, l.partial);
           }, c.getCurrentContext = function(l) {
-            var k = this.levels, I = l.level, x = l.sn, P = l.part;
+            var k = this.levels, I = l.level, C = l.sn, P = l.part;
             if (!k || !k[I])
-              return this.warn("Levels object was unset while buffering fragment " + x + " of level " + I + ". The current chunk will not be buffered."), null;
-            var N = k[I], B = P > -1 ? Object(S.getPartWith)(N, x, P) : null, F = B ? B.fragment : Object(S.getFragmentWithSN)(N, x, this.fragCurrent);
+              return this.warn("Levels object was unset while buffering fragment " + C + " of level " + I + ". The current chunk will not be buffered."), null;
+            var N = k[I], B = P > -1 ? Object(S.getPartWith)(N, C, P) : null, F = B ? B.fragment : Object(S.getFragmentWithSN)(N, C, this.fragCurrent);
             return F ? { frag: F, part: B, level: N } : null;
-          }, c.bufferFragmentData = function(l, k, I, x) {
+          }, c.bufferFragmentData = function(l, k, I, C) {
             if (!(!l || this.state !== p.PARSING)) {
               var P = l.data1, N = l.data2, B = P;
               if (P && N && (B = Object(g.appendUint8Array)(P, N)), !(!B || !B.length)) {
-                var F = { type: l.type, frag: k, part: I, chunkMeta: x, parent: k.type, data: B };
+                var F = { type: l.type, frag: k, part: I, chunkMeta: C, parent: k.type, data: B };
                 this.hls.trigger(L.Events.BUFFER_APPENDING, F), l.dropped && l.independent && !I && this.flushBufferGap(k);
               }
             }
@@ -4656,18 +4656,18 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 this.flushMainBuffer(0, l.start);
                 return;
               }
-              var I = k.currentTime, x = w.BufferHelper.bufferInfo(k, I, 0), P = l.duration, N = Math.min(this.config.maxFragLookUpTolerance * 2, P * 0.25), B = Math.max(Math.min(l.start - N, x.end - N), I + N);
+              var I = k.currentTime, C = w.BufferHelper.bufferInfo(k, I, 0), P = l.duration, N = Math.min(this.config.maxFragLookUpTolerance * 2, P * 0.25), B = Math.max(Math.min(l.start - N, C.end - N), I + N);
               l.start - B > N && this.flushMainBuffer(B, l.start);
             }
           }, c.getFwdBufferInfo = function(l, k) {
-            var I = this.config, x = this.getLoadPosition();
-            if (!Object(R.isFiniteNumber)(x))
+            var I = this.config, C = this.getLoadPosition();
+            if (!Object(R.isFiniteNumber)(C))
               return null;
-            var P = w.BufferHelper.bufferInfo(l, x, I.maxBufferHole);
+            var P = w.BufferHelper.bufferInfo(l, C, I.maxBufferHole);
             if (P.len === 0 && P.nextStart !== void 0) {
-              var N = this.fragmentTracker.getBufferedFrag(x, k);
+              var N = this.fragmentTracker.getBufferedFrag(C, k);
               if (N && P.nextStart < N.end)
-                return w.BufferHelper.bufferInfo(l, x, Math.max(P.nextStart, I.maxBufferHole));
+                return w.BufferHelper.bufferInfo(l, C, Math.max(P.nextStart, I.maxBufferHole));
             }
             return P;
           }, c.getMaxBufferLength = function(l) {
@@ -4677,7 +4677,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             var k = this.config, I = l || k.maxBufferLength;
             return k.maxMaxBufferLength >= I ? (k.maxMaxBufferLength /= 2, this.warn("Reduce max buffer length to " + k.maxMaxBufferLength + "s"), true) : false;
           }, c.getNextFragment = function(l, k) {
-            var I, x, P = k.fragments, N = P.length;
+            var I, C, P = k.fragments, N = P.length;
             if (!N)
               return null;
             var B = this.config, F = P[0].start, U;
@@ -4692,37 +4692,37 @@ svg, img, ::slotted(svg), ::slotted(img) {
               var H = B.lowLatencyMode ? k.partEnd : k.fragmentEnd;
               U = this.getFragmentAtPosition(l, H, k);
             }
-            return (I = U) !== null && I !== void 0 && I.initSegment && !((x = U) !== null && x !== void 0 && x.initSegment.data) && !this.bitrateTest && (U = U.initSegment), U;
+            return (I = U) !== null && I !== void 0 && I.initSegment && !((C = U) !== null && C !== void 0 && C.initSegment.data) && !this.bitrateTest && (U = U.initSegment), U;
           }, c.getNextPart = function(l, k, I) {
-            for (var x = -1, P = false, N = true, B = 0, F = l.length; B < F; B++) {
+            for (var C = -1, P = false, N = true, B = 0, F = l.length; B < F; B++) {
               var U = l[B];
-              if (N = N && !U.independent, x > -1 && I < U.start)
+              if (N = N && !U.independent, C > -1 && I < U.start)
                 break;
               var j = U.loaded;
-              !j && (P || U.independent || N) && U.fragment === k && (x = B), P = j;
+              !j && (P || U.independent || N) && U.fragment === k && (C = B), P = j;
             }
-            return x;
+            return C;
           }, c.loadedEndOfParts = function(l, k) {
             var I = l[l.length - 1];
             return I && k > I.start && I.loaded;
           }, c.getInitialLiveFragment = function(l, k) {
-            var I = this.fragPrevious, x = null;
+            var I = this.fragPrevious, C = null;
             if (I) {
-              if (l.hasProgramDateTime && (this.log("Live playlist, switching playlist, load frag with same PDT: " + I.programDateTime), x = Object(E.findFragmentByPDT)(k, I.endProgramDateTime, this.config.maxFragLookUpTolerance)), !x) {
+              if (l.hasProgramDateTime && (this.log("Live playlist, switching playlist, load frag with same PDT: " + I.programDateTime), C = Object(E.findFragmentByPDT)(k, I.endProgramDateTime, this.config.maxFragLookUpTolerance)), !C) {
                 var P = I.sn + 1;
                 if (P >= l.startSN && P <= l.endSN) {
                   var N = k[P - l.startSN];
-                  I.cc === N.cc && (x = N, this.log("Live playlist, switching playlist, load frag with next SN: " + x.sn));
+                  I.cc === N.cc && (C = N, this.log("Live playlist, switching playlist, load frag with next SN: " + C.sn));
                 }
-                x || (x = Object(E.findFragWithCC)(k, I.cc), x && this.log("Live playlist, switching playlist, load frag with same CC: " + x.sn));
+                C || (C = Object(E.findFragWithCC)(k, I.cc), C && this.log("Live playlist, switching playlist, load frag with same CC: " + C.sn));
               }
             } else {
               var B = this.hls.liveSyncPosition;
-              B !== null && (x = this.getFragmentAtPosition(B, this.bitrateTest ? l.fragmentEnd : l.edge, l));
+              B !== null && (C = this.getFragmentAtPosition(B, this.bitrateTest ? l.fragmentEnd : l.edge, l));
             }
-            return x;
+            return C;
           }, c.getFragmentAtPosition = function(l, k, I) {
-            var x = this.config, P = this.fragPrevious, N = I.fragments, B = I.endSN, F = I.fragmentHint, U = x.maxFragLookUpTolerance, j = !!(x.lowLatencyMode && I.partList && F);
+            var C = this.config, P = this.fragPrevious, N = I.fragments, B = I.endSN, F = I.fragmentHint, U = C.maxFragLookUpTolerance, j = !!(C.lowLatencyMode && I.partList && F);
             j && F && !this.bitrateTest && (N = N.concat(F), B = F.sn);
             var H;
             if (l < k) {
@@ -4744,14 +4744,14 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, c.synchronizeToLiveEdge = function(l) {
             var k = this.config, I = this.media;
             if (I) {
-              var x = this.hls.liveSyncPosition, P = I.currentTime, N = l.fragments[0].start, B = l.edge, F = P >= N - k.maxFragLookUpTolerance && P <= B;
-              if (x !== null && I.duration > x && (P < x || !F)) {
+              var C = this.hls.liveSyncPosition, P = I.currentTime, N = l.fragments[0].start, B = l.edge, F = P >= N - k.maxFragLookUpTolerance && P <= B;
+              if (C !== null && I.duration > C && (P < C || !F)) {
                 var U = k.liveMaxLatencyDuration !== void 0 ? k.liveMaxLatencyDuration : k.liveMaxLatencyDurationCount * l.targetduration;
-                (!F && I.readyState < 4 || P < B - U) && (this.loadedmetadata || (this.nextLoadPosition = x), I.readyState && (this.warn("Playback: " + P.toFixed(3) + " is located too far from the end of live sliding playlist: " + B + ", reset currentTime to : " + x.toFixed(3)), I.currentTime = x));
+                (!F && I.readyState < 4 || P < B - U) && (this.loadedmetadata || (this.nextLoadPosition = C), I.readyState && (this.warn("Playback: " + P.toFixed(3) + " is located too far from the end of live sliding playlist: " + B + ", reset currentTime to : " + C.toFixed(3)), I.currentTime = C));
               }
             }
           }, c.alignPlaylists = function(l, k) {
-            var I = this.levels, x = this.levelLastLoaded, P = this.fragPrevious, N = x !== null ? I[x] : null, B = l.fragments.length;
+            var I = this.levels, C = this.levelLastLoaded, P = this.fragPrevious, N = C !== null ? I[C] : null, B = l.fragments.length;
             if (!B)
               return this.warn("No fragments in live playlist"), 0;
             var F = l.fragments[0].start, U = !k, j = l.alignedSliding && Object(R.isFiniteNumber)(F);
@@ -4767,8 +4767,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, c.setStartPosition = function(l, k) {
             var I = this.startPosition;
             if (I < k && (I = -1), I === -1 || this.lastCurrentTime === -1) {
-              var x = l.startTimeOffset;
-              Object(R.isFiniteNumber)(x) ? (I = k + x, x < 0 && (I += l.totalduration), I = Math.min(Math.max(k, I), k + l.totalduration), this.log("Start time offset " + x + " found in playlist, adjust startPosition to " + I), this.startPosition = I) : l.live ? I = this.hls.liveSyncPosition || k : this.startPosition = I = 0, this.lastCurrentTime = I;
+              var C = l.startTimeOffset;
+              Object(R.isFiniteNumber)(C) ? (I = k + C, C < 0 && (I += l.totalduration), I = Math.min(Math.max(k, I), k + l.totalduration), this.log("Start time offset " + C + " found in playlist, adjust startPosition to " + I), this.startPosition = I) : l.live ? I = this.hls.liveSyncPosition || k : this.startPosition = I = 0, this.lastCurrentTime = I;
             }
             this.nextLoadPosition = I;
           }, c.getLoadPosition = function() {
@@ -4782,8 +4782,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             if (!k.fatal) {
               var I = k.frag;
               if (!(!I || I.type !== l)) {
-                var x = this.fragCurrent;
-                console.assert(x && I.sn === x.sn && I.level === x.level && I.urlId === x.urlId, "Frag load error must match current frag to retry");
+                var C = this.fragCurrent;
+                console.assert(C && I.sn === C.sn && I.level === C.level && I.urlId === C.urlId, "Frag load error must match current frag to retry");
                 var P = this.config;
                 if (this.fragLoadError + 1 <= P.fragLoadingMaxRetry) {
                   if (this.resetLiveStartWhenNotLoaded(I.level))
@@ -4796,8 +4796,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }
           }, c.afterBufferFlushed = function(l, k, I) {
             if (l) {
-              var x = w.BufferHelper.getBuffered(l);
-              this.fragmentTracker.detectEvictedFragments(k, x, I), this.state === p.ENDED && this.resetLoadingState();
+              var C = w.BufferHelper.getBuffered(l);
+              this.fragmentTracker.detectEvictedFragments(k, C, I), this.state === p.ENDED && this.resetLoadingState();
             }
           }, c.resetLoadingState = function() {
             this.fragCurrent = null, this.fragPrevious = null, this.state = p.IDLE;
@@ -4810,7 +4810,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
               this.nextLoadPosition = this.startPosition;
             }
             return false;
-          }, c.updateLevelTiming = function(l, k, I, x) {
+          }, c.updateLevelTiming = function(l, k, I, C) {
             var P = this, N = I.details;
             console.assert(!!N, "level.details must be defined");
             var B = Object.keys(l.elementaryStreams).reduce(function(F, U) {
@@ -4819,7 +4819,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 var H = j.endPTS - j.startPTS;
                 if (H <= 0)
                   return P.warn("Could not parse fragment " + l.sn + " " + U + " duration reliably (" + H + ") resetting transmuxer to fallback to playlist timing"), P.resetTransmuxer(), F || false;
-                var V = x ? 0 : Object(S.updateFragPTSDTS)(N, l, j.startPTS, j.endPTS, j.startDTS, j.endDTS);
+                var V = C ? 0 : Object(S.updateFragPTSDTS)(N, l, j.startPTS, j.endPTS, j.startDTS, j.endDTS);
                 return P.hls.trigger(L.Events.LEVEL_PTS_UPDATED, { details: N, level: I, drift: V, type: U, frag: l, start: j.startPTS, end: j.endPTS }), true;
               }
               return F;
@@ -4834,7 +4834,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             k !== l && (this._state = l, this.log(k + "->" + l));
           } }]), i;
         }(m.default);
-      }, "./src/controller/buffer-controller.ts": function(C, T, e) {
+      }, "./src/controller/buffer-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return E;
@@ -4925,8 +4925,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             i.start = c;
             var l = p.stats.buffering, k = o ? o.stats.buffering : null;
             l.start === 0 && (l.start = c), k && k.start === 0 && (k.start = c);
-            var I = f.audio, x = _ === "audio" && s.id === 1 && (I == null ? void 0 : I.container) === "audio/mpeg", P = { execute: function() {
-              if (i.executeStart = self.performance.now(), x) {
+            var I = f.audio, C = _ === "audio" && s.id === 1 && (I == null ? void 0 : I.container) === "audio/mpeg", P = { execute: function() {
+              if (i.executeStart = self.performance.now(), C) {
                 var N = n.sourceBuffer[_];
                 if (N) {
                   var B = p.start - N.timestampOffset;
@@ -5101,7 +5101,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             });
           }, S;
         }();
-      }, "./src/controller/buffer-operation-queue.ts": function(C, T, e) {
+      }, "./src/controller/buffer-operation-queue.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return m;
@@ -5141,7 +5141,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return this.queues[A][0];
           }, y;
         }();
-      }, "./src/controller/cap-level-controller.ts": function(C, T, e) {
+      }, "./src/controller/cap-level-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/events.ts");
@@ -5239,7 +5239,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           } }]), A;
         }();
         T.default = w;
-      }, "./src/controller/eme-controller.ts": function(C, T, e) {
+      }, "./src/controller/eme-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/events.ts"), m = e("./src/errors.ts"), y = e("./src/utils/logger.ts"), w = e("./src/utils/mediakeys-helper.ts");
@@ -5461,7 +5461,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           } }]), E;
         }();
         T.default = D;
-      }, "./src/controller/fps-controller.ts": function(C, T, e) {
+      }, "./src/controller/fps-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/events.ts"), m = e("./src/utils/logger.ts"), y = function() {
@@ -5506,7 +5506,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, w;
         }();
         T.default = y;
-      }, "./src/controller/fragment-finders.ts": function(C, T, e) {
+      }, "./src/controller/fragment-finders.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "findFragmentByPDT", function() {
           return y;
@@ -5559,7 +5559,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return D.cc < g ? 1 : D.cc > g ? -1 : 0;
           });
         }
-      }, "./src/controller/fragment-tracker.ts": function(C, T, e) {
+      }, "./src/controller/fragment-tracker.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "FragmentState", function() {
           return y;
@@ -5731,7 +5731,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function L(b) {
           return b.type + "_" + b.level + "_" + b.urlId + "_" + b.sn;
         }
-      }, "./src/controller/gap-controller.ts": function(C, T, e) {
+      }, "./src/controller/gap-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "STALL_MINIMUM_DURATION_MS", function() {
           return A;
@@ -5773,8 +5773,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   this.moved = false;
                 }
                 if (!this.moved && this.stalled !== null) {
-                  var c, l = Math.max(o, _.start || 0) - n, k = this.hls.levels ? this.hls.levels[this.hls.currentLevel] : null, I = k == null || (c = k.details) === null || c === void 0 ? void 0 : c.live, x = I ? k.details.targetduration * 2 : L;
-                  if (l > 0 && l <= x) {
+                  var c, l = Math.max(o, _.start || 0) - n, k = this.hls.levels ? this.hls.levels[this.hls.currentLevel] : null, I = k == null || (c = k.details) === null || c === void 0 ? void 0 : c.live, C = I ? k.details.targetduration * 2 : L;
+                  if (l > 0 && l <= C) {
                     this._trySkipBufferHole(null);
                     return;
                   }
@@ -5820,7 +5820,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
               w.logger.error("Playhead still not moving while enough data buffered @" + r + " after " + S.nudgeMaxRetry + " nudges"), d.trigger(y.Events.ERROR, { type: m.ErrorTypes.MEDIA_ERROR, details: m.ErrorDetails.BUFFER_STALLED_ERROR, fatal: true });
           }, D;
         }();
-      }, "./src/controller/id3-track-controller.ts": function(C, T, e) {
+      }, "./src/controller/id3-track-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/events.ts"), m = e("./src/utils/texttrack-utils.ts"), y = e("./src/demux/id3.ts"), w = 0.25, A = function() {
@@ -5877,7 +5877,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, L;
         }();
         T.default = A;
-      }, "./src/controller/latency-controller.ts": function(C, T, e) {
+      }, "./src/controller/latency-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return L;
@@ -5980,7 +5980,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return E ? g.buffered.end(E - 1) : D.edge - this.currentTime;
           } }]), b;
         }();
-      }, "./src/controller/level-controller.ts": function(C, T, e) {
+      }, "./src/controller/level-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return t;
@@ -6057,7 +6057,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   this._firstLevel = I, this.log("manifest loaded, " + v.length + " level(s) found, first bitrate: " + o);
                   break;
                 }
-              var x = k && !l, P = { levels: v, audioTracks: _, subtitleTracks: p, firstLevel: this._firstLevel, stats: f.stats, audio: k, video: l, altAudio: !x && _.some(function(N) {
+              var C = k && !l, P = { levels: v, audioTracks: _, subtitleTracks: p, firstLevel: this._firstLevel, stats: f.stats, audio: k, video: l, altAudio: !C && _.some(function(N) {
                 return !!N.url;
               }) };
               this.hls.trigger(m.Events.MANIFEST_PARSED, P), (this.hls.config.autoStartLoad || this.hls.forceStartLoad) && this.hls.startLoad(this.hls.config.startPosition);
@@ -6213,7 +6213,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             this.level = a, this.manualLevelIndex === -1 && (this.hls.nextAutoLevel = a);
           } }]), n;
         }(L.default);
-      }, "./src/controller/level-helper.ts": function(C, T, e) {
+      }, "./src/controller/level-helper.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "addGroupId", function() {
           return y;
@@ -6287,11 +6287,11 @@ svg, img, ::slotted(svg), ::slotted(img) {
           var I = h.sn;
           if (!n || I < n.startSN || I > n.endSN)
             return 0;
-          var x, P = I - n.startSN, N = n.fragments;
-          for (N[P] = h, x = P; x > 0; x--)
-            L(N[x], N[x - 1]);
-          for (x = P; x < N.length - 1; x++)
-            L(N[x], N[x + 1]);
+          var C, P = I - n.startSN, N = n.fragments;
+          for (N[P] = h, C = P; C > 0; C--)
+            L(N[C], N[C - 1]);
+          for (C = P; C < N.length - 1; C++)
+            L(N[C], N[C + 1]);
           return n.fragmentHint && L(N[N.length - 1], n.fragmentHint), n.PTSKnown = n.alignedSliding = true, k;
         }
         function u(n, h) {
@@ -6304,9 +6304,9 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }
           n.fragmentHint && delete n.fragmentHint.endPTS;
           var p = 0, o;
-          if (D(n, h, function(I, x) {
+          if (D(n, h, function(I, C) {
             var P;
-            I.relurl && (p = I.cc - x.cc), Object(R.isFiniteNumber)(I.startPTS) && Object(R.isFiniteNumber)(I.endPTS) && (x.start = x.startPTS = I.startPTS, x.startDTS = I.startDTS, x.appendedPTS = I.appendedPTS, x.maxStartPTS = I.maxStartPTS, x.endPTS = I.endPTS, x.endDTS = I.endDTS, x.minEndPTS = I.minEndPTS, x.duration = I.endPTS - I.startPTS, x.duration && (o = x), h.PTSKnown = h.alignedSliding = true), x.elementaryStreams = I.elementaryStreams, x.loader = I.loader, x.stats = I.stats, x.urlId = I.urlId, I.initSegment ? (x.initSegment = I.initSegment, a = I.initSegment) : (!x.initSegment || x.initSegment.relurl == ((P = a) === null || P === void 0 ? void 0 : P.relurl)) && (x.initSegment = a);
+            I.relurl && (p = I.cc - C.cc), Object(R.isFiniteNumber)(I.startPTS) && Object(R.isFiniteNumber)(I.endPTS) && (C.start = C.startPTS = I.startPTS, C.startDTS = I.startDTS, C.appendedPTS = I.appendedPTS, C.maxStartPTS = I.maxStartPTS, C.endPTS = I.endPTS, C.endDTS = I.endDTS, C.minEndPTS = I.minEndPTS, C.duration = I.endPTS - I.startPTS, C.duration && (o = C), h.PTSKnown = h.alignedSliding = true), C.elementaryStreams = I.elementaryStreams, C.loader = I.loader, C.stats = I.stats, C.urlId = I.urlId, I.initSegment ? (C.initSegment = I.initSegment, a = I.initSegment) : (!C.initSegment || C.initSegment.relurl == ((P = a) === null || P === void 0 ? void 0 : P.relurl)) && (C.initSegment = a);
           }), h.skippedSegments && (h.deltaUpdateFailed = h.fragments.some(function(I) {
             return !I;
           }), h.deltaUpdateFailed)) {
@@ -6321,8 +6321,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             for (var c = 0; c < i.length; c++)
               i[c].cc += p;
           }
-          h.skippedSegments && (h.startCC = h.fragments[0].cc), g(n.partList, h.partList, function(I, x) {
-            x.elementaryStreams = I.elementaryStreams, x.stats = I.stats;
+          h.skippedSegments && (h.startCC = h.fragments[0].cc), g(n.partList, h.partList, function(I, C) {
+            C.elementaryStreams = I.elementaryStreams, C.stats = I.stats;
           }), o ? b(h, o, o.startPTS, o.endPTS, o.startDTS, o.endDTS) : E(n, h), i.length && (h.totalduration = h.edge - i[0].start), h.driftStartTime = n.driftStartTime, h.driftStart = n.driftStart;
           var l = h.advancedDateTime;
           if (h.advanced && l) {
@@ -6385,7 +6385,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }
           return null;
         }
-      }, "./src/controller/stream-controller.ts": function(C, T, e) {
+      }, "./src/controller/stream-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return f;
@@ -6463,12 +6463,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, p.onTickEnd = function() {
             v.prototype.onTickEnd.call(this), this.checkBuffer(), this.checkFragmentChanged();
           }, p.doTickIdle = function() {
-            var o, s, i = this.hls, c = this.levelLastLoaded, l = this.levels, k = this.media, I = i.config, x = i.nextLoadLevel;
-            if (!(c === null || !k && (this.startFragRequested || !I.startFragPrefetch)) && !(this.altAudio && this.audioOnly) && !(!l || !l[x])) {
-              var P = l[x];
-              this.level = i.nextLoadLevel = x;
+            var o, s, i = this.hls, c = this.levelLastLoaded, l = this.levels, k = this.media, I = i.config, C = i.nextLoadLevel;
+            if (!(c === null || !k && (this.startFragRequested || !I.startFragPrefetch)) && !(this.altAudio && this.audioOnly) && !(!l || !l[C])) {
+              var P = l[C];
+              this.level = i.nextLoadLevel = C;
               var N = P.details;
-              if (!N || this.state === m.State.WAITING_LEVEL || N.live && this.levelLastLoaded !== x) {
+              if (!N || this.state === m.State.WAITING_LEVEL || N.live && this.levelLastLoaded !== C) {
                 this.state = m.State.WAITING_LEVEL;
                 return;
               }
@@ -6523,12 +6523,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 I && this.fragCurrent ? i = this.fragCurrent.duration * k.maxBitrate / (1e3 * I) + 1 : i = 0;
               } else
                 i = 0;
-              var x = this.getBufferedFrag(s.currentTime + i);
-              if (x) {
-                var P = this.followingBufferedFrag(x);
+              var C = this.getBufferedFrag(s.currentTime + i);
+              if (C) {
+                var P = this.followingBufferedFrag(C);
                 if (P) {
                   this.abortCurrentFrag();
-                  var N = P.maxStartPTS ? P.maxStartPTS : P.start, B = P.duration, F = Math.max(x.end, N + Math.min(Math.max(B - this.config.maxFragLookUpTolerance, B * 0.5), B * 0.75));
+                  var N = P.maxStartPTS ? P.maxStartPTS : P.start, B = P.duration, F = Math.max(C.end, N + Math.min(Math.max(B - this.config.maxFragLookUpTolerance, B * 0.5), B * 0.75));
                   this.flushMainBuffer(F, Number.POSITIVE_INFINITY);
                 }
               }
@@ -6570,8 +6570,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
               return;
             }
             this.log("Level " + l + " loaded [" + k.startSN + "," + k.endSN + "], cc [" + k.startCC + ", " + k.endCC + "] duration:" + I);
-            var x = this.fragCurrent;
-            x && (this.state === m.State.FRAG_LOADING || this.state === m.State.FRAG_LOADING_WAITING_RETRY) && x.level !== s.level && x.loader && (this.state = m.State.IDLE, x.loader.abort());
+            var C = this.fragCurrent;
+            C && (this.state === m.State.FRAG_LOADING || this.state === m.State.FRAG_LOADING_WAITING_RETRY) && C.level !== s.level && C.loader && (this.state = m.State.IDLE, C.loader.abort());
             var P = c[l], N = 0;
             if (k.live || (i = P.details) !== null && i !== void 0 && i.live) {
               if (k.fragments[0] || (k.deltaUpdateFailed = true), k.deltaUpdateFailed)
@@ -6590,13 +6590,13 @@ svg, img, ::slotted(svg), ::slotted(img) {
               this.warn("Levels were reset while fragment load was in progress. Fragment " + i.sn + " of level " + i.level + " will not be buffered");
               return;
             }
-            var I = k[i.level], x = I.details;
-            if (!x) {
+            var I = k[i.level], C = I.details;
+            if (!C) {
               this.warn("Dropping fragment " + i.sn + " of level " + i.level + " after level details were reset");
               return;
             }
-            var P = I.videoCodec, N = x.PTSKnown || !x.live, B = (s = i.initSegment) === null || s === void 0 ? void 0 : s.data, F = this._getAudioCodec(I), U = this.transmuxer = this.transmuxer || new g.default(this.hls, b.PlaylistLevelType.MAIN, this._handleTransmuxComplete.bind(this), this._handleTransmuxerFlush.bind(this)), j = c ? c.index : -1, H = j !== -1, V = new D.ChunkMetadata(i.level, i.sn, i.stats.chunkCount, l.byteLength, j, H), K = this.initPTS[i.cc];
-            U.push(l, B, F, P, i, c, x.totalduration, N, V, K);
+            var P = I.videoCodec, N = C.PTSKnown || !C.live, B = (s = i.initSegment) === null || s === void 0 ? void 0 : s.data, F = this._getAudioCodec(I), U = this.transmuxer = this.transmuxer || new g.default(this.hls, b.PlaylistLevelType.MAIN, this._handleTransmuxComplete.bind(this), this._handleTransmuxerFlush.bind(this)), j = c ? c.index : -1, H = j !== -1, V = new D.ChunkMetadata(i.level, i.sn, i.stats.chunkCount, l.byteLength, j, H), K = this.initPTS[i.cc];
+            U.push(l, B, F, P, i, c, C.totalduration, N, V, K);
           }, p.onAudioTrackSwitching = function(o, s) {
             var i = this.altAudio, c = !!s.url, l = s.id;
             if (!c) {
@@ -6619,9 +6619,9 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, p.onBufferCreated = function(o, s) {
             var i = s.tracks, c, l, k = false;
             for (var I in i) {
-              var x = i[I];
-              if (x.id === "main") {
-                if (l = I, c = x, I === "video") {
+              var C = i[I];
+              if (C.id === "main") {
+                if (l = I, c = C, I === "video") {
                   var P = i[I];
                   P && (this.videoBuffer = P.buffer);
                 }
@@ -6707,12 +6707,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
               this.warn("The loading context changed while buffering fragment " + k.sn + " of level " + k.level + ". This chunk will not be buffered."), this.resetLiveStartWhenNotLoaded(k.level);
               return;
             }
-            var x = I.frag, P = I.part, N = I.level, B = l.video, F = l.text, U = l.id3, j = l.initSegment, H = this.altAudio ? void 0 : l.audio;
-            if (!this.fragContextChanged(x)) {
+            var C = I.frag, P = I.part, N = I.level, B = l.video, F = l.text, U = l.id3, j = l.initSegment, H = this.altAudio ? void 0 : l.audio;
+            if (!this.fragContextChanged(C)) {
               if (this.state = m.State.PARSING, j) {
-                j.tracks && (this._bufferInitSegment(N, j.tracks, x, k), c.trigger(w.Events.FRAG_PARSING_INIT_SEGMENT, { frag: x, id: i, tracks: j.tracks }));
+                j.tracks && (this._bufferInitSegment(N, j.tracks, C, k), c.trigger(w.Events.FRAG_PARSING_INIT_SEGMENT, { frag: C, id: i, tracks: j.tracks }));
                 var V = j.initPTS, K = j.timescale;
-                Object(R.isFiniteNumber)(V) && (this.initPTS[x.cc] = V, c.trigger(w.Events.INIT_PTS_FOUND, { frag: x, id: i, initPTS: V, timescale: K }));
+                Object(R.isFiniteNumber)(V) && (this.initPTS[C.cc] = V, c.trigger(w.Events.INIT_PTS_FOUND, { frag: C, id: i, initPTS: V, timescale: K }));
               }
               if (B && l.independent !== false) {
                 if (N.details) {
@@ -6722,27 +6722,27 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   else if (B.firstKeyFrame && B.independent && (this.couldBacktrack = true), B.dropped && B.independent) {
                     var tt = this.getLoadPosition() + this.config.maxBufferHole;
                     if (tt < q) {
-                      this.backtrack(x);
+                      this.backtrack(C);
                       return;
                     }
-                    x.setElementaryStreamInfo(B.type, x.start, $, x.start, z, true);
+                    C.setElementaryStreamInfo(B.type, C.start, $, C.start, z, true);
                   }
-                  x.setElementaryStreamInfo(B.type, q, $, J, z), this.bufferFragmentData(B, x, P, k);
+                  C.setElementaryStreamInfo(B.type, q, $, J, z), this.bufferFragmentData(B, C, P, k);
                 }
               } else if (l.independent === false) {
-                this.backtrack(x);
+                this.backtrack(C);
                 return;
               }
               if (H) {
                 var et = H.startPTS, at = H.endPTS, pt = H.startDTS, ot = H.endDTS;
-                P && (P.elementaryStreams[u.ElementaryStreamTypes.AUDIO] = { startPTS: et, endPTS: at, startDTS: pt, endDTS: ot }), x.setElementaryStreamInfo(u.ElementaryStreamTypes.AUDIO, et, at, pt, ot), this.bufferFragmentData(H, x, P, k);
+                P && (P.elementaryStreams[u.ElementaryStreamTypes.AUDIO] = { startPTS: et, endPTS: at, startDTS: pt, endDTS: ot }), C.setElementaryStreamInfo(u.ElementaryStreamTypes.AUDIO, et, at, pt, ot), this.bufferFragmentData(H, C, P, k);
               }
               if (U != null && (s = U.samples) !== null && s !== void 0 && s.length) {
-                var nt = { frag: x, id: i, samples: U.samples };
+                var nt = { frag: C, id: i, samples: U.samples };
                 c.trigger(w.Events.FRAG_PARSING_METADATA, nt);
               }
               if (F) {
-                var X = { frag: x, id: i, samples: F.samples };
+                var X = { frag: C, id: i, samples: F.samples };
                 c.trigger(w.Events.FRAG_PARSING_USERDATA, X);
               }
             }
@@ -6750,12 +6750,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
             var l = this;
             if (this.state === m.State.PARSING) {
               this.audioOnly = !!s.audio && !s.video, this.altAudio && !this.audioOnly && delete s.audio;
-              var k = s.audio, I = s.video, x = s.audiovideo;
+              var k = s.audio, I = s.video, C = s.audiovideo;
               if (k) {
                 var P = o.audioCodec, N = navigator.userAgent.toLowerCase();
                 this.audioCodecSwitch && (P && (P.indexOf("mp4a.40.5") !== -1 ? P = "mp4a.40.2" : P = "mp4a.40.5"), k.metadata.channelCount !== 1 && N.indexOf("firefox") === -1 && (P = "mp4a.40.5")), N.indexOf("android") !== -1 && k.container !== "audio/mpeg" && (P = "mp4a.40.2", this.log("Android: force audio codec to " + P)), o.audioCodec && o.audioCodec !== P && this.log('Swapping manifest audio codec "' + o.audioCodec + '" for "' + P + '"'), k.levelCodec = P, k.id = "main", this.log("Init audio buffer, container:" + k.container + ", codecs[selected/level/parsed]=[" + (P || "") + "/" + (o.audioCodec || "") + "/" + k.codec + "]");
               }
-              I && (I.levelCodec = o.videoCodec, I.id = "main", this.log("Init video buffer, container:" + I.container + ", codecs[level/parsed]=[" + (o.videoCodec || "") + "/" + I.codec + "]")), x && this.log("Init audiovideo buffer, container:" + x.container + ", codecs[level/parsed]=[" + (o.attrs.CODECS || "") + "/" + x.codec + "]"), this.hls.trigger(w.Events.BUFFER_CODECS, s), Object.keys(s).forEach(function(B) {
+              I && (I.levelCodec = o.videoCodec, I.id = "main", this.log("Init video buffer, container:" + I.container + ", codecs[level/parsed]=[" + (o.videoCodec || "") + "/" + I.codec + "]")), C && this.log("Init audiovideo buffer, container:" + C.container + ", codecs[level/parsed]=[" + (o.attrs.CODECS || "") + "/" + C.codec + "]"), this.hls.trigger(w.Events.BUFFER_CODECS, s), Object.keys(s).forEach(function(B) {
                 var F = s[B], U = F.initSegment;
                 U != null && U.byteLength && l.hls.trigger(w.Events.BUFFER_APPENDING, { type: B, data: U, frag: i, part: null, chunkMeta: c, parent: i.type });
               }), this.tick();
@@ -6795,7 +6795,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return this._forceStartLoad;
           } }]), _;
         }(m.default);
-      }, "./src/controller/subtitle-stream-controller.ts": function(C, T, e) {
+      }, "./src/controller/subtitle-stream-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "SubtitleStreamController", function() {
           return n;
@@ -6863,15 +6863,15 @@ svg, img, ::slotted(svg), ::slotted(img) {
               if (k <= 0)
                 return;
               _.endOffsetSubtitles = Math.max(0, k), this.tracksBuffered.forEach(function(I) {
-                for (var x = 0; x < I.length; ) {
-                  if (I[x].end <= k) {
+                for (var C = 0; C < I.length; ) {
+                  if (I[C].end <= k) {
                     I.shift();
                     continue;
-                  } else if (I[x].start < k)
-                    I[x].start = k;
+                  } else if (I[C].start < k)
+                    I[C].start = k;
                   else
                     break;
-                  x++;
+                  C++;
                 }
               }), this.fragmentTracker.removeFragmentsInRange(p, k, g.PlaylistLevelType.SUBTITLE);
             }
@@ -6905,8 +6905,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   if (!l.details)
                     o.hasProgramDateTime && k.hasProgramDateTime ? Object(A.alignMediaPlaylistByPDT)(o, k) : I && Object(L.addSliding)(o, I.start);
                   else {
-                    var x = this.alignPlaylists(o, l.details);
-                    x === 0 && I && Object(L.addSliding)(o, I.start);
+                    var C = this.alignPlaylists(o, l.details);
+                    C === 0 && I && Object(L.addSliding)(o, I.start);
                   }
                 }
                 if (l.details = o, this.levelLastLoaded = s, this.tick(), o.live && !this.fragCurrent && this.media && this.state === u.State.IDLE) {
@@ -6933,8 +6933,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
               var v, _ = this.currentTrackId, p = this.levels;
               if (!p.length || !p[_] || !p[_].details)
                 return;
-              var o = p[_].details, s = o.targetduration, i = this.config, c = this.media, l = y.BufferHelper.bufferedInfo(this.mediaBufferTimeRanges, c.currentTime - s, i.maxBufferHole), k = l.end, I = l.len, x = this.getMaxBufferLength() + s;
-              if (I > x)
+              var o = p[_].details, s = o.targetduration, i = this.config, c = this.media, l = y.BufferHelper.bufferedInfo(this.mediaBufferTimeRanges, c.currentTime - s, i.maxBufferHole), k = l.end, I = l.len, C = this.getMaxBufferLength() + s;
+              if (I > C)
                 return;
               console.assert(o, "Subtitle track details are defined on idle subtitle stream controller tick");
               var P = o.fragments, N = P.length, B = o.edge, F, U = this.fragPrevious;
@@ -6951,7 +6951,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return this.tracksBuffered[this.currentTrackId] || [];
           } }]), a;
         }(u.default);
-      }, "./src/controller/subtitle-track-controller.ts": function(C, T, e) {
+      }, "./src/controller/subtitle-track-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/events.ts"), m = e("./src/utils/texttrack-utils.ts"), y = e("./src/controller/base-playlist-controller.ts"), w = e("./src/types/loader.ts");
@@ -7118,7 +7118,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           return S;
         }
         T.default = g;
-      }, "./src/controller/timeline-controller.ts": function(C, T, e) {
+      }, "./src/controller/timeline-controller.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "TimelineController", function() {
           return D;
@@ -7350,7 +7350,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function d() {
           return { ccOffset: 0, presentationOffset: 0, 0: { start: 0, prevCC: -1, new: false } };
         }
-      }, "./src/crypt/aes-crypto.ts": function(C, T, e) {
+      }, "./src/crypt/aes-crypto.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return R;
@@ -7364,7 +7364,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return this.subtle.decrypt({ name: "AES-CBC", iv: this.aesIV }, A, w);
           }, m;
         }();
-      }, "./src/crypt/aes-decryptor.ts": function(C, T, e) {
+      }, "./src/crypt/aes-decryptor.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "removePadding", function() {
           return m;
@@ -7417,15 +7417,15 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, A.networkToHostOrderSwap = function(L) {
             return L << 24 | (L & 65280) << 8 | (L & 16711680) >> 8 | L >>> 24;
           }, A.decrypt = function(L, b, u) {
-            for (var g = this.keySize + 6, D = this.invKeySchedule, E = this.invSBox, S = this.invSubMix, d = S[0], t = S[1], r = S[2], n = S[3], h = this.uint8ArrayToUint32Array_(u), a = h[0], f = h[1], v = h[2], _ = h[3], p = new Int32Array(L), o = new Int32Array(p.length), s, i, c, l, k, I, x, P, N, B, F, U, j, H, V = this.networkToHostOrderSwap; b < p.length; ) {
-              for (N = V(p[b]), B = V(p[b + 1]), F = V(p[b + 2]), U = V(p[b + 3]), k = N ^ D[0], I = U ^ D[1], x = F ^ D[2], P = B ^ D[3], j = 4, H = 1; H < g; H++)
-                s = d[k >>> 24] ^ t[I >> 16 & 255] ^ r[x >> 8 & 255] ^ n[P & 255] ^ D[j], i = d[I >>> 24] ^ t[x >> 16 & 255] ^ r[P >> 8 & 255] ^ n[k & 255] ^ D[j + 1], c = d[x >>> 24] ^ t[P >> 16 & 255] ^ r[k >> 8 & 255] ^ n[I & 255] ^ D[j + 2], l = d[P >>> 24] ^ t[k >> 16 & 255] ^ r[I >> 8 & 255] ^ n[x & 255] ^ D[j + 3], k = s, I = i, x = c, P = l, j = j + 4;
-              s = E[k >>> 24] << 24 ^ E[I >> 16 & 255] << 16 ^ E[x >> 8 & 255] << 8 ^ E[P & 255] ^ D[j], i = E[I >>> 24] << 24 ^ E[x >> 16 & 255] << 16 ^ E[P >> 8 & 255] << 8 ^ E[k & 255] ^ D[j + 1], c = E[x >>> 24] << 24 ^ E[P >> 16 & 255] << 16 ^ E[k >> 8 & 255] << 8 ^ E[I & 255] ^ D[j + 2], l = E[P >>> 24] << 24 ^ E[k >> 16 & 255] << 16 ^ E[I >> 8 & 255] << 8 ^ E[x & 255] ^ D[j + 3], o[b] = V(s ^ a), o[b + 1] = V(l ^ f), o[b + 2] = V(c ^ v), o[b + 3] = V(i ^ _), a = N, f = B, v = F, _ = U, b = b + 4;
+            for (var g = this.keySize + 6, D = this.invKeySchedule, E = this.invSBox, S = this.invSubMix, d = S[0], t = S[1], r = S[2], n = S[3], h = this.uint8ArrayToUint32Array_(u), a = h[0], f = h[1], v = h[2], _ = h[3], p = new Int32Array(L), o = new Int32Array(p.length), s, i, c, l, k, I, C, P, N, B, F, U, j, H, V = this.networkToHostOrderSwap; b < p.length; ) {
+              for (N = V(p[b]), B = V(p[b + 1]), F = V(p[b + 2]), U = V(p[b + 3]), k = N ^ D[0], I = U ^ D[1], C = F ^ D[2], P = B ^ D[3], j = 4, H = 1; H < g; H++)
+                s = d[k >>> 24] ^ t[I >> 16 & 255] ^ r[C >> 8 & 255] ^ n[P & 255] ^ D[j], i = d[I >>> 24] ^ t[C >> 16 & 255] ^ r[P >> 8 & 255] ^ n[k & 255] ^ D[j + 1], c = d[C >>> 24] ^ t[P >> 16 & 255] ^ r[k >> 8 & 255] ^ n[I & 255] ^ D[j + 2], l = d[P >>> 24] ^ t[k >> 16 & 255] ^ r[I >> 8 & 255] ^ n[C & 255] ^ D[j + 3], k = s, I = i, C = c, P = l, j = j + 4;
+              s = E[k >>> 24] << 24 ^ E[I >> 16 & 255] << 16 ^ E[C >> 8 & 255] << 8 ^ E[P & 255] ^ D[j], i = E[I >>> 24] << 24 ^ E[C >> 16 & 255] << 16 ^ E[P >> 8 & 255] << 8 ^ E[k & 255] ^ D[j + 1], c = E[C >>> 24] << 24 ^ E[P >> 16 & 255] << 16 ^ E[k >> 8 & 255] << 8 ^ E[I & 255] ^ D[j + 2], l = E[P >>> 24] << 24 ^ E[k >> 16 & 255] << 16 ^ E[I >> 8 & 255] << 8 ^ E[C & 255] ^ D[j + 3], o[b] = V(s ^ a), o[b + 1] = V(l ^ f), o[b + 2] = V(c ^ v), o[b + 3] = V(i ^ _), a = N, f = B, v = F, _ = U, b = b + 4;
             }
             return o.buffer;
           }, w;
         }();
-      }, "./src/crypt/decrypter.ts": function(C, T, e) {
+      }, "./src/crypt/decrypter.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return u;
@@ -7493,7 +7493,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             !this.logEnabled || (w.logger.log("[decrypter.ts]: " + E), this.logEnabled = false);
           }, g;
         }();
-      }, "./src/crypt/fast-aes-key.ts": function(C, T, e) {
+      }, "./src/crypt/fast-aes-key.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return R;
@@ -7507,7 +7507,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return this.subtle.importKey("raw", this.key, { name: "AES-CBC" }, false, ["encrypt", "decrypt"]);
           }, m;
         }();
-      }, "./src/demux/aacdemuxer.ts": function(C, T, e) {
+      }, "./src/demux/aacdemuxer.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/demux/base-audio-demuxer.ts"), m = e("./src/demux/adts.ts"), y = e("./src/utils/logger.ts"), w = e("./src/demux/id3.ts");
@@ -7545,7 +7545,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, g;
         }(R.default);
         b.minProbeByteLength = 9, T.default = b;
-      }, "./src/demux/adts.ts": function(C, T, e) {
+      }, "./src/demux/adts.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "getAudioConfig", function() {
           return w;
@@ -7641,7 +7641,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return l || n.samples.push(I), { sample: I, length: c, missing: l };
           }
         }
-      }, "./src/demux/base-audio-demuxer.ts": function(C, T, e) {
+      }, "./src/demux/base-audio-demuxer.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "initPTSFn", function() {
           return b;
@@ -7684,7 +7684,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           return Object(R.isFiniteNumber)(u) ? u * 90 : g * 9e4;
         };
         T.default = L;
-      }, "./src/demux/chunk-cache.ts": function(C, T, e) {
+      }, "./src/demux/chunk-cache.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return R;
@@ -7714,7 +7714,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }
           return A;
         }
-      }, "./src/demux/dummy-demuxed-track.ts": function(C, T, e) {
+      }, "./src/demux/dummy-demuxed-track.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "dummyTrack", function() {
           return R;
@@ -7722,7 +7722,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function R() {
           return { type: "", id: -1, pid: -1, inputTimeScale: 9e4, sequenceNumber: -1, samples: [], dropped: 0 };
         }
-      }, "./src/demux/exp-golomb.ts": function(C, T, e) {
+      }, "./src/demux/exp-golomb.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/utils/logger.ts"), m = function() {
@@ -7852,7 +7852,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, y;
         }();
         T.default = m;
-      }, "./src/demux/id3.ts": function(C, T, e) {
+      }, "./src/demux/id3.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "isHeader", function() {
           return R;
@@ -7989,7 +7989,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function a() {
           return !h && typeof self.TextDecoder != "undefined" && (h = new self.TextDecoder("utf-8")), h;
         }
-      }, "./src/demux/mp3demuxer.ts": function(C, T, e) {
+      }, "./src/demux/mp3demuxer.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/demux/base-audio-demuxer.ts"), m = e("./src/demux/id3.ts"), y = e("./src/utils/logger.ts"), w = e("./src/demux/mpegaudio.ts");
@@ -8024,7 +8024,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, g;
         }(R.default);
         b.minProbeByteLength = 4, T.default = b;
-      }, "./src/demux/mp4demuxer.ts": function(C, T, e) {
+      }, "./src/demux/mp4demuxer.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/utils/mp4-tools.ts"), m = e("./src/demux/dummy-demuxed-track.ts"), y = function() {
@@ -8055,7 +8055,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, w;
         }();
         y.minProbeByteLength = 1024, T.default = y;
-      }, "./src/demux/mpegaudio.ts": function(C, T, e) {
+      }, "./src/demux/mpegaudio.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "appendFrame", function() {
           return L;
@@ -8085,8 +8085,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
           if (t !== 1 && n !== 0 && n !== 15 && h !== 3) {
             var a = S[d + 2] >> 1 & 1, f = S[d + 3] >> 6, v = t === 3 ? 3 - r : r === 3 ? 3 : 4, _ = m[v * 14 + n - 1] * 1e3, p = t === 3 ? 0 : t === 2 ? 1 : 2, o = y[p * 3 + h], s = f === 3 ? 1 : 2, i = w[t][r], c = A[r], l = i * 8 * c, k = Math.floor(i * _ / o + a) * c;
             if (R === null) {
-              var I = navigator.userAgent || "", x = I.match(/Chrome\/(\d+)/i);
-              R = x ? parseInt(x[1]) : 0;
+              var I = navigator.userAgent || "", C = I.match(/Chrome\/(\d+)/i);
+              R = C ? parseInt(C[1]) : 0;
             }
             var P = !!R && R <= 87;
             return P && r === 2 && _ >= 224e3 && f === 0 && (S[d + 3] = S[d + 3] | 128), { sampleRate: o, channelCount: s, frameLength: k, samplesPerFrame: l };
@@ -8111,7 +8111,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }
           return false;
         }
-      }, "./src/demux/sample-aes.ts": function(C, T, e) {
+      }, "./src/demux/sample-aes.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/crypt/decrypter.ts"), m = e("./src/demux/tsdemuxer.ts"), y = function() {
@@ -8172,7 +8172,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, w;
         }();
         T.default = y;
-      }, "./src/demux/transmuxer-interface.ts": function(C, T, e) {
+      }, "./src/demux/transmuxer-interface.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return E;
@@ -8215,12 +8215,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, d.push = function(t, r, n, h, a, f, v, _, p, o) {
             var s = this;
             p.transmuxing.start = self.performance.now();
-            var i = this.transmuxer, c = this.worker, l = f ? f.start : a.start, k = a.decryptdata, I = this.frag, x = !(I && a.cc === I.cc), P = !(I && p.level === I.level), N = I ? p.sn - I.sn : -1, B = this.part ? p.part - this.part.index : 1, F = !P && (N === 1 || N === 0 && B === 1), U = self.performance.now();
+            var i = this.transmuxer, c = this.worker, l = f ? f.start : a.start, k = a.decryptdata, I = this.frag, C = !(I && a.cc === I.cc), P = !(I && p.level === I.level), N = I ? p.sn - I.sn : -1, B = this.part ? p.part - this.part.index : 1, F = !P && (N === 1 || N === 0 && B === 1), U = self.performance.now();
             (P || N || a.stats.parsing.start === 0) && (a.stats.parsing.start = U), f && (B || !F) && (f.stats.parsing.start = U);
-            var j = new w.TransmuxState(x, F, _, P, l);
-            if (!F || x) {
+            var j = new w.TransmuxState(C, F, _, P, l);
+            if (!F || C) {
               A.logger.log("[transmuxer-interface, " + a.type + "]: Starting new transmux session for sn: " + p.sn + " p: " + p.part + " level: " + p.level + " id: " + p.id + `
-        discontinuity: ` + x + `
+        discontinuity: ` + C + `
         trackSwitch: ` + P + `
         contiguous: ` + F + `
         accurateTimeOffset: ` + _ + `
@@ -8280,7 +8280,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             t.chunkMeta.transmuxing.end = self.performance.now(), this.onTransmuxComplete(t);
           }, S;
         }();
-      }, "./src/demux/transmuxer-worker.ts": function(C, T, e) {
+      }, "./src/demux/transmuxer-worker.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return L;
@@ -8338,7 +8338,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function D(E) {
           return !E.audio && !E.video && !E.text && !E.id3 && !E.initSegment;
         }
-      }, "./src/demux/transmuxer.ts": function(C, T, e) {
+      }, "./src/demux/transmuxer.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return n;
@@ -8370,38 +8370,38 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, o.push = function(s, i, c, l) {
             var k = this, I = c.transmuxing;
             I.executeStart = d();
-            var x = new Uint8Array(s), P = this.cache, N = this.config, B = this.currentTransmuxState, F = this.transmuxConfig;
+            var C = new Uint8Array(s), P = this.cache, N = this.config, B = this.currentTransmuxState, F = this.transmuxConfig;
             l && (this.currentTransmuxState = l);
-            var U = h(x, i);
+            var U = h(C, i);
             if (U && U.method === "AES-128") {
               var j = this.getDecrypter();
               if (N.enableSoftwareAES) {
-                var H = j.softwareDecrypt(x, U.key.buffer, U.iv.buffer);
+                var H = j.softwareDecrypt(C, U.key.buffer, U.iv.buffer);
                 if (!H)
                   return I.executeEnd = d(), a(c);
-                x = new Uint8Array(H);
+                C = new Uint8Array(H);
               } else
-                return this.decryptionPromise = j.webCryptoDecrypt(x, U.key.buffer, U.iv.buffer).then(function(Q) {
+                return this.decryptionPromise = j.webCryptoDecrypt(C, U.key.buffer, U.iv.buffer).then(function(Q) {
                   var ut = k.push(Q, null, c);
                   return k.decryptionPromise = null, ut;
                 }), this.decryptionPromise;
             }
             var V = l || B, K = V.contiguous, q = V.discontinuity, $ = V.trackSwitch, J = V.accurateTimeOffset, z = V.timeOffset, tt = F.audioCodec, et = F.videoCodec, at = F.defaultInitPts, pt = F.duration, ot = F.initSegmentData;
-            if ((q || $) && this.resetInitSegment(ot, tt, et, pt), q && this.resetInitialTimestamp(at), K || this.resetContiguity(), this.needsProbing(x, q, $)) {
+            if ((q || $) && this.resetInitSegment(ot, tt, et, pt), q && this.resetInitialTimestamp(at), K || this.resetContiguity(), this.needsProbing(C, q, $)) {
               if (P.dataLength) {
                 var nt = P.flush();
-                x = Object(E.appendUint8Array)(nt, x);
+                C = Object(E.appendUint8Array)(nt, C);
               }
-              this.configureTransmuxer(x, F);
+              this.configureTransmuxer(C, F);
             }
-            var X = this.transmux(x, U, z, J, c), Z = this.currentTransmuxState;
+            var X = this.transmux(C, U, z, J, c), Z = this.currentTransmuxState;
             return Z.contiguous = true, Z.discontinuity = false, Z.trackSwitch = false, I.executeEnd = d(), X;
           }, o.flush = function(s) {
             var i = this, c = s.transmuxing;
             c.executeStart = d();
-            var l = this.decrypter, k = this.cache, I = this.currentTransmuxState, x = this.decryptionPromise;
-            if (x)
-              return x.then(function() {
+            var l = this.decrypter, k = this.cache, I = this.currentTransmuxState, C = this.decryptionPromise;
+            if (C)
+              return C.then(function() {
                 return i.flush(s);
               });
             var P = [], N = I.timeOffset;
@@ -8419,9 +8419,9 @@ svg, img, ::slotted(svg), ::slotted(img) {
               return i.flushRemux(P, V, s), P;
             }) : (this.flushRemux(P, H, s), P);
           }, o.flushRemux = function(s, i, c) {
-            var l = i.audioTrack, k = i.avcTrack, I = i.id3Track, x = i.textTrack, P = this.currentTransmuxState, N = P.accurateTimeOffset, B = P.timeOffset;
+            var l = i.audioTrack, k = i.avcTrack, I = i.id3Track, C = i.textTrack, P = this.currentTransmuxState, N = P.accurateTimeOffset, B = P.timeOffset;
             S.logger.log("[transmuxer.ts]: Flushed fragment " + c.sn + (c.part > -1 ? " p: " + c.part : "") + " of level " + c.level);
-            var F = this.remuxer.remux(l, k, I, x, B, N, true, this.id);
+            var F = this.remuxer.remux(l, k, I, C, B, N, true, this.id);
             s.push({ remuxResult: F, chunkMeta: c }), c.transmuxing.executeEnd = d();
           }, o.resetInitialTimestamp = function(s) {
             var i = this.demuxer, c = this.remuxer;
@@ -8438,23 +8438,23 @@ svg, img, ::slotted(svg), ::slotted(img) {
             var I;
             return i && i.method === "SAMPLE-AES" ? I = this.transmuxSampleAes(s, i, c, l, k) : I = this.transmuxUnencrypted(s, c, l, k), I;
           }, o.transmuxUnencrypted = function(s, i, c, l) {
-            var k = this.demuxer.demux(s, i, false, !this.config.progressive), I = k.audioTrack, x = k.avcTrack, P = k.id3Track, N = k.textTrack, B = this.remuxer.remux(I, x, P, N, i, c, false, this.id);
+            var k = this.demuxer.demux(s, i, false, !this.config.progressive), I = k.audioTrack, C = k.avcTrack, P = k.id3Track, N = k.textTrack, B = this.remuxer.remux(I, C, P, N, i, c, false, this.id);
             return { remuxResult: B, chunkMeta: l };
           }, o.transmuxSampleAes = function(s, i, c, l, k) {
             var I = this;
-            return this.demuxer.demuxSampleAes(s, i, c).then(function(x) {
-              var P = I.remuxer.remux(x.audioTrack, x.avcTrack, x.id3Track, x.textTrack, c, l, false, I.id);
+            return this.demuxer.demuxSampleAes(s, i, c).then(function(C) {
+              var P = I.remuxer.remux(C.audioTrack, C.avcTrack, C.id3Track, C.textTrack, c, l, false, I.id);
               return { remuxResult: P, chunkMeta: k };
             });
           }, o.configureTransmuxer = function(s, i) {
-            for (var c = this.config, l = this.observer, k = this.typeSupported, I = this.vendor, x = i.audioCodec, P = i.defaultInitPts, N = i.duration, B = i.initSegmentData, F = i.videoCodec, U, j = 0, H = t.length; j < H; j++)
+            for (var c = this.config, l = this.observer, k = this.typeSupported, I = this.vendor, C = i.audioCodec, P = i.defaultInitPts, N = i.duration, B = i.initSegmentData, F = i.videoCodec, U, j = 0, H = t.length; j < H; j++)
               if (t[j].demux.probe(s)) {
                 U = t[j];
                 break;
               }
             U || (S.logger.warn("Failed to find demuxer by probing frag, treating as mp4 passthrough"), U = { demux: A.default, remux: g.default });
             var V = this.demuxer, K = this.remuxer, q = U.remux, $ = U.demux;
-            (!K || !(K instanceof q)) && (this.remuxer = new q(l, c, k, I)), (!V || !(V instanceof $)) && (this.demuxer = new $(l, c, k), this.probe = $.probe), this.resetInitSegment(B, x, F, N), this.resetInitialTimestamp(P);
+            (!K || !(K instanceof q)) && (this.remuxer = new q(l, c, k, I)), (!V || !(V instanceof $)) && (this.demuxer = new $(l, c, k), this.probe = $.probe), this.resetInitSegment(B, C, F, N), this.resetInitialTimestamp(P);
           }, o.needsProbing = function(s, i, c) {
             return !this.demuxer || !this.remuxer || i || c;
           }, o.getDecrypter = function() {
@@ -8477,7 +8477,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         }, _ = function(p, o, s, i, c) {
           this.discontinuity = void 0, this.contiguous = void 0, this.accurateTimeOffset = void 0, this.trackSwitch = void 0, this.timeOffset = void 0, this.discontinuity = p, this.contiguous = o, this.accurateTimeOffset = s, this.trackSwitch = i, this.timeOffset = c;
         };
-      }, "./src/demux/tsdemuxer.ts": function(C, T, e) {
+      }, "./src/demux/tsdemuxer.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "discardEPB", function() {
           return a;
@@ -8508,7 +8508,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             _ && (_.pesData = null), p && (p.pesData = null), o && (o.pesData = null), this.aacOverFlow = null, this.aacLastPTS = null;
           }, v.demux = function(_, p, o, s) {
             o === void 0 && (o = false), s === void 0 && (s = false), o || (this.sampleAes = null);
-            var i, c = this._avcTrack, l = this._audioTrack, k = this._id3Track, I = c.pid, x = c.pesData, P = l.pid, N = k.pid, B = l.pesData, F = k.pesData, U = false, j = this.pmtParsed, H = this._pmtId, V = _.length;
+            var i, c = this._avcTrack, l = this._audioTrack, k = this._id3Track, I = c.pid, C = c.pesData, P = l.pid, N = k.pid, B = l.pesData, F = k.pesData, U = false, j = this.pmtParsed, H = this._pmtId, V = _.length;
             if (this.remainderData && (_ = Object(b.appendUint8Array)(this.remainderData, _), V = _.length, this.remainderData = null), V < 188 && !s)
               return this.remainderData = _, { audioTrack: l, avcTrack: c, id3Track: k, textTrack: this._txtTrack };
             var K = Math.max(0, f.syncOffset(_));
@@ -8523,7 +8523,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   tt = q + 4;
                 switch (J) {
                   case I:
-                    $ && (x && (i = r(x)) && this.parseAVCPES(i, false), x = { data: [], size: 0 }), x && (x.data.push(_.subarray(tt, q + 188)), x.size += q + 188 - tt);
+                    $ && (C && (i = r(C)) && this.parseAVCPES(i, false), C = { data: [], size: 0 }), C && (C.data.push(_.subarray(tt, q + 188)), C.size += q + 188 - tt);
                     break;
                   case P:
                     $ && (B && (i = r(B)) && (l.isAAC ? this.parseAACPES(i) : this.parseMPEGPES(i)), B = { data: [], size: 0 }), B && (B.data.push(_.subarray(tt, q + 188)), B.size += q + 188 - tt);
@@ -8549,7 +8549,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 }
               } else
                 this.observer.emit(L.Events.ERROR, L.Events.ERROR, { type: g.ErrorTypes.MEDIA_ERROR, details: g.ErrorDetails.FRAG_PARSING_ERROR, fatal: false, reason: "TS packet did not start with 0x47" });
-            c.pesData = x, l.pesData = B, k.pesData = F;
+            c.pesData = C, l.pesData = B, k.pesData = F;
             var at = { audioTrack: l, avcTrack: c, id3Track: k, textTrack: this._txtTrack };
             return s && this.extractRemainingSamples(at), at;
           }, v.flush = function() {
@@ -8578,11 +8578,11 @@ svg, img, ::slotted(svg), ::slotted(img) {
             this._initPTS = this._initDTS = null, this._duration = 0;
           }, v.parseAVCPES = function(_, p) {
             var o = this, s = this._avcTrack, i = this.parseAVCNALu(_.data), c = false, l = this.avcSample, k, I = false;
-            _.data = null, l && i.length && !s.audFound && (n(l, s), l = this.avcSample = S(false, _.pts, _.dts, "")), i.forEach(function(x) {
-              switch (x.type) {
+            _.data = null, l && i.length && !s.audFound && (n(l, s), l = this.avcSample = S(false, _.pts, _.dts, "")), i.forEach(function(C) {
+              switch (C.type) {
                 case 1: {
                   k = true, l || (l = o.avcSample = S(true, _.pts, _.dts, "")), c && (l.debug += "NDR "), l.frame = true;
-                  var P = x.data;
+                  var P = C.data;
                   if (I && P.length > 4) {
                     var N = new y.default(P).readSliceType();
                     (N === 2 || N === 4 || N === 7 || N === 9) && (l.key = true);
@@ -8594,7 +8594,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   break;
                 case 6: {
                   k = true, c && l && (l.debug += "SEI ");
-                  var B = new y.default(a(x.data));
+                  var B = new y.default(a(C.data));
                   B.readUByte();
                   for (var F = 0, U = 0, j = false, H = 0; !j && B.bytesAvailable > 1; ) {
                     F = 0;
@@ -8638,9 +8638,9 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 }
                 case 7:
                   if (k = true, I = true, c && l && (l.debug += "SPS "), !s.sps) {
-                    var ut = new y.default(x.data), ft = ut.readSPS();
-                    s.width = ft.width, s.height = ft.height, s.pixelRatio = ft.pixelRatio, s.sps = [x.data], s.duration = o._duration;
-                    for (var mt = x.data.subarray(1, 4), Et = "avc1.", ct = 0; ct < 3; ct++) {
+                    var ut = new y.default(C.data), ft = ut.readSPS();
+                    s.width = ft.width, s.height = ft.height, s.pixelRatio = ft.pixelRatio, s.sps = [C.data], s.duration = o._duration;
+                    for (var mt = C.data.subarray(1, 4), Et = "avc1.", ct = 0; ct < 3; ct++) {
                       var vt = mt[ct].toString(16);
                       vt.length < 2 && (vt = "0" + vt), Et += vt;
                     }
@@ -8648,7 +8648,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   }
                   break;
                 case 8:
-                  k = true, c && l && (l.debug += "PPS "), s.pps || (s.pps = [x.data]);
+                  k = true, c && l && (l.debug += "PPS "), s.pps || (s.pps = [C.data]);
                   break;
                 case 9:
                   k = false, s.audFound = true, l && n(l, s), l = o.avcSample = S(false, _.pts, _.dts, c ? "AUD " : "");
@@ -8657,12 +8657,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   k = false;
                   break;
                 default:
-                  k = false, l && (l.debug += "unknown NAL " + x.type + " ");
+                  k = false, l && (l.debug += "unknown NAL " + C.type + " ");
                   break;
               }
               if (l && k) {
                 var lt = l.units;
-                lt.push(x);
+                lt.push(C);
               }
             }), p && l && (n(l, s), this.avcSample = null);
           }, v.getLastNalUnit = function() {
@@ -8677,7 +8677,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }
             return o;
           }, v.parseAVCNALu = function(_) {
-            var p = _.byteLength, o = this._avcTrack, s = o.naluState || 0, i = s, c = [], l = 0, k, I, x, P = -1, N = 0;
+            var p = _.byteLength, o = this._avcTrack, s = o.naluState || 0, i = s, c = [], l = 0, k, I, C, P = -1, N = 0;
             for (s === -1 && (P = 0, N = _[0] & 31, s = 0, l = 1); l < p; ) {
               if (k = _[l++], !s) {
                 s = k ? 0 : 1;
@@ -8700,7 +8700,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                     U.set(F.data, 0), U.set(_.subarray(0, I), F.data.byteLength), F.data = U;
                   }
                 }
-                l < p ? (x = _[l] & 31, P = l, N = x, s = 0) : s = -1;
+                l < p ? (C = _[l] & 31, P = l, N = C, s = 0) : s = -1;
               } else
                 s = 0;
             }
@@ -8723,12 +8723,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
               var c = s.sample.unit.byteLength, l = Math.min(s.missing, c), k = c - l;
               s.sample.unit.set(i.subarray(0, l), k), o.samples.push(s.sample), p = s.missing;
             }
-            var I, x;
-            for (I = p, x = i.length; I < x - 1 && !R.isHeader(i, I); I++)
+            var I, C;
+            for (I = p, C = i.length; I < C - 1 && !R.isHeader(i, I); I++)
               ;
             if (I !== p) {
               var P, N;
-              if (I < x - 1 ? (P = "AAC PES did not start with ADTS header,offset:" + I, N = false) : (P = "no ADTS header found in AAC PES", N = true), u.logger.warn("parsing error:" + P), this.observer.emit(L.Events.ERROR, L.Events.ERROR, { type: g.ErrorTypes.MEDIA_ERROR, details: g.ErrorDetails.FRAG_PARSING_ERROR, fatal: N, reason: P }), N)
+              if (I < C - 1 ? (P = "AAC PES did not start with ADTS header,offset:" + I, N = false) : (P = "no ADTS header found in AAC PES", N = true), u.logger.warn("parsing error:" + P), this.observer.emit(L.Events.ERROR, L.Events.ERROR, { type: g.ErrorTypes.MEDIA_ERROR, details: g.ErrorDetails.FRAG_PARSING_ERROR, fatal: N, reason: P }), N)
                 return;
             }
             R.initTrackConfig(o, this.observer, i, I, this.audioCodec);
@@ -8742,9 +8742,9 @@ svg, img, ::slotted(svg), ::slotted(img) {
               u.logger.warn("[tsdemuxer]: AAC PES unknown PTS");
               return;
             }
-            for (var U = 0; I < x; )
+            for (var U = 0; I < C; )
               if (R.isHeader(i, I)) {
-                if (I + 5 < x) {
+                if (I + 5 < C) {
                   var j = R.appendFrame(o, i, I, B, U);
                   if (j)
                     if (j.missing)
@@ -8840,19 +8840,19 @@ svg, img, ::slotted(svg), ::slotted(img) {
               return null;
             var I = _[7];
             I & 192 && (s = (_[9] & 14) * 536870912 + (_[10] & 255) * 4194304 + (_[11] & 254) * 16384 + (_[12] & 255) * 128 + (_[13] & 254) / 2, I & 64 ? (i = (_[14] & 14) * 536870912 + (_[15] & 255) * 4194304 + (_[16] & 254) * 16384 + (_[17] & 255) * 128 + (_[18] & 254) / 2, s - i > 60 * 9e4 && (u.logger.warn(Math.round((s - i) / 9e4) + "s delta between PTS and DTS, align them"), s = i)) : i = s), o = _[8];
-            var x = o + 9;
-            if (f.size <= x)
+            var C = o + 9;
+            if (f.size <= C)
               return null;
-            f.size -= x;
+            f.size -= C;
             for (var P = new Uint8Array(f.size), N = 0, B = c.length; N < B; N++) {
               _ = c[N];
               var F = _.byteLength;
-              if (x)
-                if (x > F) {
-                  x -= F;
+              if (C)
+                if (C > F) {
+                  C -= F;
                   continue;
                 } else
-                  _ = _.subarray(x), F -= x, x = 0;
+                  _ = _.subarray(C), F -= C, C = 0;
               P.set(_, v), v += F;
             }
             return p && (p -= o + 3), { data: P, pts: s, dts: i, len: p };
@@ -8900,7 +8900,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           return s;
         }
         T.default = E;
-      }, "./src/errors.ts": function(C, T, e) {
+      }, "./src/errors.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "ErrorTypes", function() {
           return R;
@@ -8915,7 +8915,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         (function(y) {
           y.KEY_SYSTEM_NO_KEYS = "keySystemNoKeys", y.KEY_SYSTEM_NO_ACCESS = "keySystemNoAccess", y.KEY_SYSTEM_NO_SESSION = "keySystemNoSession", y.KEY_SYSTEM_LICENSE_REQUEST_FAILED = "keySystemLicenseRequestFailed", y.KEY_SYSTEM_NO_INIT_DATA = "keySystemNoInitData", y.MANIFEST_LOAD_ERROR = "manifestLoadError", y.MANIFEST_LOAD_TIMEOUT = "manifestLoadTimeOut", y.MANIFEST_PARSING_ERROR = "manifestParsingError", y.MANIFEST_INCOMPATIBLE_CODECS_ERROR = "manifestIncompatibleCodecsError", y.LEVEL_EMPTY_ERROR = "levelEmptyError", y.LEVEL_LOAD_ERROR = "levelLoadError", y.LEVEL_LOAD_TIMEOUT = "levelLoadTimeOut", y.LEVEL_SWITCH_ERROR = "levelSwitchError", y.AUDIO_TRACK_LOAD_ERROR = "audioTrackLoadError", y.AUDIO_TRACK_LOAD_TIMEOUT = "audioTrackLoadTimeOut", y.SUBTITLE_LOAD_ERROR = "subtitleTrackLoadError", y.SUBTITLE_TRACK_LOAD_TIMEOUT = "subtitleTrackLoadTimeOut", y.FRAG_LOAD_ERROR = "fragLoadError", y.FRAG_LOAD_TIMEOUT = "fragLoadTimeOut", y.FRAG_DECRYPT_ERROR = "fragDecryptError", y.FRAG_PARSING_ERROR = "fragParsingError", y.REMUX_ALLOC_ERROR = "remuxAllocError", y.KEY_LOAD_ERROR = "keyLoadError", y.KEY_LOAD_TIMEOUT = "keyLoadTimeOut", y.BUFFER_ADD_CODEC_ERROR = "bufferAddCodecError", y.BUFFER_INCOMPATIBLE_CODECS_ERROR = "bufferIncompatibleCodecsError", y.BUFFER_APPEND_ERROR = "bufferAppendError", y.BUFFER_APPENDING_ERROR = "bufferAppendingError", y.BUFFER_STALLED_ERROR = "bufferStalledError", y.BUFFER_FULL_ERROR = "bufferFullError", y.BUFFER_SEEK_OVER_HOLE = "bufferSeekOverHole", y.BUFFER_NUDGE_ON_STALL = "bufferNudgeOnStall", y.INTERNAL_EXCEPTION = "internalException", y.INTERNAL_ABORTED = "aborted", y.UNKNOWN = "unknown";
         })(m || (m = {}));
-      }, "./src/events.ts": function(C, T, e) {
+      }, "./src/events.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "Events", function() {
           return R;
@@ -8924,7 +8924,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         (function(m) {
           m.MEDIA_ATTACHING = "hlsMediaAttaching", m.MEDIA_ATTACHED = "hlsMediaAttached", m.MEDIA_DETACHING = "hlsMediaDetaching", m.MEDIA_DETACHED = "hlsMediaDetached", m.BUFFER_RESET = "hlsBufferReset", m.BUFFER_CODECS = "hlsBufferCodecs", m.BUFFER_CREATED = "hlsBufferCreated", m.BUFFER_APPENDING = "hlsBufferAppending", m.BUFFER_APPENDED = "hlsBufferAppended", m.BUFFER_EOS = "hlsBufferEos", m.BUFFER_FLUSHING = "hlsBufferFlushing", m.BUFFER_FLUSHED = "hlsBufferFlushed", m.MANIFEST_LOADING = "hlsManifestLoading", m.MANIFEST_LOADED = "hlsManifestLoaded", m.MANIFEST_PARSED = "hlsManifestParsed", m.LEVEL_SWITCHING = "hlsLevelSwitching", m.LEVEL_SWITCHED = "hlsLevelSwitched", m.LEVEL_LOADING = "hlsLevelLoading", m.LEVEL_LOADED = "hlsLevelLoaded", m.LEVEL_UPDATED = "hlsLevelUpdated", m.LEVEL_PTS_UPDATED = "hlsLevelPtsUpdated", m.LEVELS_UPDATED = "hlsLevelsUpdated", m.AUDIO_TRACKS_UPDATED = "hlsAudioTracksUpdated", m.AUDIO_TRACK_SWITCHING = "hlsAudioTrackSwitching", m.AUDIO_TRACK_SWITCHED = "hlsAudioTrackSwitched", m.AUDIO_TRACK_LOADING = "hlsAudioTrackLoading", m.AUDIO_TRACK_LOADED = "hlsAudioTrackLoaded", m.SUBTITLE_TRACKS_UPDATED = "hlsSubtitleTracksUpdated", m.SUBTITLE_TRACKS_CLEARED = "hlsSubtitleTracksCleared", m.SUBTITLE_TRACK_SWITCH = "hlsSubtitleTrackSwitch", m.SUBTITLE_TRACK_LOADING = "hlsSubtitleTrackLoading", m.SUBTITLE_TRACK_LOADED = "hlsSubtitleTrackLoaded", m.SUBTITLE_FRAG_PROCESSED = "hlsSubtitleFragProcessed", m.CUES_PARSED = "hlsCuesParsed", m.NON_NATIVE_TEXT_TRACKS_FOUND = "hlsNonNativeTextTracksFound", m.INIT_PTS_FOUND = "hlsInitPtsFound", m.FRAG_LOADING = "hlsFragLoading", m.FRAG_LOAD_EMERGENCY_ABORTED = "hlsFragLoadEmergencyAborted", m.FRAG_LOADED = "hlsFragLoaded", m.FRAG_DECRYPTED = "hlsFragDecrypted", m.FRAG_PARSING_INIT_SEGMENT = "hlsFragParsingInitSegment", m.FRAG_PARSING_USERDATA = "hlsFragParsingUserdata", m.FRAG_PARSING_METADATA = "hlsFragParsingMetadata", m.FRAG_PARSED = "hlsFragParsed", m.FRAG_BUFFERED = "hlsFragBuffered", m.FRAG_CHANGED = "hlsFragChanged", m.FPS_DROP = "hlsFpsDrop", m.FPS_DROP_LEVEL_CAPPING = "hlsFpsDropLevelCapping", m.ERROR = "hlsError", m.DESTROYING = "hlsDestroying", m.KEY_LOADING = "hlsKeyLoading", m.KEY_LOADED = "hlsKeyLoaded", m.LIVE_BACK_BUFFER_REACHED = "hlsLiveBackBufferReached", m.BACK_BUFFER_REACHED = "hlsBackBufferReached";
         })(R || (R = {}));
-      }, "./src/hls.ts": function(C, T, e) {
+      }, "./src/hls.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return f;
@@ -8947,11 +8947,11 @@ svg, img, ::slotted(svg), ::slotted(img) {
             p === void 0 && (p = {}), this.config = void 0, this.userConfig = void 0, this.coreComponents = void 0, this.networkControllers = void 0, this._emitter = new d.EventEmitter(), this._autoLevelCapping = void 0, this.abrController = void 0, this.bufferController = void 0, this.capLevelController = void 0, this.latencyController = void 0, this.levelController = void 0, this.streamController = void 0, this.audioTrackController = void 0, this.subtitleTrackController = void 0, this.emeController = void 0, this._media = null, this.url = null;
             var o = this.config = Object(S.mergeConfig)(v.DefaultConfig, p);
             this.userConfig = p, Object(E.enableLogs)(o.debug), this._autoLevelCapping = -1, o.progressive && Object(S.enableStreamingMode)(o);
-            var s = o.abrController, i = o.bufferController, c = o.capLevelController, l = o.fpsController, k = this.abrController = new s(this), I = this.bufferController = new i(this), x = this.capLevelController = new c(this), P = new l(this), N = new y.default(this), B = new w.default(this), F = new A.default(this), U = this.levelController = new b.default(this), j = new u.FragmentTracker(this), H = this.streamController = new g.default(this, j);
-            x.setStreamController(H), P.setStreamController(H);
+            var s = o.abrController, i = o.bufferController, c = o.capLevelController, l = o.fpsController, k = this.abrController = new s(this), I = this.bufferController = new i(this), C = this.capLevelController = new c(this), P = new l(this), N = new y.default(this), B = new w.default(this), F = new A.default(this), U = this.levelController = new b.default(this), j = new u.FragmentTracker(this), H = this.streamController = new g.default(this, j);
+            C.setStreamController(H), P.setStreamController(H);
             var V = [U, H];
             this.networkControllers = V;
-            var K = [N, B, k, I, x, P, F, j];
+            var K = [N, B, k, I, C, P, F, j];
             this.audioTrackController = this.createController(o.audioTrackController, null, V), this.createController(o.audioStreamController, j, V), this.subtitleTrackController = this.createController(o.subtitleTrackController, null, V), this.createController(o.subtitleStreamController, j, V), this.createController(o.timelineController, null, K), this.emeController = this.createController(o.emeController, null, K), this.latencyController = this.createController(L.default, null, K), this.coreComponents = K;
           }
           var _ = v.prototype;
@@ -9129,7 +9129,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           } }]), v;
         }();
         f.defaultConfig = void 0;
-      }, "./src/is-supported.ts": function(C, T, e) {
+      }, "./src/is-supported.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "isSupported", function() {
           return y;
@@ -9151,7 +9151,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           var A, L = m();
           return typeof (L == null || (A = L.prototype) === null || A === void 0 ? void 0 : A.changeType) == "function";
         }
-      }, "./src/loader/fragment-loader.ts": function(C, T, e) {
+      }, "./src/loader/fragment-loader.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return E;
@@ -9231,16 +9231,16 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return new Promise(function(o, s) {
               a.loader && a.loader.destroy();
               var i = a.loader = n.loader = _ ? new _(v) : new p(v), c = S(n), l = { timeout: v.fragLoadingTimeOut, maxRetry: 0, retryDelay: 0, maxRetryDelay: v.fragLoadingMaxRetryTimeout, highWaterMark: D };
-              n.stats = i.stats, i.load(c, l, { onSuccess: function(k, I, x, P) {
+              n.stats = i.stats, i.load(c, l, { onSuccess: function(k, I, C, P) {
                 a.resetLoader(n, i), o({ frag: n, part: null, payload: k.data, networkDetails: P });
-              }, onError: function(k, I, x) {
-                a.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.FRAG_LOAD_ERROR, fatal: false, frag: n, response: k, networkDetails: x }));
-              }, onAbort: function(k, I, x) {
-                a.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.INTERNAL_ABORTED, fatal: false, frag: n, networkDetails: x }));
-              }, onTimeout: function(k, I, x) {
-                a.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.FRAG_LOAD_TIMEOUT, fatal: false, frag: n, networkDetails: x }));
-              }, onProgress: function(k, I, x, P) {
-                h && h({ frag: n, part: null, payload: x, networkDetails: P });
+              }, onError: function(k, I, C) {
+                a.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.FRAG_LOAD_ERROR, fatal: false, frag: n, response: k, networkDetails: C }));
+              }, onAbort: function(k, I, C) {
+                a.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.INTERNAL_ABORTED, fatal: false, frag: n, networkDetails: C }));
+              }, onTimeout: function(k, I, C) {
+                a.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.FRAG_LOAD_TIMEOUT, fatal: false, frag: n, networkDetails: C }));
+              }, onProgress: function(k, I, C, P) {
+                h && h({ frag: n, part: null, payload: C, networkDetails: P });
               } });
             });
           }, r.loadPart = function(n, h, a) {
@@ -9250,16 +9250,16 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return new Promise(function(o, s) {
               f.loader && f.loader.destroy();
               var i = f.loader = n.loader = _ ? new _(v) : new p(v), c = S(n, h), l = { timeout: v.fragLoadingTimeOut, maxRetry: 0, retryDelay: 0, maxRetryDelay: v.fragLoadingMaxRetryTimeout, highWaterMark: D };
-              h.stats = i.stats, i.load(c, l, { onSuccess: function(k, I, x, P) {
+              h.stats = i.stats, i.load(c, l, { onSuccess: function(k, I, C, P) {
                 f.resetLoader(n, i), f.updateStatsFromPart(n, h);
                 var N = { frag: n, part: h, payload: k.data, networkDetails: P };
                 a(N), o(N);
-              }, onError: function(k, I, x) {
-                f.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.FRAG_LOAD_ERROR, fatal: false, frag: n, part: h, response: k, networkDetails: x }));
-              }, onAbort: function(k, I, x) {
-                n.stats.aborted = h.stats.aborted, f.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.INTERNAL_ABORTED, fatal: false, frag: n, part: h, networkDetails: x }));
-              }, onTimeout: function(k, I, x) {
-                f.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.FRAG_LOAD_TIMEOUT, fatal: false, frag: n, part: h, networkDetails: x }));
+              }, onError: function(k, I, C) {
+                f.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.FRAG_LOAD_ERROR, fatal: false, frag: n, part: h, response: k, networkDetails: C }));
+              }, onAbort: function(k, I, C) {
+                n.stats.aborted = h.stats.aborted, f.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.INTERNAL_ABORTED, fatal: false, frag: n, part: h, networkDetails: C }));
+              }, onTimeout: function(k, I, C) {
+                f.resetLoader(n, i), s(new d({ type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.FRAG_LOAD_TIMEOUT, fatal: false, frag: n, part: h, networkDetails: C }));
               } });
             });
           }, r.updateStatsFromPart = function(n, h) {
@@ -9289,7 +9289,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }
           return r;
         }(w(Error));
-      }, "./src/loader/fragment.ts": function(C, T, e) {
+      }, "./src/loader/fragment.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "ElementaryStreamTypes", function() {
           return E;
@@ -9403,7 +9403,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return !!(h.audio || h.video || h.audiovideo);
           } }]), n;
         }(S);
-      }, "./src/loader/key-loader.ts": function(C, T, e) {
+      }, "./src/loader/key-loader.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return w;
@@ -9458,7 +9458,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             D && D.abort(), delete this.loaders[g.type], this.hls.trigger(R.Events.ERROR, { type: m.ErrorTypes.NETWORK_ERROR, details: m.ErrorDetails.KEY_LOAD_TIMEOUT, fatal: false, frag: g });
           }, A;
         }();
-      }, "./src/loader/level-details.ts": function(C, T, e) {
+      }, "./src/loader/level-details.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "LevelDetails", function() {
           return A;
@@ -9514,7 +9514,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return (u = this.partList) !== null && u !== void 0 && u.length ? this.partList[this.partList.length - 1].fragment.sn : this.endSN;
           } }]), L;
         }();
-      }, "./src/loader/level-key.ts": function(C, T, e) {
+      }, "./src/loader/level-key.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "LevelKey", function() {
           return A;
@@ -9542,7 +9542,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return this._uri;
           } }]), L;
         }();
-      }, "./src/loader/load-stats.ts": function(C, T, e) {
+      }, "./src/loader/load-stats.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "LoadStats", function() {
           return R;
@@ -9550,7 +9550,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         var R = function() {
           this.aborted = false, this.loaded = 0, this.retry = 0, this.total = 0, this.chunkCount = 0, this.bwEstimate = 0, this.loading = { start: 0, first: 0, end: 0 }, this.parsing = { start: 0, end: 0 }, this.buffering = { start: 0, first: 0, end: 0 };
         };
-      }, "./src/loader/m3u8-parser.ts": function(C, T, e) {
+      }, "./src/loader/m3u8-parser.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return n;
@@ -9583,8 +9583,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             D.lastIndex = 0;
             for (var l; (l = D.exec(p)) != null; )
               if (l[1]) {
-                var k = new b.AttrList(l[1]), I = { attrs: k, bitrate: k.decimalInteger("AVERAGE-BANDWIDTH") || k.decimalInteger("BANDWIDTH"), name: k.NAME, url: _.resolve(l[2], o) }, x = k.decimalResolution("RESOLUTION");
-                x && (I.width = x.width, I.height = x.height), h((k.CODECS || "").split(/[ ,]+/).filter(function(N) {
+                var k = new b.AttrList(l[1]), I = { attrs: k, bitrate: k.decimalInteger("AVERAGE-BANDWIDTH") || k.decimalInteger("BANDWIDTH"), name: k.NAME, url: _.resolve(l[2], o) }, C = k.decimalResolution("RESOLUTION");
+                C && (I.width = C.width, I.height = C.height), h((k.CODECS || "").split(/[ ,]+/).filter(function(N) {
                   return N;
                 }), I), I.videoCodec && I.videoCodec.indexOf("avc1") !== -1 && (I.videoCodec = _.convertAVC1ToAVCOTI(I.videoCodec)), s.push(I);
               } else if (l[3]) {
@@ -9598,26 +9598,26 @@ svg, img, ::slotted(svg), ::slotted(img) {
             for (E.lastIndex = 0; (c = E.exec(p)) !== null; ) {
               var I = new b.AttrList(c[1]);
               if (I.TYPE === s) {
-                var x = { attrs: I, bitrate: 0, id: k++, groupId: I["GROUP-ID"], instreamId: I["INSTREAM-ID"], name: I.NAME || I.LANGUAGE || "", type: s, default: I.bool("DEFAULT"), autoselect: I.bool("AUTOSELECT"), forced: I.bool("FORCED"), lang: I.LANGUAGE, url: I.URI ? _.resolve(I.URI, o) : "" };
+                var C = { attrs: I, bitrate: 0, id: k++, groupId: I["GROUP-ID"], instreamId: I["INSTREAM-ID"], name: I.NAME || I.LANGUAGE || "", type: s, default: I.bool("DEFAULT"), autoselect: I.bool("AUTOSELECT"), forced: I.bool("FORCED"), lang: I.LANGUAGE, url: I.URI ? _.resolve(I.URI, o) : "" };
                 if (i.length) {
-                  var P = _.findGroup(i, x.groupId) || i[0];
-                  a(x, P, "audioCodec"), a(x, P, "textCodec");
+                  var P = _.findGroup(i, C.groupId) || i[0];
+                  a(C, P, "audioCodec"), a(C, P, "textCodec");
                 }
-                l.push(x);
+                l.push(C);
               }
             }
             return l;
           }, _.parseLevelPlaylist = function(p, o, s, i, c) {
-            var l = new A.LevelDetails(o), k = l.fragments, I = null, x = 0, P = 0, N = 0, B = 0, F = null, U = new w.Fragment(i, o), j, H, V, K = -1, q = false;
+            var l = new A.LevelDetails(o), k = l.fragments, I = null, C = 0, P = 0, N = 0, B = 0, F = null, U = new w.Fragment(i, o), j, H, V, K = -1, q = false;
             for (S.lastIndex = 0, l.m3u8 = p; (j = S.exec(p)) !== null; ) {
-              q && (q = false, U = new w.Fragment(i, o), U.start = N, U.sn = x, U.cc = B, U.level = s, I && (U.initSegment = I, U.rawProgramDateTime = I.rawProgramDateTime));
+              q && (q = false, U = new w.Fragment(i, o), U.start = N, U.sn = C, U.cc = B, U.level = s, I && (U.initSegment = I, U.rawProgramDateTime = I.rawProgramDateTime));
               var $ = j[1];
               if ($) {
                 U.duration = parseFloat($);
                 var J = (" " + j[2]).slice(1);
                 U.title = J || null, U.tagList.push(J ? ["INF", $, J] : ["INF", $]);
               } else if (j[3])
-                Object(R.isFiniteNumber)(U.duration) && (U.start = N, V && (U.levelkey = V), U.sn = x, U.level = s, U.cc = B, U.urlId = c, k.push(U), U.relurl = (" " + j[3]).slice(1), v(U, F), F = U, N += U.duration, x++, P = 0, q = true);
+                Object(R.isFiniteNumber)(U.duration) && (U.start = N, V && (U.levelkey = V), U.sn = C, U.level = s, U.cc = B, U.urlId = c, k.push(U), U.relurl = (" " + j[3]).slice(1), v(U, F), F = U, N += U.duration, C++, P = 0, q = true);
               else if (j[4]) {
                 var z = (" " + j[4]).slice(1);
                 F ? U.setByteRange(z, F) : U.setByteRange(z);
@@ -9636,7 +9636,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                     l.type = et.toUpperCase();
                     break;
                   case "MEDIA-SEQUENCE":
-                    x = l.startSN = parseInt(et);
+                    C = l.startSN = parseInt(et);
                     break;
                   case "SKIP": {
                     var pt = new b.AttrList(et), ot = pt.decimalInteger("SKIPPED-SEGMENTS");
@@ -9644,7 +9644,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                       l.skippedSegments = ot;
                       for (var nt = ot; nt--; )
                         k.unshift(null);
-                      x += ot;
+                      C += ot;
                     }
                     var X = pt.enumeratedString("RECENTLY-REMOVED-DATERANGES");
                     X && (l.recentlyRemovedDateranges = X.split("	"));
@@ -9708,8 +9708,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   case "PART": {
                     var bt = l.partList;
                     bt || (bt = l.partList = []);
-                    var kt = P > 0 ? bt[bt.length - 1] : void 0, Gt = P++, Ct = new w.Part(new b.AttrList(et), U, o, Gt, kt);
-                    bt.push(Ct), U.duration += Ct.duration;
+                    var kt = P > 0 ? bt[bt.length - 1] : void 0, Gt = P++, xt = new w.Part(new b.AttrList(et), U, o, Gt, kt);
+                    bt.push(xt), U.duration += xt.duration;
                     break;
                   }
                   case "PRELOAD-HINT": {
@@ -9771,7 +9771,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function v(_, p) {
           _.rawProgramDateTime ? _.programDateTime = Date.parse(_.rawProgramDateTime) : p != null && p.programDateTime && (_.programDateTime = p.endProgramDateTime), Object(R.isFiniteNumber)(_.programDateTime) || (_.programDateTime = null, _.rawProgramDateTime = null);
         }
-      }, "./src/loader/playlist-loader.ts": function(C, T, e) {
+      }, "./src/loader/playlist-loader.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/polyfills/number.ts"), m = e("./src/events.ts"), y = e("./src/errors.ts"), w = e("./src/utils/logger.ts"), A = e("./src/utils/mp4-tools.ts"), L = e("./src/loader/m3u8-parser.ts"), b = e("./src/types/loader.ts"), u = e("./src/utils/attr-list.ts");
@@ -9882,14 +9882,14 @@ svg, img, ::slotted(svg), ::slotted(img) {
               this.handleManifestParsingError(t, n, "no level found in manifest", h);
               return;
             }
-            var s = p.map(function(x) {
-              return { id: x.attrs.AUDIO, audioCodec: x.audioCodec };
-            }), i = p.map(function(x) {
-              return { id: x.attrs.SUBTITLES, textCodec: x.textCodec };
+            var s = p.map(function(C) {
+              return { id: C.attrs.AUDIO, audioCodec: C.audioCodec };
+            }), i = p.map(function(C) {
+              return { id: C.attrs.SUBTITLES, textCodec: C.textCodec };
             }), c = L.default.parseMasterPlaylistMedia(f, v, "AUDIO", s), l = L.default.parseMasterPlaylistMedia(f, v, "SUBTITLES", i), k = L.default.parseMasterPlaylistMedia(f, v, "CLOSED-CAPTIONS");
             if (c.length) {
-              var I = c.some(function(x) {
-                return !x.url;
+              var I = c.some(function(C) {
+                return !C.url;
               });
               !I && p[0].audioCodec && !p[0].attrs.AUDIO && (w.logger.log("[playlist-loader]: audio codec signaled in quality level, but no embedded audio track signaled, create one"), c.unshift({ type: "main", name: "main", default: false, autoselect: false, forced: false, id: -1, attrs: new u.AttrList({}), bitrate: 0, url: "" }));
             }
@@ -9963,7 +9963,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, S;
         }();
         T.default = E;
-      }, "./src/polyfills/number.ts": function(C, T, e) {
+      }, "./src/polyfills/number.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "isFiniteNumber", function() {
           return R;
@@ -9973,7 +9973,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         var R = Number.isFinite || function(y) {
           return typeof y == "number" && isFinite(y);
         }, m = Number.MAX_SAFE_INTEGER || 9007199254740991;
-      }, "./src/remux/aac-helper.ts": function(C, T, e) {
+      }, "./src/remux/aac-helper.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = function() {
@@ -10007,7 +10007,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, m;
         }();
         T.default = R;
-      }, "./src/remux/mp4-generator.ts": function(C, T, e) {
+      }, "./src/remux/mp4-generator.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = Math.pow(2, 32) - 1, m = function() {
@@ -10110,7 +10110,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, y;
         }();
         m.types = void 0, m.HDLR_TYPES = void 0, m.STTS = void 0, m.STSC = void 0, m.STCO = void 0, m.STSZ = void 0, m.VMHD = void 0, m.SMHD = void 0, m.STSD = void 0, m.FTYP = void 0, m.DINF = void 0, T.default = m;
-      }, "./src/remux/mp4-remuxer.ts": function(C, T, e) {
+      }, "./src/remux/mp4-remuxer.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return n;
@@ -10154,7 +10154,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
               return k < -4294967296 ? (s = true, h(c, l.pts)) : k > 0 ? c : l.pts;
             }, o[0].pts);
             return s && L.logger.debug("PTS rollover detected"), i;
-          }, p.remux = function(o, s, i, c, l, k, I, x) {
+          }, p.remux = function(o, s, i, c, l, k, I, C) {
             var P, N, B, F, U, j, H = l, V = l, K = o.pid > -1, q = s.pid > -1, $ = s.samples.length, J = o.samples.length > 0, z = $ > 1, tt = (!K || J) && (!q || z) || this.ISGenerated || I;
             if (tt) {
               this.ISGenerated || (B = this.generateIS(o, s, l));
@@ -10172,7 +10172,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                   H += Math.max(0, X), V += Math.max(0, -X);
                 }
                 if (J) {
-                  if (o.samplerate || (L.logger.warn("[mp4-remuxer]: regenerate InitSegment as audio detected"), B = this.generateIS(o, s, l)), N = this.remuxAudio(o, H, this.isAudioContiguous, k, q || z || x === b.PlaylistLevelType.AUDIO ? V : void 0), z) {
+                  if (o.samplerate || (L.logger.warn("[mp4-remuxer]: regenerate InitSegment as audio detected"), B = this.generateIS(o, s, l)), N = this.remuxAudio(o, H, this.isAudioContiguous, k, q || z || C === b.PlaylistLevelType.AUDIO ? V : void 0), z) {
                     var Z = N ? N.endPTS - N.startPTS : 0;
                     s.inputTimeScale || (L.logger.warn("[mp4-remuxer]: regenerate InitSegment as video detected"), B = this.generateIS(o, s, l)), P = this.remuxVideo(s, V, et, Z);
                   }
@@ -10183,21 +10183,21 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }
             return this.ISGenerated && (i.samples.length && (U = this.remuxID3(i, l)), c.samples.length && (F = this.remuxText(c, l))), { audio: N, video: P, initSegment: B, independent: j, text: F, id3: U };
           }, p.generateIS = function(o, s, i) {
-            var c = o.samples, l = s.samples, k = this.typeSupported, I = {}, x = !Object(R.isFiniteNumber)(this._initPTS), P = "audio/mp4", N, B, F;
-            if (x && (N = B = 1 / 0), o.config && c.length && (o.timescale = o.samplerate, o.isAAC || (k.mpeg ? (P = "audio/mpeg", o.codec = "") : k.mp3 && (o.codec = "mp3")), I.audio = { id: "audio", container: P, codec: o.codec, initSegment: !o.isAAC && k.mpeg ? new Uint8Array(0) : y.default.initSegment([o]), metadata: { channelCount: o.channelCount } }, x && (F = o.inputTimeScale, N = B = c[0].pts - Math.round(F * i))), s.sps && s.pps && l.length && (s.timescale = s.inputTimeScale, I.video = { id: "main", container: "video/mp4", codec: s.codec, initSegment: y.default.initSegment([s]), metadata: { width: s.width, height: s.height } }, x)) {
+            var c = o.samples, l = s.samples, k = this.typeSupported, I = {}, C = !Object(R.isFiniteNumber)(this._initPTS), P = "audio/mp4", N, B, F;
+            if (C && (N = B = 1 / 0), o.config && c.length && (o.timescale = o.samplerate, o.isAAC || (k.mpeg ? (P = "audio/mpeg", o.codec = "") : k.mp3 && (o.codec = "mp3")), I.audio = { id: "audio", container: P, codec: o.codec, initSegment: !o.isAAC && k.mpeg ? new Uint8Array(0) : y.default.initSegment([o]), metadata: { channelCount: o.channelCount } }, C && (F = o.inputTimeScale, N = B = c[0].pts - Math.round(F * i))), s.sps && s.pps && l.length && (s.timescale = s.inputTimeScale, I.video = { id: "main", container: "video/mp4", codec: s.codec, initSegment: y.default.initSegment([s]), metadata: { width: s.width, height: s.height } }, C)) {
               F = s.inputTimeScale;
               var U = this.getVideoStartPts(l), j = Math.round(F * i);
               B = Math.min(B, h(l[0].dts, U) - j), N = Math.min(N, U - j);
             }
             if (Object.keys(I).length)
-              return this.ISGenerated = true, x && (this._initPTS = N, this._initDTS = B), { tracks: I, initPTS: N, timescale: F };
+              return this.ISGenerated = true, C && (this._initPTS = N, this._initDTS = B), { tracks: I, initPTS: N, timescale: F };
           }, p.remuxVideo = function(o, s, i, c) {
-            var l = o.inputTimeScale, k = o.samples, I = [], x = k.length, P = this._initPTS, N = this.nextAvcDts, B = 8, F, U, j, H = Number.POSITIVE_INFINITY, V = Number.NEGATIVE_INFINITY, K = 0, q = false;
+            var l = o.inputTimeScale, k = o.samples, I = [], C = k.length, P = this._initPTS, N = this.nextAvcDts, B = 8, F, U, j, H = Number.POSITIVE_INFINITY, V = Number.NEGATIVE_INFINITY, K = 0, q = false;
             if (!i || N === null) {
               var $ = s * l, J = k[0].pts - h(k[0].dts, k[0].pts);
               N = $ - J;
             }
-            for (var z = 0; z < x; z++) {
+            for (var z = 0; z < C; z++) {
               var tt = k[z];
               if (tt.pts = h(tt.pts - P, N), tt.dts = h(tt.dts - P, N), tt.dts > tt.pts) {
                 var et = 9e4 * 0.2;
@@ -10205,19 +10205,19 @@ svg, img, ::slotted(svg), ::slotted(img) {
               }
               tt.dts < k[z > 0 ? z - 1 : z].dts && (q = true);
             }
-            q && k.sort(function(Fe, Ue) {
-              var xi = Fe.dts - Ue.dts, Ci = Fe.pts - Ue.pts;
-              return xi || Ci;
+            q && k.sort(function(Ue, Be) {
+              var xi = Ue.dts - Be.dts, Oi = Ue.pts - Be.pts;
+              return xi || Oi;
             }), U = k[0].dts, j = k[k.length - 1].dts;
-            var at = Math.round((j - U) / (x - 1));
+            var at = Math.round((j - U) / (C - 1));
             if (K < 0) {
               if (K < at * -2) {
                 L.logger.warn("PTS < DTS detected in video samples, offsetting DTS from PTS by " + Object(u.toMsFromMpegTsClock)(-at, true) + " ms");
-                for (var pt = K, ot = 0; ot < x; ot++)
+                for (var pt = K, ot = 0; ot < C; ot++)
                   k[ot].dts = pt = Math.max(pt, k[ot].pts - at), k[ot].pts = Math.max(pt, k[ot].pts);
               } else {
                 L.logger.warn("PTS < DTS detected in video samples, shifting DTS by " + Object(u.toMsFromMpegTsClock)(K, true) + " ms to overcome this issue");
-                for (var nt = 0; nt < x; nt++)
+                for (var nt = 0; nt < C; nt++)
                   k[nt].dts = k[nt].dts + K;
               }
               U = k[0].dts;
@@ -10231,12 +10231,12 @@ svg, img, ::slotted(svg), ::slotted(img) {
               }
             }
             r && (U = Math.max(0, U));
-            for (var ft = 0, mt = 0, Et = 0; Et < x; Et++) {
+            for (var ft = 0, mt = 0, Et = 0; Et < C; Et++) {
               for (var ct = k[Et], vt = ct.units, lt = vt.length, dt = 0, Lt = 0; Lt < lt; Lt++)
                 dt += vt[Lt].data.length;
               mt += dt, ft += lt, ct.length = dt, ct.dts = Math.max(ct.dts, U), ct.pts = Math.max(ct.pts, ct.dts, 0), H = Math.min(ct.pts, H), V = Math.max(ct.pts, V);
             }
-            j = k[x - 1].dts;
+            j = k[C - 1].dts;
             var Mt = mt + 4 * ft + 8, At;
             try {
               At = new Uint8Array(Mt);
@@ -10246,33 +10246,33 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }
             var Ut = new DataView(At.buffer);
             Ut.setUint32(0, Mt), At.set(y.default.types.mdat, 4);
-            for (var bt = 0; bt < x; bt++) {
-              for (var kt = k[bt], Gt = kt.units, Ct = 0, Ot = 0, zt = Gt.length; Ot < zt; Ot++) {
+            for (var bt = 0; bt < C; bt++) {
+              for (var kt = k[bt], Gt = kt.units, xt = 0, Ot = 0, zt = Gt.length; Ot < zt; Ot++) {
                 var Pt = Gt[Ot], Rt = Pt.data, Bt = Pt.data.byteLength;
-                Ut.setUint32(B, Bt), B += 4, At.set(Rt, B), B += Bt, Ct += 4 + Bt;
+                Ut.setUint32(B, Bt), B += 4, At.set(Rt, B), B += Bt, xt += 4 + Bt;
               }
-              if (bt < x - 1)
+              if (bt < C - 1)
                 F = k[bt + 1].dts - kt.dts;
               else {
                 var Qt = this.config, jt = kt.dts - k[bt > 0 ? bt - 1 : bt].dts;
                 if (Qt.stretchShortVideoTrack && this.nextAudioPts !== null) {
-                  var ki = Math.floor(Qt.maxBufferHole * l), ve = (c ? H + c * l : this.nextAudioPts) - kt.pts;
-                  ve > ki ? (F = ve - jt, F < 0 && (F = jt), L.logger.log("[mp4-remuxer]: It is approximately " + ve / 90 + " ms to the next segment; using duration " + F / 90 + " ms for the last video frame.")) : F = jt;
+                  var Ri = Math.floor(Qt.maxBufferHole * l), ge = (c ? H + c * l : this.nextAudioPts) - kt.pts;
+                  ge > Ri ? (F = ge - jt, F < 0 && (F = jt), L.logger.log("[mp4-remuxer]: It is approximately " + ge / 90 + " ms to the next segment; using duration " + F / 90 + " ms for the last video frame.")) : F = jt;
                 } else
                   F = jt;
               }
-              var Ri = Math.round(kt.pts - kt.dts);
-              I.push(new f(kt.key, F, Ct, Ri));
+              var wi = Math.round(kt.pts - kt.dts);
+              I.push(new f(kt.key, F, xt, wi));
             }
             if (I.length && d && d < 70) {
-              var Ne = I[0].flags;
-              Ne.dependsOn = 2, Ne.isNonSync = 0;
+              var Fe = I[0].flags;
+              Fe.dependsOn = 2, Fe.isNonSync = 0;
             }
             console.assert(F !== void 0, "mp4SampleDuration must be computed"), this.nextAvcDts = N = j + F, this.isVideoContiguous = true;
-            var wi = y.default.moof(o.sequenceNumber++, U, g({}, o, { samples: I })), Ii = "video", Mi = { data1: wi, data2: At, startPTS: H / l, endPTS: (V + F) / l, startDTS: U / l, endDTS: N / l, type: Ii, hasAudio: false, hasVideo: true, nb: I.length, dropped: o.dropped };
-            return o.samples = [], o.dropped = 0, console.assert(At.length, "MDAT length must not be zero"), Mi;
+            var Ii = y.default.moof(o.sequenceNumber++, U, g({}, o, { samples: I })), Mi = "video", Ci = { data1: Ii, data2: At, startPTS: H / l, endPTS: (V + F) / l, startDTS: U / l, endDTS: N / l, type: Mi, hasAudio: false, hasVideo: true, nb: I.length, dropped: o.dropped };
+            return o.samples = [], o.dropped = 0, console.assert(At.length, "MDAT length must not be zero"), Ci;
           }, p.remuxAudio = function(o, s, i, c, l) {
-            var k = o.inputTimeScale, I = o.samplerate ? o.samplerate : k, x = k / I, P = o.isAAC ? E : S, N = P * x, B = this._initPTS, F = !o.isAAC && this.typeSupported.mpeg, U = [], j = o.samples, H = F ? 0 : 8, V = this.nextAudioPts || -1, K = s * k;
+            var k = o.inputTimeScale, I = o.samplerate ? o.samplerate : k, C = k / I, P = o.isAAC ? E : S, N = P * C, B = this._initPTS, F = !o.isAAC && this.typeSupported.mpeg, U = [], j = o.samples, H = F ? 0 : 8, V = this.nextAudioPts || -1, K = s * k;
             if (this.isAudioContiguous = i = i || j.length && V > 0 && (c && Math.abs(K - V) < 9e3 || Math.abs(h(j[0].pts - B, K) - V) < 20 * N), j.forEach(function(Rt) {
               Rt.pts = h(Rt.pts - B, K);
             }), !i || V < 0) {
@@ -10303,7 +10303,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
               var lt = j[ct], dt = lt.unit, Lt = lt.pts;
               if (ut !== null) {
                 var Mt = U[ct - 1];
-                Mt.duration = Math.round((Lt - ut) / x);
+                Mt.duration = Math.round((Lt - ut) / C);
               } else if (i && o.isAAC && (Lt = V), Q = Lt, mt > 0) {
                 mt += H;
                 try {
@@ -10325,14 +10325,14 @@ svg, img, ::slotted(svg), ::slotted(img) {
             var bt = U.length;
             if (bt) {
               var kt = U[U.length - 1];
-              this.nextAudioPts = V = ut + x * kt.duration;
-              var Gt = F ? new Uint8Array(0) : y.default.moof(o.sequenceNumber++, Q / x, g({}, o, { samples: U }));
+              this.nextAudioPts = V = ut + C * kt.duration;
+              var Gt = F ? new Uint8Array(0) : y.default.moof(o.sequenceNumber++, Q / C, g({}, o, { samples: U }));
               o.samples = [];
-              var Ct = Q / k, Ot = V / k, zt = "audio", Pt = { data1: Gt, data2: ft, startPTS: Ct, endPTS: Ot, startDTS: Ct, endDTS: Ot, type: zt, hasAudio: true, hasVideo: false, nb: bt };
+              var xt = Q / k, Ot = V / k, zt = "audio", Pt = { data1: Gt, data2: ft, startPTS: xt, endPTS: Ot, startDTS: xt, endDTS: Ot, type: zt, hasAudio: true, hasVideo: false, nb: bt };
               return this.isAudioContiguous = true, console.assert(ft.length, "MDAT length must not be zero"), Pt;
             }
           }, p.remuxEmptyAudio = function(o, s, i, c) {
-            var l = o.inputTimeScale, k = o.samplerate ? o.samplerate : l, I = l / k, x = this.nextAudioPts, P = (x !== null ? x : c.startDTS * l) + this._initDTS, N = c.endDTS * l + this._initDTS, B = I * E, F = Math.ceil((N - P) / B), U = m.default.getSilentFrame(o.manifestCodec || o.codec, o.channelCount);
+            var l = o.inputTimeScale, k = o.samplerate ? o.samplerate : l, I = l / k, C = this.nextAudioPts, P = (C !== null ? C : c.startDTS * l) + this._initDTS, N = c.endDTS * l + this._initDTS, B = I * E, F = Math.ceil((N - P) / B), U = m.default.getSilentFrame(o.manifestCodec || o.codec, o.channelCount);
             if (L.logger.warn("[mp4-remuxer]: remux empty Audio"), !U) {
               L.logger.trace("[mp4-remuxer]: Unable to remuxEmptyAudio since we were unable to get a silent frame for given audio codec");
               return;
@@ -10346,8 +10346,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             var i = o.samples.length;
             if (i) {
               for (var c = o.inputTimeScale, l = this._initPTS, k = this._initDTS, I = 0; I < i; I++) {
-                var x = o.samples[I];
-                x.pts = h(x.pts - l, s * c) / c, x.dts = h(x.dts - k, s * c) / c;
+                var C = o.samples[I];
+                C.pts = h(C.pts - l, s * c) / c, C.dts = h(C.dts - k, s * c) / c;
               }
               var P = o.samples;
               return o.samples = [], { samples: P };
@@ -10362,8 +10362,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
               o.samples.sort(function(P, N) {
                 return P.pts - N.pts;
               });
-              var x = o.samples;
-              return o.samples = [], { samples: x };
+              var C = o.samples;
+              return o.samples = [], { samples: C };
             }
           }, _;
         }();
@@ -10386,7 +10386,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         }, v = function(_) {
           this.isLeading = 0, this.isDependedOn = 0, this.hasRedundancy = 0, this.degradPrio = 0, this.dependsOn = 1, this.isNonSync = 1, this.dependsOn = _ ? 2 : 1, this.isNonSync = _ ? 0 : 1;
         };
-      }, "./src/remux/passthrough-remuxer.ts": function(C, T, e) {
+      }, "./src/remux/passthrough-remuxer.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/polyfills/number.ts"), m = e("./src/utils/mp4-tools.ts"), y = e("./src/loader/fragment.ts"), w = e("./src/utils/logger.ts"), A = function() {
@@ -10436,7 +10436,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           return D && D.length > 4 ? D : D === "hvc1" ? "hvc1.1.c.L120.90" : D === "av01" ? "av01.0.04M.08" : D === "avc1" || g === y.ElementaryStreamTypes.VIDEO ? "avc1.42e01e" : "mp4a.40.5";
         }
         T.default = A;
-      }, "./src/task-loop.ts": function(C, T, e) {
+      }, "./src/task-loop.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return R;
@@ -10468,7 +10468,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, y.doTick = function() {
           }, m;
         }();
-      }, "./src/types/level.ts": function(C, T, e) {
+      }, "./src/types/level.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "HlsSkip", function() {
           return y;
@@ -10522,7 +10522,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             this._urlId !== g && (this.details = void 0, this._urlId = g);
           } }]), b;
         }();
-      }, "./src/types/loader.ts": function(C, T, e) {
+      }, "./src/types/loader.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "PlaylistContextType", function() {
           return R;
@@ -10537,7 +10537,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         (function(y) {
           y.MAIN = "main", y.AUDIO = "audio", y.SUBTITLE = "subtitle";
         })(m || (m = {}));
-      }, "./src/types/transmuxer.ts": function(C, T, e) {
+      }, "./src/types/transmuxer.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "ChunkMetadata", function() {
           return R;
@@ -10548,7 +10548,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function m() {
           return { start: 0, executeStart: 0, executeEnd: 0, end: 0 };
         }
-      }, "./src/utils/attr-list.ts": function(C, T, e) {
+      }, "./src/utils/attr-list.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "AttrList", function() {
           return y;
@@ -10597,7 +10597,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return u;
           }, w;
         }();
-      }, "./src/utils/binary-search.ts": function(C, T, e) {
+      }, "./src/utils/binary-search.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = { search: function(m, y) {
@@ -10614,7 +10614,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           return null;
         } };
         T.default = R;
-      }, "./src/utils/buffer-helper.ts": function(C, T, e) {
+      }, "./src/utils/buffer-helper.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "BufferHelper", function() {
           return y;
@@ -10682,7 +10682,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }
           }, w;
         }();
-      }, "./src/utils/cea-608-parser.ts": function(C, T, e) {
+      }, "./src/utils/cea-608-parser.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "Row", function() {
           return n;
@@ -10730,8 +10730,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return "color=" + this.foreground + ", underline=" + this.underline + ", italics=" + this.italics + ", background=" + this.background + ", flash=" + this.flash;
           }, o;
         }(), r = function() {
-          function o(i, c, l, k, I, x) {
-            this.uchar = void 0, this.penState = void 0, this.uchar = i || " ", this.penState = new t(c, l, k, I, x);
+          function o(i, c, l, k, I, C) {
+            this.uchar = void 0, this.penState = void 0, this.uchar = i || " ", this.penState = new t(c, l, k, I, C);
           }
           var s = o.prototype;
           return s.reset = function() {
@@ -10865,8 +10865,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 this.rows[l].clear();
               var k = this.currRow + 1 - this.nrRollUpRows, I = this.lastOutputScreen;
               if (I) {
-                var x = I.rows[k].cueStartTime, P = this.logger.time;
-                if (x && P !== null && x < P)
+                var C = I.rows[k].cueStartTime, P = this.logger.time;
+                if (C && P !== null && C < P)
                   for (var N = 0; N < this.nrRollUpRows; N++)
                     this.rows[c - this.nrRollUpRows + N + 1].copy(I.rows[k + N]);
               }
@@ -10894,8 +10894,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, s.getDisplayText = function(i) {
             i = i || false;
             for (var c = [], l = "", k = -1, I = 0; I < w; I++) {
-              var x = this.rows[I].getTextString();
-              x && (k = I + 1, i ? c.push("Row " + k + ": '" + x + "'") : c.push(x.trim()));
+              var C = this.rows[I].getTextString();
+              C && (k = I + 1, i ? c.push("Row " + k + ": '" + C + "'") : c.push(C.trim()));
             }
             return c.length > 0 && (i ? l = "[" + c.join(" | ") + "]" : l = c.join(`
 `)), l;
@@ -10984,19 +10984,19 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, s.setHandler = function(i, c) {
             this.channels[i].setHandler(c);
           }, s.addData = function(i, c) {
-            var l, k, I, x = false;
+            var l, k, I, C = false;
             this.logger.time = i;
             for (var P = 0; P < c.length; P += 2)
               if (k = c[P] & 127, I = c[P + 1] & 127, !(k === 0 && I === 0)) {
-                if (this.logger.log(E.DATA, "[" + d([c[P], c[P + 1]]) + "] -> (" + d([k, I]) + ")"), l = this.parseCmd(k, I), l || (l = this.parseMidrow(k, I)), l || (l = this.parsePAC(k, I)), l || (l = this.parseBackgroundAttributes(k, I)), !l && (x = this.parseChars(k, I), x)) {
+                if (this.logger.log(E.DATA, "[" + d([c[P], c[P + 1]]) + "] -> (" + d([k, I]) + ")"), l = this.parseCmd(k, I), l || (l = this.parseMidrow(k, I)), l || (l = this.parsePAC(k, I)), l || (l = this.parseBackgroundAttributes(k, I)), !l && (C = this.parseChars(k, I), C)) {
                   var N = this.currentChannel;
                   if (N && N > 0) {
                     var B = this.channels[N];
-                    B.insertChars(x);
+                    B.insertChars(C);
                   } else
                     this.logger.log(E.WARNING, "No channel found yet. TEXT-MODE?");
                 }
-                !l && !x && this.logger.log(E.WARNING, "Couldn't parse cleaned data " + d([k, I]) + " orig: " + d([c[P], c[P + 1]]));
+                !l && !C && this.logger.log(E.WARNING, "Couldn't parse cleaned data " + d([k, I]) + " orig: " + d([c[P], c[P + 1]]));
               }
           }, s.parseCmd = function(i, c) {
             var l = this.cmdHistory, k = (i === 20 || i === 28 || i === 21 || i === 29) && c >= 32 && c <= 47, I = (i === 23 || i === 31) && c >= 33 && c <= 35;
@@ -11004,8 +11004,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
               return false;
             if (_(i, c, l))
               return v(null, null, l), this.logger.log(E.DEBUG, "Repeated command (" + d([i, c]) + ") is dropped"), true;
-            var x = i === 20 || i === 21 || i === 23 ? 1 : 2, P = this.channels[x];
-            return i === 20 || i === 21 || i === 28 || i === 29 ? c === 32 ? P.ccRCL() : c === 33 ? P.ccBS() : c === 34 ? P.ccAOF() : c === 35 ? P.ccAON() : c === 36 ? P.ccDER() : c === 37 ? P.ccRU(2) : c === 38 ? P.ccRU(3) : c === 39 ? P.ccRU(4) : c === 40 ? P.ccFON() : c === 41 ? P.ccRDC() : c === 42 ? P.ccTR() : c === 43 ? P.ccRTD() : c === 44 ? P.ccEDM() : c === 45 ? P.ccCR() : c === 46 ? P.ccENM() : c === 47 && P.ccEOC() : P.ccTO(c - 32), v(i, c, l), this.currentChannel = x, true;
+            var C = i === 20 || i === 21 || i === 23 ? 1 : 2, P = this.channels[C];
+            return i === 20 || i === 21 || i === 28 || i === 29 ? c === 32 ? P.ccRCL() : c === 33 ? P.ccBS() : c === 34 ? P.ccAOF() : c === 35 ? P.ccAON() : c === 36 ? P.ccDER() : c === 37 ? P.ccRU(2) : c === 38 ? P.ccRU(3) : c === 39 ? P.ccRU(4) : c === 40 ? P.ccFON() : c === 41 ? P.ccRDC() : c === 42 ? P.ccTR() : c === 43 ? P.ccRTD() : c === 44 ? P.ccEDM() : c === 45 ? P.ccCR() : c === 46 ? P.ccENM() : c === 47 && P.ccEOC() : P.ccTO(c - 32), v(i, c, l), this.currentChannel = C, true;
           }, s.parseMidrow = function(i, c) {
             var l = 0;
             if ((i === 17 || i === 25) && c >= 32 && c <= 47) {
@@ -11016,8 +11016,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }
             return false;
           }, s.parsePAC = function(i, c) {
-            var l, k = this.cmdHistory, I = (i >= 17 && i <= 23 || i >= 25 && i <= 31) && c >= 64 && c <= 127, x = (i === 16 || i === 24) && c >= 64 && c <= 95;
-            if (!(I || x))
+            var l, k = this.cmdHistory, I = (i >= 17 && i <= 23 || i >= 25 && i <= 31) && c >= 64 && c <= 127, C = (i === 16 || i === 24) && c >= 64 && c <= 95;
+            if (!(I || C))
               return false;
             if (_(i, c, k))
               return v(null, null, k), true;
@@ -11031,8 +11031,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, s.parseChars = function(i, c) {
             var l, k = null, I = null;
             if (i >= 25 ? (l = 2, I = i - 8) : (l = 1, I = i), I >= 17 && I <= 19) {
-              var x;
-              I === 17 ? x = c + 80 : I === 18 ? x = c + 112 : x = c + 144, this.logger.log(E.INFO, "Special char '" + y(x) + "' in channel " + l), k = [x];
+              var C;
+              I === 17 ? C = c + 80 : I === 18 ? C = c + 112 : C = c + 144, this.logger.log(E.INFO, "Special char '" + y(C) + "' in channel " + l), k = [C];
             } else
               i >= 32 && i <= 127 && (k = c === 0 ? [i] : [i, c]);
             if (k) {
@@ -11044,10 +11044,10 @@ svg, img, ::slotted(svg), ::slotted(img) {
             var l = (i === 16 || i === 24) && c >= 32 && c <= 47, k = (i === 23 || i === 31) && c >= 45 && c <= 47;
             if (!(l || k))
               return false;
-            var I, x = {};
-            i === 16 || i === 24 ? (I = Math.floor((c - 32) / 2), x.background = D[I], c % 2 == 1 && (x.background = x.background + "_semi")) : c === 45 ? x.background = "transparent" : (x.foreground = "black", c === 47 && (x.underline = true));
+            var I, C = {};
+            i === 16 || i === 24 ? (I = Math.floor((c - 32) / 2), C.background = D[I], c % 2 == 1 && (C.background = C.background + "_semi")) : c === 45 ? C.background = "transparent" : (C.foreground = "black", c === 47 && (C.underline = true));
             var P = i <= 23 ? 1 : 2, N = this.channels[P];
-            return N.setBkgData(x), v(i, c, this.cmdHistory), true;
+            return N.setBkgData(C), v(i, c, this.cmdHistory), true;
           }, s.reset = function() {
             for (var i = 0; i < Object.keys(this.channels).length; i++) {
               var c = this.channels[i];
@@ -11071,7 +11071,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           return { a: null, b: null };
         }
         T.default = f;
-      }, "./src/utils/codecs.ts": function(C, T, e) {
+      }, "./src/utils/codecs.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "isCodecType", function() {
           return m;
@@ -11086,7 +11086,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function y(w, A) {
           return MediaSource.isTypeSupported((A || "video") + '/mp4;codecs="' + w + '"');
         }
-      }, "./src/utils/cues.ts": function(C, T, e) {
+      }, "./src/utils/cues.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/utils/vttparser.ts"), m = e("./src/utils/webvtt-parser.ts"), y = e("./src/utils/texttrack-utils.ts"), w = /\s/, A = { newCue: function(L, b, u, g) {
@@ -11105,7 +11105,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           })), D;
         } };
         T.default = A;
-      }, "./src/utils/discontinuities.ts": function(C, T, e) {
+      }, "./src/utils/discontinuities.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "findFirstFragWithCC", function() {
           return w;
@@ -11192,7 +11192,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }), t.fragmentHint && S(t.fragmentHint, a), t.alignedSliding = true;
           }
         }
-      }, "./src/utils/ewma-bandwidth-estimator.ts": function(C, T, e) {
+      }, "./src/utils/ewma-bandwidth-estimator.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/utils/ewma.ts"), m = function() {
@@ -11216,7 +11216,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, y;
         }();
         T.default = m;
-      }, "./src/utils/ewma.ts": function(C, T, e) {
+      }, "./src/utils/ewma.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = function() {
@@ -11239,7 +11239,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, m;
         }();
         T.default = R;
-      }, "./src/utils/fetch-loader.ts": function(C, T, e) {
+      }, "./src/utils/fetch-loader.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "fetchSupported", function() {
           return E;
@@ -11383,7 +11383,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           return h;
         }(A(Error));
         T.default = S;
-      }, "./src/utils/imsc1-ttml-parser.ts": function(C, T, e) {
+      }, "./src/utils/imsc1-ttml-parser.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "IMSC1_CODEC", function() {
           return u;
@@ -11408,9 +11408,9 @@ svg, img, ::slotted(svg), ::slotted(img) {
             l(new Error("Could not parse IMSC1 mdat"));
             return;
           }
-          var I = k[0], x = Object(w.utf8ArrayToStr)(new Uint8Array(o, I.start, I.end - I.start)), P = Object(A.toTimescaleFromScale)(s, 1, i);
+          var I = k[0], C = Object(w.utf8ArrayToStr)(new Uint8Array(o, I.start, I.end - I.start)), P = Object(A.toTimescaleFromScale)(s, 1, i);
           try {
-            c(d(x, P));
+            c(d(C, P));
           } catch (N) {
             l(N);
           }
@@ -11421,9 +11421,9 @@ svg, img, ::slotted(svg), ::slotted(img) {
             throw new Error("Invalid ttml");
           var k = { frameRate: 30, subFrameRate: 1, frameRateMultiplier: 0, tickRate: 0 }, I = Object.keys(k).reduce(function(F, U) {
             return F[U] = l.getAttribute("ttp:" + U) || k[U], F;
-          }, {}), x = l.getAttribute("xml:space") !== "preserve", P = r(t(l, "styling", "style")), N = r(t(l, "layout", "region")), B = t(l, "body", "[begin]");
+          }, {}), C = l.getAttribute("xml:space") !== "preserve", P = r(t(l, "styling", "style")), N = r(t(l, "layout", "region")), B = t(l, "body", "[begin]");
           return [].map.call(B, function(F) {
-            var U = n(F, x);
+            var U = n(F, C);
             if (!U || !F.hasAttribute("begin"))
               return null;
             var j = v(F.getAttribute("begin"), I), H = v(F.getAttribute("dur"), I), V = v(F.getAttribute("end"), I);
@@ -11504,7 +11504,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }
           return c;
         }
-      }, "./src/utils/logger.ts": function(C, T, e) {
+      }, "./src/utils/logger.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "enableLogs", function() {
           return L;
@@ -11536,7 +11536,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             y = m;
         }
         var b = y;
-      }, "./src/utils/mediakeys-helper.ts": function(C, T, e) {
+      }, "./src/utils/mediakeys-helper.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "KeySystems", function() {
           return R;
@@ -11550,7 +11550,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         var m = function() {
           return typeof self != "undefined" && self.navigator && self.navigator.requestMediaKeySystemAccess ? self.navigator.requestMediaKeySystemAccess.bind(self.navigator) : null;
         }();
-      }, "./src/utils/mediasource-helper.ts": function(C, T, e) {
+      }, "./src/utils/mediasource-helper.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "getMediaSource", function() {
           return R;
@@ -11558,7 +11558,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function R() {
           return self.MediaSource || self.WebKitMediaSource;
         }
-      }, "./src/utils/mp4-tools.ts": function(C, T, e) {
+      }, "./src/utils/mp4-tools.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "bin2str", function() {
           return A;
@@ -11631,7 +11631,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           c += 4;
           var k = 0, I = 0;
           i === 0 ? c += 8 : c += 16, c += 2;
-          var x = s.end + I, P = L(s, c);
+          var C = s.end + I, P = L(s, c);
           c += 2;
           for (var N = 0; N < P; N++) {
             var B = c, F = b(s, B);
@@ -11640,7 +11640,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             if (j === 1)
               return console.warn("SIDX has hierarchical references (not supported)"), null;
             var H = b(s, B);
-            B += 4, o.push({ referenceSize: U, subsegmentDuration: H, info: { duration: H / l, start: x, end: x + U - 1 } }), x += U, B += 4, c = B;
+            B += 4, o.push({ referenceSize: U, subsegmentDuration: H, info: { duration: H / l, start: C, end: C + U - 1 } }), C += U, B += 4, c = B;
           }
           return { earliestPresentationTime: k, timescale: l, version: i, referencesCount: P, references: o, moovEndOffset: _ };
         }
@@ -11653,7 +11653,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
                 s = l.data[l.start], i = s === 0 ? 12 : 20;
                 var k = b(l, i), I = g(p, ["mdia", "hdlr"])[0];
                 if (I) {
-                  var x = A(I.data.subarray(I.start + 8, I.start + 12)), P = { soun: m.ElementaryStreamTypes.AUDIO, vide: m.ElementaryStreamTypes.VIDEO }[x];
+                  var C = A(I.data.subarray(I.start + 8, I.start + 12)), P = { soun: m.ElementaryStreamTypes.AUDIO, vide: m.ElementaryStreamTypes.VIDEO }[C];
                   if (P) {
                     var N = g(p, ["mdia", "minf", "stbl", "stsd"])[0], B = void 0;
                     N && (B = A(N.data.subarray(N.start + 12, N.start + 16))), f[c] = { timescale: k, type: P }, f[P] = { timescale: k, id: c, codec: B };
@@ -11675,7 +11675,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
               if (k) {
                 var I = b(p, 4);
                 o === 1 && (I *= Math.pow(2, 32), I += b(p, 8));
-                var x = k.timescale || 9e4, P = I / x;
+                var C = k.timescale || 9e4, P = I / C;
                 if (isFinite(P) && (i === null || P < i))
                   return P;
               }
@@ -11688,8 +11688,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
           for (var v = 0, _ = 0, p = 0, o = g(a, ["moof", "traf"]), s = 0; s < o.length; s++) {
             var i = o[s], c = g(i, ["tfhd"])[0], l = b(c, 4), k = f[l];
             if (k) {
-              var I = k.default, x = b(c, 0) | (I == null ? void 0 : I.flags), P = I == null ? void 0 : I.duration;
-              x & 8 && (x & 2 ? P = b(c, 12) : P = b(c, 8));
+              var I = k.default, C = b(c, 0) | (I == null ? void 0 : I.flags), P = I == null ? void 0 : I.duration;
+              C & 8 && (C & 2 ? P = b(c, 12) : P = b(c, 8));
               for (var N = k.timescale || 9e4, B = g(i, ["trun"]), F = 0; F < B.length; F++) {
                 if (P) {
                   var U = b(B[F], 4);
@@ -11733,8 +11733,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
                     u(c, 4, k - v * i);
                   else {
                     k *= Math.pow(2, 32), k += b(c, 8), k -= v * i, k = Math.max(k, 0);
-                    var I = Math.floor(k / (y + 1)), x = Math.floor(k % (y + 1));
-                    u(c, 4, I), u(c, 8, x);
+                    var I = Math.floor(k / (y + 1)), C = Math.floor(k % (y + 1));
+                    u(c, 4, I), u(c, 8, C);
                   }
                 });
               }
@@ -11755,7 +11755,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           var v = new Uint8Array(a.length + f.length);
           return v.set(a), v.set(f, a.length), v;
         }
-      }, "./src/utils/output-filter.ts": function(C, T, e) {
+      }, "./src/utils/output-filter.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "default", function() {
           return R;
@@ -11773,7 +11773,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             this.cueRanges = [];
           }, m;
         }();
-      }, "./src/utils/texttrack-utils.ts": function(C, T, e) {
+      }, "./src/utils/texttrack-utils.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "sendAddTrackEvent", function() {
           return m;
@@ -11852,7 +11852,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             }
           return E;
         }
-      }, "./src/utils/time-ranges.ts": function(C, T, e) {
+      }, "./src/utils/time-ranges.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = { toString: function(m) {
@@ -11861,7 +11861,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
           return y;
         } };
         T.default = R;
-      }, "./src/utils/timescale-conversion.ts": function(C, T, e) {
+      }, "./src/utils/timescale-conversion.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "toTimescaleFromBase", function() {
           return m;
@@ -11887,7 +11887,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function A(L, b) {
           return b === void 0 && (b = 1), m(L, R, 1 / b);
         }
-      }, "./src/utils/typed-array.ts": function(C, T, e) {
+      }, "./src/utils/typed-array.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "sliceUint8", function() {
           return R;
@@ -11895,7 +11895,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function R(m, y, w) {
           return Uint8Array.prototype.slice ? m.slice(y, w) : new Uint8Array(Array.prototype.slice.call(m, y, w));
         }
-      }, "./src/utils/vttcue.ts": function(C, T, e) {
+      }, "./src/utils/vttcue.ts": function(x, T, e) {
         "use strict";
         e.r(T), T.default = function() {
           if (typeof self != "undefined" && self.VTTCue)
@@ -12012,7 +12012,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return u.convertCueToDOMTree(self, this.text);
           }, b;
         }();
-      }, "./src/utils/vttparser.ts": function(C, T, e) {
+      }, "./src/utils/vttparser.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "parseTimeStamp", function() {
           return y;
@@ -12233,7 +12233,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
             return d.onflush && d.onflush(), this;
           }, E;
         }();
-      }, "./src/utils/webvtt-parser.ts": function(C, T, e) {
+      }, "./src/utils/webvtt-parser.ts": function(x, T, e) {
         "use strict";
         e.r(T), e.d(T, "generateCueId", function() {
           return D;
@@ -12270,10 +12270,10 @@ svg, img, ::slotted(svg), ::slotted(img) {
         function S(d, t, r, n, h, a, f, v) {
           var _ = new m.VTTParser(), p = Object(y.utf8ArrayToStr)(new Uint8Array(d)).trim().replace(L, `
 `).split(`
-`), o = [], s = Object(w.toMpegTsClockFromTimescale)(t, r), i = "00:00.000", c = 0, l = 0, k, I = true, x = false;
+`), o = [], s = Object(w.toMpegTsClockFromTimescale)(t, r), i = "00:00.000", c = 0, l = 0, k, I = true, C = false;
           _.oncue = function(P) {
             var N = n[h], B = n.ccOffset, F = (c - s) / 9e4;
-            if (N != null && N.new && (l !== void 0 ? B = n.ccOffset = N.start : E(n, h, F)), F && (B = F - n.presentationOffset), x) {
+            if (N != null && N.new && (l !== void 0 ? B = n.ccOffset = N.start : E(n, h, F)), F && (B = F - n.presentationOffset), C) {
               var U = P.endTime - P.startTime, j = Object(A.normalizePts)((P.startTime + B - l) * 9e4, a * 9e4) / 9e4;
               P.startTime = j, P.endTime = j + U;
             }
@@ -12290,13 +12290,13 @@ svg, img, ::slotted(svg), ::slotted(img) {
           }, p.forEach(function(P) {
             if (I)
               if (b(P, "X-TIMESTAMP-MAP=")) {
-                I = false, x = true, P.substr(16).split(",").forEach(function(N) {
+                I = false, C = true, P.substr(16).split(",").forEach(function(N) {
                   b(N, "LOCAL:") ? i = N.substr(6) : b(N, "MPEGTS:") && (c = parseInt(N.substr(7)));
                 });
                 try {
                   l = u(i) / 1e3;
                 } catch (N) {
-                  x = false, k = N;
+                  C = false, k = N;
                 }
                 return;
               } else
@@ -12305,7 +12305,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
 `);
           }), _.flush();
         }
-      }, "./src/utils/xhr-loader.ts": function(C, T, e) {
+      }, "./src/utils/xhr-loader.ts": function(x, T, e) {
         "use strict";
         e.r(T);
         var R = e("./src/utils/logger.ts"), m = e("./src/loader/load-stats.ts"), y = /^age:\s*[\d.]+\s*$/m, w = function() {
@@ -12387,19 +12387,19 @@ svg, img, ::slotted(svg), ::slotted(img) {
         T.default = w;
       } }).default;
     });
-  }), Vn = ae((O) => {
-    var M = Object.create, C = Object.defineProperty, T = Object.getOwnPropertyDescriptor, e = Object.getOwnPropertyNames, R = Object.getPrototypeOf, m = Object.prototype.hasOwnProperty, y = (i) => C(i, "__esModule", { value: true }), w = (i, c) => {
+  }), Kn = ae((O) => {
+    var M = Object.create, x = Object.defineProperty, T = Object.getOwnPropertyDescriptor, e = Object.getOwnPropertyNames, R = Object.getPrototypeOf, m = Object.prototype.hasOwnProperty, y = (i) => x(i, "__esModule", { value: true }), w = (i, c) => {
       y(i);
       for (var l in c)
-        C(i, l, { get: c[l], enumerable: true });
+        x(i, l, { get: c[l], enumerable: true });
     }, A = (i, c, l) => {
       if (c && typeof c == "object" || typeof c == "function")
         for (let k of e(c))
-          !m.call(i, k) && k !== "default" && C(i, k, { get: () => c[k], enumerable: !(l = T(c, k)) || l.enumerable });
+          !m.call(i, k) && k !== "default" && x(i, k, { get: () => c[k], enumerable: !(l = T(c, k)) || l.enumerable });
       return i;
-    }, L = (i) => A(y(C(i != null ? M(R(i)) : {}, "default", i && i.__esModule && "default" in i ? { get: () => i.default, enumerable: true } : { value: i, enumerable: true })), i);
+    }, L = (i) => A(y(x(i != null ? M(R(i)) : {}, "default", i && i.__esModule && "default" in i ? { get: () => i.default, enumerable: true } : { value: i, enumerable: true })), i);
     w(O, { ExtensionMimeTypeMap: () => E, Hls: () => u.default, MimeTypeShorthandMap: () => S, StreamTypes: () => D, allMediaTypes: () => t, getStreamTypeConfig: () => f, getType: () => a, inferMimeTypeFromURL: () => h, initialize: () => s, loadMedia: () => o, mux: () => b.default, setupHls: () => _, setupMux: () => p, shorthandKeys: () => d, teardown: () => v, toMuxVideoURL: () => n, toPlaybackIdParts: () => r });
-    var b = L(Hn()), u = L(Gn()), g = (i, c) => i in c, D = { VOD: "on-demand", LIVE: "live", LL_LIVE: "ll-live" }, E = { M3U8: "application/vnd.apple.mpegurl", MP4: "video/mp4" }, S = { HLS: E.M3U8 }, d = Object.keys(S), t = [...Object.values(E), ...d, ...d.map((i) => i.toUpperCase()), ...d.map((i) => i.toLowerCase())], r = (i) => {
+    var b = L(Gn()), u = L(Vn()), g = (i, c) => i in c, D = { VOD: "on-demand", LIVE: "live", LL_LIVE: "ll-live" }, E = { M3U8: "application/vnd.apple.mpegurl", MP4: "video/mp4" }, S = { HLS: E.M3U8 }, d = Object.keys(S), t = [...Object.values(E), ...d, ...d.map((i) => i.toUpperCase()), ...d.map((i) => i.toLowerCase())], r = (i) => {
       let c = i.indexOf("?");
       if (c < 0)
         return [i];
@@ -12434,16 +12434,16 @@ svg, img, ::slotted(svg), ::slotted(img) {
       c && (c.detachMedia(), c.destroy()), (i == null ? void 0 : i.mux) && (i.mux.destroy(), i.mux);
     }, _ = (i, c) => {
       var l;
-      let { debug: k, preferMse: I, streamType: x, startTime: P = -1 } = i, N = a(i), B = N === E.M3U8, F = !N || ((l = c == null ? void 0 : c.canPlayType(N)) != null ? l : true), U = u.default.isSupported();
+      let { debug: k, preferMse: I, streamType: C, startTime: P = -1 } = i, N = a(i), B = N === E.M3U8, F = !N || ((l = c == null ? void 0 : c.canPlayType(N)) != null ? l : true), U = u.default.isSupported();
       if (B && !(!B || F && !(I && U)) && U) {
-        let j = f(x);
+        let j = f(C);
         return new u.default({ debug: k, startPosition: P, ...j });
       }
     }, p = (i, c, l) => {
       let { envKey: k } = i;
       if (k && c) {
-        let { playerInitTime: I, playerSoftwareName: x, playerSoftwareVersion: P, beaconDomain: N, metadata: B, debug: F } = i;
-        b.default.monitor(c, { debug: F, beaconDomain: N, hlsjs: l, Hls: l ? u.default : void 0, data: { env_key: k, player_software_name: x, player_software_version: P, player_init_time: I, ...B } });
+        let { playerInitTime: I, playerSoftwareName: C, playerSoftwareVersion: P, beaconDomain: N, metadata: B, debug: F } = i;
+        b.default.monitor(c, { debug: F, beaconDomain: N, hlsjs: l, Hls: l ? u.default : void 0, data: { env_key: k, player_software_name: C, player_software_version: P, player_init_time: I, ...B } });
       }
     }, o = (i, c, l) => {
       var k;
@@ -12451,7 +12451,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
         console.warn("attempting to load media before mediaEl exists");
         return;
       }
-      let { preferMse: I } = i, x = a(i), P = x === E.M3U8, N = !x || ((k = c == null ? void 0 : c.canPlayType(x)) != null ? k : true), B = u.default.isSupported(), F = !P || N && !(I && B), { src: U } = i;
+      let { preferMse: I } = i, C = a(i), P = C === E.M3U8, N = !C || ((k = c == null ? void 0 : c.canPlayType(C)) != null ? k : true), B = u.default.isSupported(), F = !P || N && !(I && B), { src: U } = i;
       if (c && N && F)
         if (typeof U == "string") {
           let { startTime: j } = i;
@@ -12483,8 +12483,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
       let k = _(i, c);
       return p(i, c, k), o(i, c, k), k;
     };
-  }), Ol = Wr(jn()), $r = document.createElement("template");
-  $r.innerHTML = `
+  }), Pl = $r(Hn()), Yr = document.createElement("template");
+  Yr.innerHTML = `
 <style>
   :host {
     /* Supposed to reset styles. Need to understand the specific effects more */
@@ -12513,15 +12513,15 @@ svg, img, ::slotted(svg), ::slotted(img) {
   var te = class extends HTMLElement {
     constructor() {
       super();
-      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild($r.content.cloneNode(true));
+      this.attachShadow({ mode: "open" }), this.shadowRoot.appendChild(Yr.content.cloneNode(true));
       let O = this.nativeEl = this.shadowRoot.querySelector("video");
-      Array.prototype.forEach.call(this.attributes, (C) => {
-        this.attributeChangedCallback(C.name, null, C.value);
-      }), O.defaultMuted && (O.muted = true), this.querySelectorAll(":scope > track").forEach((C) => {
-        this.nativeEl.appendChild(C.cloneNode());
+      Array.prototype.forEach.call(this.attributes, (x) => {
+        this.attributeChangedCallback(x.name, null, x.value);
+      }), O.defaultMuted && (O.muted = true), this.querySelectorAll(":scope > track").forEach((x) => {
+        this.nativeEl.appendChild(x.cloneNode());
       });
-      let M = (C, T) => {
-        for (let e of C)
+      let M = (x, T) => {
+        for (let e of x)
           e.type === "childList" && (e.removedNodes.forEach((R) => {
             this.nativeEl.removeChild(this.nativeEl.querySelector(`track[src="${R.src}"]`));
           }), e.addedNodes.forEach((R) => {
@@ -12532,31 +12532,31 @@ svg, img, ::slotted(svg), ::slotted(img) {
     }
     static get observedAttributes() {
       let O = [];
-      Object.getOwnPropertyNames(this.prototype).forEach((C) => {
+      Object.getOwnPropertyNames(this.prototype).forEach((x) => {
         let T = false;
         try {
-          typeof this.prototype[C] == "function" && (T = true);
+          typeof this.prototype[x] == "function" && (T = true);
         } catch {
         }
-        !T && C !== C.toUpperCase() && O.push(C.toLowerCase());
+        !T && x !== x.toUpperCase() && O.push(x.toLowerCase());
       });
       let M = Object.getPrototypeOf(this).observedAttributes;
       return M && (O = O.concat(M)), O;
     }
-    attributeChangedCallback(O, M, C) {
-      let T = Object.getOwnPropertyNames(Object.getPrototypeOf(this)), e = qn(T, O), R = Object.getPrototypeOf(this.constructor).toString().indexOf("function HTMLElement") === 0;
-      e && !R ? typeof this[e] == "boolean" ? C === null ? this[e] = false : this[e] = true : this[e] = C : C === null ? this.nativeEl.removeAttribute(O) : ["id", "class"].indexOf(O) === -1 && this.nativeEl.setAttribute(O, C);
+    attributeChangedCallback(O, M, x) {
+      let T = Object.getOwnPropertyNames(Object.getPrototypeOf(this)), e = Wn(T, O), R = Object.getPrototypeOf(this.constructor).toString().indexOf("function HTMLElement") === 0;
+      e && !R ? typeof this[e] == "boolean" ? x === null ? this[e] = false : this[e] = true : this[e] = x : x === null ? this.nativeEl.removeAttribute(O) : ["id", "class"].indexOf(O) === -1 && this.nativeEl.setAttribute(O, x);
     }
     connectedCallback() {
     }
-  }, se = [], Yr = document.createElement("video"), Kn = ["webkitDisplayingFullscreen", "webkitSupportsFullscreen"];
-  for (let O = Object.getPrototypeOf(Yr); O && O !== HTMLElement.prototype; O = Object.getPrototypeOf(O))
+  }, se = [], zr = document.createElement("video"), qn = ["webkitDisplayingFullscreen", "webkitSupportsFullscreen"];
+  for (let O = Object.getPrototypeOf(zr); O && O !== HTMLElement.prototype; O = Object.getPrototypeOf(O))
     Object.keys(O).forEach((M) => {
-      Kn.indexOf(M) === -1 && se.push(M);
+      qn.indexOf(M) === -1 && se.push(M);
     });
   se = se.concat(Object.keys(EventTarget.prototype));
   se.forEach((O) => {
-    if (typeof Yr[O] == "function")
+    if (typeof zr[O] == "function")
       te.prototype[O] = function() {
         return this.nativeEl[O].apply(this.nativeEl, arguments);
       };
@@ -12564,38 +12564,38 @@ svg, img, ::slotted(svg), ::slotted(img) {
       let M = { get() {
         return this.nativeEl[O];
       } };
-      O !== O.toUpperCase() && (M.set = function(C) {
-        this.nativeEl[O] = C;
+      O !== O.toUpperCase() && (M.set = function(x) {
+        this.nativeEl[O] = x;
       }), Object.defineProperty(te.prototype, O, M);
     }
   });
-  function qn(O, M) {
-    let C = null;
+  function Wn(O, M) {
+    let x = null;
     return O.forEach((T) => {
-      T.toLowerCase() == M.toLowerCase() && (C = T);
-    }), C;
+      T.toLowerCase() == M.toLowerCase() && (x = T);
+    }), x;
   }
   globalThis.customElements.get("custom-video") || (globalThis.customElements.define("custom-video", te), globalThis.CustomVideoElement = te);
-  var zr = te, qt = Wr(Vn()), Wn = () => {
+  var Qr = te, qt = $r(Kn()), $n = () => {
     try {
       return "0.2.0";
     } catch {
     }
     return "UNKNOWN";
-  }, $n = Wn(), Yn = () => $n, ht = { ENV_KEY: "env-key", DEBUG: "debug", PLAYBACK_ID: "playback-id", METADATA_URL: "metadata-url", PREFER_MSE: "prefer-mse", METADATA_VIDEO_ID: "metadata-video-id", METADATA_VIDEO_TITLE: "metadata-video-title", METADATA_VIEWER_USER_ID: "metadata-viewer-user-id", BEACON_DOMAIN: "beacon-domain", TYPE: "type", STREAM_TYPE: "stream-type", START_TIME: "start-time" }, zn = Object.values(ht), Qn = Yn(), Xn = "mux-video", Qr = class extends zr {
+  }, Yn = $n(), zn = () => Yn, ht = { ENV_KEY: "env-key", DEBUG: "debug", PLAYBACK_ID: "playback-id", METADATA_URL: "metadata-url", PREFER_MSE: "prefer-mse", METADATA_VIDEO_ID: "metadata-video-id", METADATA_VIDEO_TITLE: "metadata-video-title", METADATA_VIEWER_USER_ID: "metadata-viewer-user-id", BEACON_DOMAIN: "beacon-domain", TYPE: "type", STREAM_TYPE: "stream-type", START_TIME: "start-time" }, Qn = Object.values(ht), Xn = zn(), Zn = "mux-video", Xr = class extends Qr {
     constructor() {
       super();
       this.__metadata = {}, this.__muxPlayerInitTime = Date.now();
     }
     static get observedAttributes() {
       var O;
-      return [...zn, ...(O = zr.observedAttributes) != null ? O : []];
+      return [...Qn, ...(O = Qr.observedAttributes) != null ? O : []];
     }
     get playerSoftwareName() {
-      return Xn;
+      return Zn;
     }
     get playerSoftwareVersion() {
-      return Qn;
+      return Xn;
     }
     get hls() {
       return this.__hls;
@@ -12672,26 +12672,26 @@ svg, img, ::slotted(svg), ::slotted(img) {
     unload() {
       (0, qt.teardown)(this.nativeEl, this.__hls), this.__hls = void 0;
     }
-    attributeChangedCallback(O, M, C) {
+    attributeChangedCallback(O, M, x) {
       switch (O) {
         case "src":
-          let T = !!M, e = !!C;
+          let T = !!M, e = !!x;
           !T && e ? this.load() : T && !e ? this.unload() : T && e && (this.unload(), this.load());
           break;
         case ht.PLAYBACK_ID:
-          this.src = (0, qt.toMuxVideoURL)(C != null ? C : void 0);
+          this.src = (0, qt.toMuxVideoURL)(x != null ? x : void 0);
           break;
         case ht.DEBUG:
           let R = this.debug;
           this.mux && console.info("Cannot toggle debug mode of mux data after initialization. Make sure you set all metadata to override before setting the src."), this.hls && (this.hls.config.debug = R);
           break;
         case ht.METADATA_URL:
-          C && fetch(C).then((m) => m.json()).then((m) => this.metadata = m).catch((m) => console.error(`Unable to load or parse metadata JSON from metadata-url ${C}!`));
+          x && fetch(x).then((m) => m.json()).then((m) => this.metadata = m).catch((m) => console.error(`Unable to load or parse metadata JSON from metadata-url ${x}!`));
           break;
         default:
           break;
       }
-      super.attributeChangedCallback(O, M, C);
+      super.attributeChangedCallback(O, M, x);
     }
     disconnectedCallback() {
       this.unload();
@@ -12700,11 +12700,11 @@ svg, img, ::slotted(svg), ::slotted(img) {
       this.src && this.load();
     }
   };
-  globalThis.customElements.get("mux-video") || (globalThis.customElements.define("mux-video", Qr), globalThis.MuxVideoElement = Qr);
-  var Pl = qt.PlaybackEngine, Nl = qt.ExtensionMimeTypeMap, Fl = qt.PlaybackEngine;
-  var Xr = ["autoplay", "crossorigin", "loop", "muted", "playsinline", "src", "poster"], Zr = ["loadstart", "loadedmetadata", "progress", "durationchange", "volumechange", "ratechange", "resize", "waiting", "play", "playing", "timeupdate", "pause", "seeking", "seeked", "ended"], Jr = class extends HTMLElement {
+  globalThis.customElements.get("mux-video") || (globalThis.customElements.define("mux-video", Xr), globalThis.MuxVideoElement = Xr);
+  var Nl = qt.PlaybackEngine, Fl = qt.ExtensionMimeTypeMap, Ul = qt.PlaybackEngine;
+  var Zr = ["autoplay", "crossorigin", "loop", "muted", "playsinline", "src", "poster"], Jr = ["loadstart", "loadedmetadata", "progress", "durationchange", "volumechange", "ratechange", "resize", "waiting", "play", "playing", "timeupdate", "pause", "seeking", "seeked", "ended"], ti = class extends HTMLElement {
     static get observedAttributes() {
-      return [...Xr];
+      return [...Zr];
     }
     constructor() {
       super();
@@ -12725,17 +12725,17 @@ svg, img, ::slotted(svg), ::slotted(img) {
       };
       new MutationObserver(M).observe(this, { childList: true, subtree: true });
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       var e, R;
-      Xr.includes(M) && ((e = this.video) == null ? void 0 : e.getAttribute(M)) != T && ((R = this.video) == null || R.setAttribute(M, T));
+      Zr.includes(M) && ((e = this.video) == null ? void 0 : e.getAttribute(M)) != T && ((R = this.video) == null || R.setAttribute(M, T));
     }
-    addEventListener(M, C, T) {
+    addEventListener(M, x, T) {
       var e;
-      Zr.includes(M) && ((e = this.video) == null || e.addEventListener(M, C, T));
+      Jr.includes(M) && ((e = this.video) == null || e.addEventListener(M, x, T));
     }
-    removeEventListener(M, C, T) {
+    removeEventListener(M, x, T) {
       var e;
-      Zr.includes(M) && ((e = this.video) == null || e.removeEventListener(M, C, T));
+      Jr.includes(M) && ((e = this.video) == null || e.removeEventListener(M, x, T));
     }
     play() {
       var M;
@@ -12750,24 +12750,24 @@ svg, img, ::slotted(svg), ::slotted(img) {
       return (M = this.shadowRoot) == null ? void 0 : M.querySelector("mux-video");
     }
     get paused() {
-      var M, C;
-      return (C = (M = this.video) == null ? void 0 : M.paused) != null ? C : true;
+      var M, x;
+      return (x = (M = this.video) == null ? void 0 : M.paused) != null ? x : true;
     }
     get duration() {
-      var M, C;
-      return (C = (M = this.video) == null ? void 0 : M.duration) != null ? C : NaN;
+      var M, x;
+      return (x = (M = this.video) == null ? void 0 : M.duration) != null ? x : NaN;
     }
     get ended() {
-      var M, C;
-      return (C = (M = this.video) == null ? void 0 : M.ended) != null ? C : false;
+      var M, x;
+      return (x = (M = this.video) == null ? void 0 : M.ended) != null ? x : false;
     }
     get buffered() {
       var M;
       return (M = this.video) == null ? void 0 : M.buffered;
     }
     get readyState() {
-      var M, C;
-      return (C = (M = this.video) == null ? void 0 : M.readyState) != null ? C : 0;
+      var M, x;
+      return (x = (M = this.video) == null ? void 0 : M.readyState) != null ? x : 0;
     }
     get videoWidth() {
       var M;
@@ -12778,15 +12778,15 @@ svg, img, ::slotted(svg), ::slotted(img) {
       return (M = this.video) == null ? void 0 : M.videoHeight;
     }
     get currentTime() {
-      var M, C;
-      return (C = (M = this.video) == null ? void 0 : M.currentTime) != null ? C : 0;
+      var M, x;
+      return (x = (M = this.video) == null ? void 0 : M.currentTime) != null ? x : 0;
     }
     set currentTime(M) {
       this.video && (this.video.currentTime = Number(M));
     }
     get volume() {
-      var M, C;
-      return (C = (M = this.video) == null ? void 0 : M.volume) != null ? C : 1;
+      var M, x;
+      return (x = (M = this.video) == null ? void 0 : M.volume) != null ? x : 1;
     }
     set volume(M) {
       this.video && (this.video.volume = Number(M));
@@ -12805,8 +12805,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
       this.setAttribute("poster", `${M}`);
     }
     get playbackRate() {
-      var M, C;
-      return (C = (M = this.video) == null ? void 0 : M.playbackRate) != null ? C : 1;
+      var M, x;
+      return (x = (M = this.video) == null ? void 0 : M.playbackRate) != null ? x : 1;
     }
     set playbackRate(M) {
       this.video && (this.video.playbackRate = Number(M));
@@ -12839,31 +12839,31 @@ svg, img, ::slotted(svg), ::slotted(img) {
   function Wt(O, M) {
     return O.video ? O.video.getAttribute(M) : O.getAttribute(M);
   }
-  var Ie = Jr;
-  function ti(O) {
+  var Me = ti;
+  function ei(O) {
     let M = "";
-    return Object.entries(O).forEach(([C, T]) => {
-      M += `${Zn(C)}: ${T};`;
+    return Object.entries(O).forEach(([x, T]) => {
+      M += `${Jn(x)}: ${T};`;
     }), M;
   }
-  function Zn(O) {
+  function Jn(O) {
     return O.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
   }
-  var Jn = 0;
-  function ta(O) {
-    var M = ++Jn;
+  var ta = 0;
+  function ea(O) {
+    var M = ++ta;
     return `${O}${M}`;
   }
   function st(O, ...M) {
-    let C = ta(""), T = [];
-    M = M.map((y) => y == null ? "" : y instanceof Node || y instanceof oe || y instanceof ee ? `<div id="_${C}${T.push(y)}"></div>` : y);
+    let x = ea(""), T = [];
+    M = M.map((y) => y == null ? "" : y instanceof Node || y instanceof oe || y instanceof ee ? `<div id="_${x}${T.push(y)}"></div>` : y);
     let e = String.raw(O, ...M).replace(/>\n+/g, ">").replace(/\s+</g, "<").replace(/>\s+/g, ">"), R = document.createElement("template");
     R.innerHTML = e;
     let m = T.map((y, w) => {
       let { id: A, template: L, props: b } = y;
       if (y instanceof oe) {
         let u = L(b) || st``;
-        y = new ei(u.childNodes, u.childFragments, L);
+        y = new ri(u.childNodes, u.childFragments, L);
       }
       return y.id = A || w, y;
     });
@@ -12871,26 +12871,26 @@ svg, img, ::slotted(svg), ::slotted(img) {
       var b;
       let A = new DocumentFragment();
       y instanceof ee ? A.append(...y.childNodes) : A.append(y);
-      let L = R.content.querySelector(`#_${C}${w + 1}`);
+      let L = R.content.querySelector(`#_${x}${w + 1}`);
       (b = L == null ? void 0 : L.parentNode) == null || b.replaceChild(A, L);
     }), new ee(R.content.childNodes, m);
   }
   var ee = class {
-    constructor(M, C) {
-      this.childFragments = C, this._cachedChildNodes = [...M], this._mark = new Text(), this.id = void 0;
+    constructor(M, x) {
+      this.childFragments = x, this._cachedChildNodes = [...M], this._mark = new Text(), this.id = void 0;
     }
     get fragments() {
       let M = {};
-      for (let C of this.childFragments)
-        C.id && (M[C.id] = C);
+      for (let x of this.childFragments)
+        x.id && (M[x.id] = x);
       return M;
     }
     get childNodes() {
       return [this._mark, ...this._cachedChildNodes];
     }
     replaceChildren(...M) {
-      let C = this._cachedChildNodes;
-      this._cachedChildNodes = [...M], C.forEach((e) => {
+      let x = this._cachedChildNodes;
+      this._cachedChildNodes = [...M], x.forEach((e) => {
         var R;
         return (R = e.parentNode) == null ? void 0 : R.removeChild(e);
       });
@@ -12900,48 +12900,48 @@ svg, img, ::slotted(svg), ::slotted(img) {
         return (m = (R = this._mark) == null ? void 0 : R.parentNode) == null ? void 0 : m.insertBefore(e, T);
       });
     }
-  }, ei = class extends ee {
-    constructor(M, C, T) {
-      super(M, C);
+  }, ri = class extends ee {
+    constructor(M, x, T) {
+      super(M, x);
       this.template = T;
     }
     render(M) {
-      let C = this.template(M) || st``;
-      return this.childFragments = C.childFragments, this.replaceChildren(...C.childNodes), this;
+      let x = this.template(M) || st``;
+      return this.childFragments = x.childFragments, this.replaceChildren(...x.childNodes), this;
     }
   };
-  function St(O, M, C) {
-    return new oe(O, M, C);
+  function St(O, M, x) {
+    return new oe(O, M, x);
   }
   var oe = class {
-    constructor(M, C, T) {
-      this.id = M, this.template = C, this.props = T;
+    constructor(M, x, T) {
+      this.id = M, this.template = x, this.props = T;
     }
   };
-  var ea = () => {
+  var ra = () => {
     try {
       return "0.1.0";
     } catch {
     }
     return "UNKNOWN";
-  }, ra = ea(), ri = () => ra, ii = (O) => `https://image.mux.com/${O}/thumbnail.jpg`, ni = (O) => `https://image.mux.com/${O}/storyboard.vtt`, le, ia = (O = "video") => le || (typeof window != "undefined" && (le = document.createElement(O)), le), ai = async (O = ia()) => {
+  }, ia = ra(), ii = () => ia, ni = (O) => `https://image.mux.com/${O}/thumbnail.jpg`, ai = (O) => `https://image.mux.com/${O}/storyboard.vtt`, le, na = (O = "video") => le || (typeof window != "undefined" && (le = document.createElement(O)), le), si = async (O = na()) => {
     if (!O)
       return false;
     let M = O.volume;
-    return O.volume = M / 2 + 0.1, new Promise((C, T) => {
+    return O.volume = M / 2 + 0.1, new Promise((x, T) => {
       setTimeout(() => {
-        C(O.volume !== M);
+        x(O.volume !== M);
       }, 0);
     });
   };
-  function Me(O) {
+  function Ce(O) {
     return O.video ? Array.from(O.video.textTracks).filter(({ kind: M }) => M === "subtitles" || M === "captions") : [];
   }
-  function si(O) {
-    let { primaryColor: M, secondaryColor: C, tertiaryColor: T } = O;
-    return ti({ maxWidth: "100%", color: "#ffffff", ...M ? { "--media-icon-color": M, "--media-range-thumb-background": M, "--media-range-bar-color": M, color: M } : {}, ...C ? { "--media-background-color": C, "--media-control-background": C } : {}, ...T ? { "--media-range-track-background": T } : {} });
+  function oi(O) {
+    let { primaryColor: M, secondaryColor: x, tertiaryColor: T } = O;
+    return ei({ maxWidth: "100%", ...M ? { "--media-icon-color": M, "--media-range-thumb-background": M, "--media-range-bar-color": M, color: M } : {}, ...x ? { "--media-background-color": x, "--media-control-background": x, "--media-control-hover-background": x } : {} });
   }
-  var oi = (O) => st`
+  var li = (O) => st`
   <svg viewBox="0 0 20 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
@@ -12951,42 +12951,42 @@ svg, img, ::slotted(svg), ::slotted(img) {
       d="M19 0H1a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h2.94L5 13.75H1.25V1.25h17.5v12.5H15L16.06 15H19a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1Z"
     />
   </svg>
-`, li = (O) => st`
+`, ui = (O) => st`
   <svg viewBox="0 0 20 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
       d="M19.83 2.68a2.58 2.58 0 0 0-2.3-2.5C15.72.06 12.86 0 10 0S4.28.06 2.47.18a2.58 2.58 0 0 0-2.3 2.5 115.86 115.86 0 0 0 0 12.64 2.58 2.58 0 0 0 2.3 2.5c1.81.12 4.67.18 7.53.18s5.72-.06 7.53-.18a2.58 2.58 0 0 0 2.3-2.5 115.86 115.86 0 0 0 0-12.64Zm-1.49 12.53a1.11 1.11 0 0 1-.91 1.11c-1.67.11-4.45.18-7.43.18s-5.76-.07-7.43-.18a1.11 1.11 0 0 1-.91-1.11 122.5 122.5 0 0 1 0-12.42 1.11 1.11 0 0 1 .91-1.11C4.24 1.57 7 1.5 10 1.5s5.76.07 7.43.18a1.11 1.11 0 0 1 .91 1.11 122.5 122.5 0 0 1 0 12.42ZM7.84 11a1.55 1.55 0 0 1-.76.18 1.57 1.57 0 0 1-.71-.18 1.69 1.69 0 0 1-.57-.42 2.1 2.1 0 0 1-.38-.58 2.47 2.47 0 0 1 0-1.64 2 2 0 0 1 .39-.66 1.73 1.73 0 0 1 .58-.42 1.81 1.81 0 0 1 .73-.16 1.68 1.68 0 0 1 .7.14 1.39 1.39 0 0 1 .51.39l1.08-.89a2.18 2.18 0 0 0-.47-.44A2.81 2.81 0 0 0 8.4 6a2.91 2.91 0 0 0-.58-.15 2.71 2.71 0 0 0-.56 0A4.08 4.08 0 0 0 5.88 6a3.27 3.27 0 0 0-1.09.67 3.14 3.14 0 0 0-.71 1.06 3.62 3.62 0 0 0-.26 1.39 3.57 3.57 0 0 0 .26 1.38 3 3 0 0 0 .71 1.06 3.27 3.27 0 0 0 1.09.67 3.85 3.85 0 0 0 1.38.23 3.2 3.2 0 0 0 1.28-.27 2.49 2.49 0 0 0 1-.83l-1.17-.88a1.42 1.42 0 0 1-.53.52Zm6.62 0a1.58 1.58 0 0 1-.76.18A1.54 1.54 0 0 1 13 11a1.69 1.69 0 0 1-.57-.42A2.12 2.12 0 0 1 12 10a2.29 2.29 0 0 1 .39-2.3 1.84 1.84 0 0 1 1.32-.58 1.71 1.71 0 0 1 .7.14 1.39 1.39 0 0 1 .51.39L16 6.73a2.43 2.43 0 0 0-.47-.44A3.22 3.22 0 0 0 15 6a3 3 0 0 0-.57-.15 2.87 2.87 0 0 0-.57 0A4.06 4.06 0 0 0 12.5 6a3.17 3.17 0 0 0-1.09.67 3 3 0 0 0-.72 1.06 3.62 3.62 0 0 0-.25 1.39 3.57 3.57 0 0 0 .25 1.38 2.93 2.93 0 0 0 .72 1.06 3.17 3.17 0 0 0 1.09.67 3.83 3.83 0 0 0 1.37.23 3.16 3.16 0 0 0 1.28-.27 2.45 2.45 0 0 0 1-.83L15 10.51a1.49 1.49 0 0 1-.54.49Z"
     />
   </svg>
-`, ui = (O) => st`
+`, di = (O) => st`
   <svg viewBox="0 0 20 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
       d="M19.83 2.68a2.58 2.58 0 0 0-2.3-2.5C13.91-.06 6.09-.06 2.47.18a2.58 2.58 0 0 0-2.3 2.5 115.86 115.86 0 0 0 0 12.64 2.58 2.58 0 0 0 2.3 2.5c3.62.24 11.44.24 15.06 0a2.58 2.58 0 0 0 2.3-2.5 115.86 115.86 0 0 0 0-12.64ZM8.42 12.78a3.63 3.63 0 0 1-1.51.32 4.76 4.76 0 0 1-1.63-.27A4 4 0 0 1 4 12a3.67 3.67 0 0 1-.84-1.26 4.23 4.23 0 0 1-.3-1.63 4.28 4.28 0 0 1 .3-1.64A3.53 3.53 0 0 1 4 6.26a3.89 3.89 0 0 1 1.29-.8 4.76 4.76 0 0 1 1.63-.27 4.06 4.06 0 0 1 .67.06 4.57 4.57 0 0 1 .68.18 3.59 3.59 0 0 1 .64.34 2.7 2.7 0 0 1 .55.52l-1.27 1a1.79 1.79 0 0 0-.6-.46 2 2 0 0 0-.83-.16 2 2 0 0 0-1.56.69 2.35 2.35 0 0 0-.46.77 2.78 2.78 0 0 0-.16 1 2.74 2.74 0 0 0 .16 1 2.39 2.39 0 0 0 .46.77 2.07 2.07 0 0 0 .67.5 2 2 0 0 0 .84.18 1.87 1.87 0 0 0 .9-.21 1.78 1.78 0 0 0 .65-.6l1.38 1a2.88 2.88 0 0 1-1.22 1.01Zm7.52 0a3.63 3.63 0 0 1-1.51.32 4.76 4.76 0 0 1-1.63-.27 3.89 3.89 0 0 1-1.28-.83 3.55 3.55 0 0 1-.85-1.26 4.23 4.23 0 0 1-.3-1.63 4.28 4.28 0 0 1 .3-1.64 3.43 3.43 0 0 1 .85-1.25 3.75 3.75 0 0 1 1.28-.8 4.76 4.76 0 0 1 1.63-.27 4 4 0 0 1 .67.06 4.27 4.27 0 0 1 .68.18 3.59 3.59 0 0 1 .64.34 2.46 2.46 0 0 1 .55.52l-1.27 1a1.79 1.79 0 0 0-.6-.46 2 2 0 0 0-.83-.16 2 2 0 0 0-1.56.69 2.35 2.35 0 0 0-.46.77 3 3 0 0 0-.16 1 3 3 0 0 0 .16 1 2.58 2.58 0 0 0 .46.77 2.07 2.07 0 0 0 .67.5 2 2 0 0 0 .84.18 1.87 1.87 0 0 0 .9-.21 1.78 1.78 0 0 0 .65-.6l1.38 1a2.82 2.82 0 0 1-1.21 1.05Z"
     />
   </svg>
-`, di = (O) => st`
+`, ci = (O) => st`
   <svg viewBox="0 0 18 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
       d="M17.25 11.5h-5a.76.76 0 0 0-.75.75v5a.75.75 0 0 0 1.5 0V13h4.25a.75.75 0 0 0 0-1.5Zm-5-5h5a.75.75 0 0 0 0-1.5H13V.75a.75.75 0 0 0-1.5 0v5a.76.76 0 0 0 .75.75Zm-6.5 5h-5a.75.75 0 0 0 0 1.5H5v4.25a.75.75 0 0 0 1.5 0v-5a.76.76 0 0 0-.75-.75Zm0-11.5A.76.76 0 0 0 5 .75V5H.75a.75.75 0 0 0 0 1.5h5a.76.76 0 0 0 .75-.75v-5A.76.76 0 0 0 5.75 0Z"
     />
   </svg>
-`, ci = (O) => st`
+`, hi = (O) => st`
   <svg viewBox="0 0 18 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
       d="M17.25 11.5a.76.76 0 0 0-.75.75v4.25h-4.25a.75.75 0 0 0 0 1.5h5a.76.76 0 0 0 .75-.75v-5a.76.76 0 0 0-.75-.75Zm0-11.5h-5a.76.76 0 0 0-.75.75.76.76 0 0 0 .75.75h4.25v4.25a.75.75 0 0 0 1.5 0v-5a.76.76 0 0 0-.75-.75ZM5.75 16.5H1.5v-4.25a.76.76 0 0 0-.75-.75.76.76 0 0 0-.75.75v5a.76.76 0 0 0 .75.75h5a.75.75 0 0 0 0-1.5Zm0-16.5h-5A.76.76 0 0 0 0 .75v5a.76.76 0 0 0 .75.75.76.76 0 0 0 .75-.75V1.5h4.25A.76.76 0 0 0 6.5.75.76.76 0 0 0 5.75 0Z"
     />
   </svg>
-`, hi = (O) => st`
+`, fi = (O) => st`
   <svg viewBox="0 0 18 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
       d="M3 16.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-15a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v15ZM11.5 1a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-15a.5.5 0 0 0-.5-.5h-3Z"
     />
   </svg>
-`, fi = (O) => st`
+`, mi = (O) => st`
   <svg viewBox="0 0 18 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
@@ -13000,7 +13000,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
       d="M19 0H1a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h6.75v-1.25h-6.5V1.25h17.5v6.5H20V1a1 1 0 0 0-1-1Zm0 10h-8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1Zm-.5 6.5h-7v-5h7Z"
     />
   </svg>
-`, mi = (O) => st`
+`, pi = (O) => st`
   <svg viewBox="0 0 16 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
@@ -13014,7 +13014,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
     </text>
     <path style="fill: none" d="M0 0h16v18H0z" />
   </svg>
-`, pi = (O) => st`
+`, vi = (O) => st`
   <svg viewBox="0 0 16 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
@@ -13028,7 +13028,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
     </text>
     <path style="fill: none" d="M0 0h16v18H0z" />
   </svg>
-`, vi = (O) => st`
+`, gi = (O) => st`
   <svg viewBox="0 0 18 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
@@ -13036,7 +13036,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
     />
     <path style="fill: none" d="M0 0h18v18H0z" />
   </svg>
-`, Ce = (O) => st`
+`, Oe = (O) => st`
   <svg viewBox="0 0 18 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
@@ -13044,7 +13044,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
     />
     <path style="fill: none" d="M0 0h18v18H0z" />
   </svg>
-`, gi = (O) => st`
+`, yi = (O) => st`
   <svg viewBox="0 0 18 18" slot="${O.slot}">
     <title>${O.title}</title>
     <path
@@ -13053,8 +13053,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
     <path style="fill: none" d="M0 0h18v18H0z" />
   </svg>
 `;
-  var ue = { VOD: "on-demand", LIVE: "live", LL_LIVE: "ll-live" }, yi = { LG: "large", SM: "small" }, Ei = () => st`<div class="mxp-spacer"></div>`, bi = (O) => {
-    var M, C, T, e;
+  var ue = { VOD: "on-demand", LIVE: "live", LL_LIVE: "ll-live" }, Ei = { LG: "large", SM: "small" }, bi = () => st`<div class="mxp-spacer"></div>`, _i = (O) => {
+    var M, x, T, e;
     return st`
   <style>
     media-controller {
@@ -13081,6 +13081,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
       justify-content: center;
     }
     .mxp-center-controls media-play-button {
+      --media-control-background: transparent;
+      --media-control-hover-background: transparent;
       padding: 0;
       width: min(9%, 90px);
     }
@@ -13118,7 +13120,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
       white-space: nowrap;
     }
   </style>
-  <media-controller style="${si(O)}">
+  <media-controller style="${oi(O)}">
     <mux-video
       slot="media"
       crossorigin
@@ -13128,11 +13130,11 @@ svg, img, ::slotted(svg), ::slotted(img) {
       ${O.debug ? "debug" : ""}
       ${O.preferMse ? "prefer-mse" : ""}
       ${O.startTime != null ? `start-time="${O.startTime}"` : ""}
-      poster="${(M = O.poster) != null ? M : ii(O.playbackId)}"
+      poster="${(M = O.poster) != null ? M : ni(O.playbackId)}"
       ${O.playbackId ? `playback-id="${O.playbackId}"` : ""}
       ${O.envKey ? `env-key="${O.envKey}"` : ""}
       ${O.streamType ? `stream-type="${O.streamType}"` : ""}
-      ${((C = O.metadata) == null ? void 0 : C.video_id) ? `metadata-video-id="${O.metadata.video_id}"` : ""}
+      ${((x = O.metadata) == null ? void 0 : x.video_id) ? `metadata-video-id="${O.metadata.video_id}"` : ""}
       ${((T = O.metadata) == null ? void 0 : T.video_title) ? `metadata-video-title="${O.metadata.video_title}"` : ""}
       ${((e = O.metadata) == null ? void 0 : e.viewer_user_id) ? `metadata-viewer-user-id="${O.metadata.viewer_user_id}"` : ""}
     >
@@ -13140,44 +13142,44 @@ svg, img, ::slotted(svg), ::slotted(img) {
         label="thumbnails"
         default
         kind="metadata"
-        src=${ni(O.playbackId)}
+        src=${ai(O.playbackId)}
       />
     </mux-video>
-    ${St("chromeRenderer", na, O)}
+    ${St("chromeRenderer", aa, O)}
   </media-controller>
 `;
-  }, na = (O) => {
-    let { streamType: M, playerSize: C } = O;
-    return M === ue.LIVE || M === ue.LL_LIVE ? C === yi.LG ? la(O) : oa(O) : C === yi.LG ? sa(O) : aa(O);
+  }, aa = (O) => {
+    let { streamType: M, playerSize: x } = O;
+    return M === ue.LIVE || M === ue.LL_LIVE ? x === Ei.LG ? ua(O) : la(O) : x === Ei.LG ? oa(O) : sa(O);
   }, $t = () => st`
   <media-play-button>
-    ${fi({ slot: "play", title: "Play" })}
-    ${hi({ slot: "pause", title: "Pause" })}
+    ${mi({ slot: "play", title: "Play" })}
+    ${fi({ slot: "pause", title: "Pause" })}
   </media-play-button>
-`, _i = () => st`
-  <media-seek-backward-button>
-    ${mi({ slot: "backward", amount: 30 })}
-  </media-seek-backward-button>
 `, Ti = () => st`
+  <media-seek-backward-button>
+    ${pi({ slot: "backward", amount: 30 })}
+  </media-seek-backward-button>
+`, Ai = () => st`
   <media-seek-forward-button>
-    ${pi({ slot: "forward", amount: 30 })}
+    ${vi({ slot: "forward", amount: 30 })}
   </media-seek-forward-button>
 `, de = () => st`
   <media-mute-button>
-    ${vi({ slot: "high" })} ${Ce({ slot: "medium" })}
-    ${Ce({ slot: "low" })} ${gi({ slot: "off" })}
+    ${gi({ slot: "high" })} ${Oe({ slot: "medium" })}
+    ${Oe({ slot: "low" })} ${yi({ slot: "off" })}
   </media-mute-button>
 `, ce = () => st` <media-captions-button>
-  ${li({ slot: "off" })} ${ui({ slot: "on" })}
+  ${ui({ slot: "off" })} ${di({ slot: "on" })}
 </media-captions-button>`, he = () => st`<media-airplay-button>
-  ${oi({ slot: "airplay" })}
+  ${li({ slot: "airplay" })}
 </media-airplay-button>`, fe = () => st` <media-pip-button>
   ${xe({ slot: "enter", title: "Enter Picture-in-Picture" })}
   ${xe({ slot: "exit", title: "Exit Picture-in-Picture" })}
 </media-pip-button>`, me = () => st` <media-fullscreen-button>
-  ${ci({ slot: "enter", title: "Enter Fullscreen" })}
-  ${di({ slot: "exit", title: "Exit Fullscreen" })}
-</media-fullscreen-button>`, aa = (O) => st`
+  ${hi({ slot: "enter", title: "Enter Fullscreen" })}
+  ${ci({ slot: "exit", title: "Exit Fullscreen" })}
+</media-fullscreen-button>`, sa = (O) => st`
   <media-loading-indicator
     slot="centered-chrome"
     no-auto-hide
@@ -13188,8 +13190,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
     ${fe()}
   </media-control-bar>
   <div slot="centered-chrome" class="mxp-center-controls">
-    ${_i()} ${$t()}
-    ${Ti()}
+    ${Ti()} ${$t()}
+    ${Ai()}
   </div>
   <media-control-bar>
     <media-time-range></media-time-range>
@@ -13198,26 +13200,6 @@ svg, img, ::slotted(svg), ::slotted(img) {
     ${St("volumeRange", ({ supportsVolume: M }) => M && st`<media-volume-range></media-volume-range>`, O)}
     <media-playback-rate-button></media-playback-rate-button>
     ${me()}
-  </media-control-bar>
-`, sa = (O) => st`
-  <media-loading-indicator
-    slot="centered-chrome"
-    no-auto-hide
-  ></media-loading-indicator>
-  <div slot="centered-chrome" class="mxp-center-controls">
-    ${$t()}
-  </div>
-  <media-control-bar>
-    ${$t()} ${_i()}
-    ${Ti()}
-    <media-time-range></media-time-range>
-    <media-time-display show-duration remaining></media-time-display>
-    ${de()}
-    ${St("volumeRange", ({ supportsVolume: M }) => M && st`<media-volume-range></media-volume-range>`, O)}
-    <media-playback-rate-button></media-playback-rate-button>
-    ${St("captionsButton", ({ hasCaptions: M }) => M && ce(), O)}
-    ${St("airplayButton", ({ supportsAirPlay: M }) => M && he(), O)}
-    ${fe()} ${me()}
   </media-control-bar>
 `, oa = (O) => st`
   <media-loading-indicator
@@ -13228,10 +13210,13 @@ svg, img, ::slotted(svg), ::slotted(img) {
     ${$t()}
   </div>
   <media-control-bar>
+    ${$t()} ${Ti()}
+    ${Ai()}
+    <media-time-range></media-time-range>
+    <media-time-display show-duration remaining></media-time-display>
     ${de()}
     ${St("volumeRange", ({ supportsVolume: M }) => M && st`<media-volume-range></media-volume-range>`, O)}
-    ${Ei()}
-    <media-time-display></media-time-display>
+    <media-playback-rate-button></media-playback-rate-button>
     ${St("captionsButton", ({ hasCaptions: M }) => M && ce(), O)}
     ${St("airplayButton", ({ supportsAirPlay: M }) => M && he(), O)}
     ${fe()} ${me()}
@@ -13245,25 +13230,42 @@ svg, img, ::slotted(svg), ::slotted(img) {
     ${$t()}
   </div>
   <media-control-bar>
+    ${de()}
+    ${St("volumeRange", ({ supportsVolume: M }) => M && st`<media-volume-range></media-volume-range>`, O)}
+    ${bi()}
+    <media-time-display></media-time-display>
+    ${St("captionsButton", ({ hasCaptions: M }) => M && ce(), O)}
+    ${St("airplayButton", ({ supportsAirPlay: M }) => M && he(), O)}
+    ${fe()} ${me()}
+  </media-control-bar>
+`, ua = (O) => st`
+  <media-loading-indicator
+    slot="centered-chrome"
+    no-auto-hide
+  ></media-loading-indicator>
+  <div slot="centered-chrome" class="mxp-center-controls">
+    ${$t()}
+  </div>
+  <media-control-bar>
     ${$t()} ${de()}
     ${St("volumeRange", ({ supportsVolume: M }) => M && st`<media-volume-range></media-volume-range>`, O)}
-    ${Ei()}
+    ${bi()}
     <media-time-display></media-time-display>
     ${St("captionsButton", ({ hasCaptions: M }) => M && ce(), O)}
     ${St("airplayButton", ({ supportsAirPlay: M }) => M && he(), O)}
     ${fe()} ${me()}
   </media-control-bar>
 `;
-  var ua = (O) => {
-    var M, C, T;
-    return !((M = O.video) == null ? void 0 : M.paused) && ((T = (C = O.video) == null ? void 0 : C.readyState) != null ? T : 0) < 3;
-  }, Ai = class {
+  var da = (O) => {
+    var M, x, T;
+    return !((M = O.video) == null ? void 0 : M.paused) && ((T = (x = O.video) == null ? void 0 : x.readyState) != null ? T : 0) < 3;
+  }, Si = class {
     constructor(M) {
       this._asyncProps = {};
       var T, e;
       this.el = M;
-      let C = bi(Si(M));
-      this._chromeRenderer = C.fragments.chromeRenderer, this._captionsButton = this._chromeRenderer.fragments.captionsButton, this._airplayButton = this._chromeRenderer.fragments.airplayButton, this._volumeRange = this._chromeRenderer.fragments.volumeRange, M.attachShadow({ mode: "open" }), (T = M.shadowRoot) == null || T.append(...C.childNodes), M.querySelectorAll(":scope > track").forEach((R) => {
+      let x = _i(Li(M));
+      this._chromeRenderer = x.fragments.chromeRenderer, this._captionsButton = this._chromeRenderer.fragments.captionsButton, this._airplayButton = this._chromeRenderer.fragments.airplayButton, this._volumeRange = this._chromeRenderer.fragments.volumeRange, M.attachShadow({ mode: "open" }), (T = M.shadowRoot) == null || T.append(...x.childNodes), M.querySelectorAll(":scope > track").forEach((R) => {
         var m;
         (m = M.video) == null || m.append(R.cloneNode());
       }), Array.prototype.forEach.call(M.attributes, (R) => {
@@ -13277,8 +13279,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
       this._deinitResizing();
     }
     _setUpMutedAutoplay(M) {
-      var C;
-      if ((C = M.video) == null ? void 0 : C.hls) {
+      var x;
+      if ((x = M.video) == null ? void 0 : x.hls) {
         let T = M.video.hls.constructor;
         M.autoplay && M.video.hls.on(T.Events.MANIFEST_PARSED, () => {
           var R;
@@ -13293,32 +13295,32 @@ svg, img, ::slotted(svg), ::slotted(img) {
     }
     _setUpCaptionsButton(M) {
       var T, e, R, m;
-      let C = () => {
+      let x = () => {
         var w;
-        let y = Me(M);
+        let y = Ce(M);
         if (this._captionsButton.render({ hasCaptions: !!y.length }), M.defaultShowCaptions && y.length && M.video) {
           let [A] = y, L = A.kind === "captions" ? "mediashowcaptionsrequest" : "mediashowsubtitlesrequest", b = new CustomEvent(L, { composed: true, bubbles: true, detail: A });
           (w = M.video) == null || w.dispatchEvent(b);
         }
       };
-      (e = (T = M.video) == null ? void 0 : T.textTracks) == null || e.addEventListener("addtrack", C), (m = (R = M.video) == null ? void 0 : R.textTracks) == null || m.addEventListener("removetrack", C);
+      (e = (T = M.video) == null ? void 0 : T.textTracks) == null || e.addEventListener("addtrack", x), (m = (R = M.video) == null ? void 0 : R.textTracks) == null || m.addEventListener("removetrack", x);
     }
     _setUpAirplayButton(M) {
-      var C;
+      var x;
       if (globalThis.WebKitPlaybackTargetAvailabilityEvent) {
         let T = (e) => {
           let R = e.availability === "available";
           this._airplayButton.render({ supportsAirPlay: R }), this._asyncProps.supportsAirPlay = R;
         };
-        (C = M.video) == null || C.addEventListener("webkitplaybacktargetavailabilitychanged", T);
+        (x = M.video) == null || x.addEventListener("webkitplaybacktargetavailabilitychanged", T);
       }
     }
     async _setUpVolumeRange(M) {
-      let C = await ai();
-      this._volumeRange.render({ supportsVolume: C }), this._asyncProps.supportsVolume = C;
+      let x = await si();
+      this._volumeRange.render({ supportsVolume: x }), this._asyncProps.supportsVolume = x;
     }
     _renderChrome() {
-      this._playerSize != Oe(this.el) && (this._playerSize = Oe(this.el), this._chromeRenderer.render(Si(this.el, this._asyncProps)), this._captionsButton = this._chromeRenderer.fragments.captionsButton, this._airplayButton = this._chromeRenderer.fragments.airplayButton, this._volumeRange = this._chromeRenderer.fragments.volumeRange);
+      this._playerSize != Pe(this.el) && (this._playerSize = Pe(this.el), this._chromeRenderer.render(Li(this.el, this._asyncProps)), this._captionsButton = this._chromeRenderer.fragments.captionsButton, this._airplayButton = this._chromeRenderer.fragments.airplayButton, this._volumeRange = this._chromeRenderer.fragments.volumeRange);
     }
     _initResizing() {
       this._resizeObserver = new ResizeObserver(() => this._renderChrome()), this._resizeObserver.observe(this.el);
@@ -13328,40 +13330,46 @@ svg, img, ::slotted(svg), ::slotted(img) {
       (M = this._resizeObserver) == null || M.disconnect();
     }
   };
-  function Si(O, M) {
-    return { debug: O.debug, envKey: O.envKey, playbackId: O.playbackId, poster: O.poster, startTime: O.startTime, streamType: O.streamType, playerSize: Oe(O), hasCaptions: !!Me(O).length, showLoading: ua(O), supportsAirPlay: false, supportsVolume: false, ...M };
+  function Li(O, M) {
+    return { debug: O.debug, envKey: O.envKey, playbackId: O.playbackId, poster: O.poster, startTime: O.startTime, streamType: O.streamType, primaryColor: O.primaryColor, secondaryColor: O.secondaryColor, playerSize: Pe(O), hasCaptions: !!Ce(O).length, showLoading: da(O), supportsAirPlay: false, supportsVolume: false, ...M };
   }
-  var da = 700, Li = { LG: "large", SM: "small" };
-  function Oe(O) {
-    return O.getBoundingClientRect().width < da ? Li.SM : Li.LG;
+  var ca = 700, Di = { LG: "large", SM: "small" };
+  function Pe(O) {
+    return O.getBoundingClientRect().width < ca ? Di.SM : Di.LG;
   }
-  var Dt = { ENV_KEY: "env-key", DEBUG: "debug", PLAYBACK_ID: "playback-id", METADATA_URL: "metadata-url", PREFER_MSE: "prefer-mse", METADATA_VIDEO_ID: "metadata-video-id", METADATA_VIDEO_TITLE: "metadata-video-title", METADATA_VIEWER_USER_ID: "metadata-viewer-user-id", BEACON_DOMAIN: "beacon-domain", TYPE: "type", STREAM_TYPE: "stream-type", START_TIME: "start-time" }, ca = { DEFAULT_SHOW_CAPTIONS: "default-show-captions" }, Di = Object.values(Dt), ha = ri(), fa = "mux-player", Pe = new WeakMap(), pe = class extends Ie {
+  var Dt = { ENV_KEY: "env-key", DEBUG: "debug", PLAYBACK_ID: "playback-id", METADATA_URL: "metadata-url", PREFER_MSE: "prefer-mse", METADATA_VIDEO_ID: "metadata-video-id", METADATA_VIDEO_TITLE: "metadata-video-title", METADATA_VIEWER_USER_ID: "metadata-viewer-user-id", BEACON_DOMAIN: "beacon-domain", TYPE: "type", STREAM_TYPE: "stream-type", START_TIME: "start-time" }, pe = { DEFAULT_SHOW_CAPTIONS: "default-show-captions", PRIMARY_COLOR: "primary-color", SECONDARY_COLOR: "secondary-color" }, ki = Object.values(Dt), ha = Object.values(pe), fa = ii(), ma = "mux-player", Ne = new WeakMap(), ve = class extends Me {
     static get observedAttributes() {
       var M;
-      return [...(M = Ie.observedAttributes) != null ? M : [], ...Di];
+      return [...(M = Me.observedAttributes) != null ? M : [], ...ki, ...ha];
     }
     constructor() {
       super();
-      Pe.set(this, new Ai(this));
+      Ne.set(this, new Si(this));
     }
     connectedCallback() {
-      Pe.get(this).connectedCallback();
+      Ne.get(this).connectedCallback();
     }
     disconnectedCallback() {
-      Pe.get(this).disconnectedCallback();
+      Ne.get(this).disconnectedCallback();
     }
-    attributeChangedCallback(M, C, T) {
+    attributeChangedCallback(M, x, T) {
       var e;
-      super.attributeChangedCallback(M, C, T), Di.includes(M) && ((e = this.video) == null || e.setAttribute(M, T));
+      super.attributeChangedCallback(M, x, T), ki.includes(M) && ((e = this.video) == null || e.setAttribute(M, T));
+    }
+    get primaryColor() {
+      return this.getAttribute(pe.PRIMARY_COLOR);
+    }
+    get secondaryColor() {
+      return this.getAttribute(pe.SECONDARY_COLOR);
     }
     get defaultShowCaptions() {
-      return this.getAttribute(ca.DEFAULT_SHOW_CAPTIONS) || true;
+      return this.getAttribute(pe.DEFAULT_SHOW_CAPTIONS) || true;
     }
     get playerSoftwareName() {
-      return fa;
+      return ma;
     }
     get playerSoftwareVersion() {
-      return ha;
+      return fa;
     }
     get hls() {
       var M;
@@ -13412,8 +13420,8 @@ svg, img, ::slotted(svg), ::slotted(img) {
   function Yt(O, M) {
     return O.video ? O.video.getAttribute(M) : O.getAttribute(M);
   }
-  globalThis.customElements.get("mux-player") || (globalThis.customElements.define("mux-player", pe), globalThis.MuxPlayerElement = pe);
-  var tu = pe;
+  globalThis.customElements.get("mux-player") || (globalThis.customElements.define("mux-player", ve), globalThis.MuxPlayerElement = ve);
+  var eu = ve;
 })();
 export {
   dist_exports as MuxPlayer
