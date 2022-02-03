@@ -13008,7 +13008,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
     />
     <text
       transform="translate(.6 17.8)"
-      style="font-size: 8; font-family: 'ArialMT', 'Arial'"
+      style="font-size: 8px; font-family: 'ArialMT', 'Arial'"
     >
       ${O.amount}
     </text>
@@ -13022,7 +13022,7 @@ svg, img, ::slotted(svg), ::slotted(img) {
     />
     <text
       transform="translate(6.5 17.8)"
-      style="font-size: 8; font-family: 'ArialMT', 'Arial'"
+      style="font-size: 8px; font-family: 'ArialMT', 'Arial'"
     >
       ${O.amount}
     </text>
