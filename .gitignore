@@ -120,3 +120,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 *.sublime-*
+
+# Disable dist rule for gh-pages branch to deploy dist folders.
+!dist
