@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Basic &lt;mux-player/&gt; example</title>
+    <script type="module" src="./dist/mux-player.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      mux-player {
+        width: 100%;
+        max-width: 800px;
+        margin: 40px auto;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <mux-player
+      playback-id="xLGf7y8cRquv7QXoDB02zEe6centwKfVmUOiPSY02JhCE"
+      poster="https://image.mux.com/xLGf7y8cRquv7QXoDB02zEe6centwKfVmUOiPSY02JhCE/thumbnail.jpg?time=0"
+      env-key="5e67cqdt7hgc9vkla7p0qch7q"
+      metadata-video-id="video-id-54321"
+      metadata-video-title="Star Wars: Episode 2"
+      metadata-viewer-user-id="user-id-007"
+      stream-type="vod"
+    >
+      <track
+        label="English"
+        kind="captions"
+        srclang="en"
+        src="./vtt/ddBx5002F02xe7ftFvTFkYBxEdQ2inQ2o029CMqu9A4IcY/en-cc-mashup.vtt"
+      />
+    </mux-player>
+
+    <script>
+      console.dir(document.querySelector("mux-player"));
+    </script>
+
+    <a href="../">Browse Elements</a>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Basic &lt;mux-audio/&gt; example</title>
+    <script type="module" src="./dist/mux-audio.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <mux-audio
+      playback-id="vDpm5ygrRJgfIEPNIc02IJR4Trf3z00AiP"
+      metadata-video-id="episode-id-12345"
+      metadata-video-title="Podcast: Episode 3"
+      metadata-viewer-user-id="user-id-6789"
+      env-key="mux-data-env-key"
+      autoplay
+      muted
+      controls
+    >
+    </mux-audio>
+    <a href="../">Browse Elements</a>
+  </body>
+</html>
